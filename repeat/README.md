@@ -1,0 +1,131 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2018 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# Repeat
+
+> Repeat a string a specified number of times and return the concatenated result.
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var repeat = require( '@stdlib/string/repeat' );
+```
+
+#### repeat( str, n )
+
+Repeats a string `n` times and returns the concatenated result.
+
+```javascript
+var str = repeat( 'a', 5 );
+// returns 'aaaaa'
+
+str = repeat( '', 100 );
+// returns ''
+
+str = repeat( 'beep', 0 );
+// returns ''
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var round = require( '@stdlib/math/base/special/round' );
+var randu = require( '@stdlib/random/base/randu' );
+var repeat = require( '@stdlib/string/repeat' );
+
+var str = 'beep';
+var n;
+var i;
+
+for ( i = 0; i < 100; i++ ) {
+    n = round( randu()*3.0 );
+    console.log( repeat( str, n ) );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+* * *
+
+<section class="cli">
+
+## CLI
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: repstr [options] [<string>] --n <repeats>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --n repeats           Number of repetitions.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ repstr beep -n 5
+beepbeepbeepbeepbeep
+```
+
+To use as a [standard stream][standard-streams],
+
+```bash
+$ echo -n 'ab' | repstr -n 3
+ababab
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
+
+<section class="links">
+
+[standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+
+</section>
+
+<!-- /.links -->

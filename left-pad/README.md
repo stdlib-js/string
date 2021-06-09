@@ -1,0 +1,154 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2018 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# Left Pad
+
+> Left pad a string.
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var lpad = require( '@stdlib/string/left-pad' );
+```
+
+#### lpad( str, len\[, pad] )
+
+Left pads a `string` such that the padded `string` has a `length` of **at least** `len`.
+
+```javascript
+var str = lpad( 'a', 5 );
+// returns '    a'
+```
+
+By default, an input `string` is padded with `spaces`. To pad with a different character or sequence of characters, provide a `pad` string.
+
+```javascript
+var str = lpad( 'beep', 10, 'b' );
+// returns 'bbbbbbbeep'
+
+str = lpad( 'boop', 12, 'beep' );
+// returns 'beepbeepboop'
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   An output `string` is **not** guaranteed to have a length of **exactly** `len`, but to have a `length` of **at least** `len`. To generate a padded `string` having a `length` equal to `len`
+
+    ```javascript
+    var str = lpad( 'boop', 10, 'beep' ); // => length 12
+    // returns 'beepbeepboop'
+
+    str = str.substring( str.length-10 ); // => length 10
+    // returns 'epbeepboop'
+    ```
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var round = require( '@stdlib/math/base/special/round' );
+var randu = require( '@stdlib/random/base/randu' );
+var lpad = require( '@stdlib/string/left-pad' );
+
+var str = 'beep';
+var n;
+var i;
+
+for ( i = 0; i < 100; i++ ) {
+    n = round( randu()*10 ) + str.length;
+    console.log( lpad( str, n, 'b' ) );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+* * *
+
+<section class="cli">
+
+## CLI
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: lpad [options] [<string>] --len=<length>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --len length          Minimum string length.
+         --pad str             String used to pad. Default: ' '.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ lpad beep --len 10 --pad b
+bbbbbbbeep
+```
+
+To use as a [standard stream][standard-streams],
+
+```bash
+$ echo -n 'beep' | lpad --len 8
+    beep
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
+
+<section class="links">
+
+[standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+
+</section>
+
+<!-- /.links -->

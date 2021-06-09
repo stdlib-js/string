@@ -1,0 +1,128 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2018 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# removeLast
+
+> Remove the last character of a string.
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var removeLast = require( '@stdlib/string/remove-last' );
+```
+
+#### removeLast( str )
+
+Removes the last character of a `string`.
+
+```javascript
+var out = removeLast( 'last man standing' );
+// returns 'last man standin'
+
+out = removeLast( 'Hidden Treasures' );
+// returns 'Hidden Treasure'
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var removeLast = require( '@stdlib/string/remove-last' );
+
+var str = removeLast( 'last man standing' );
+// returns 'last man standin'
+
+str = removeLast( 'presidential election' );
+// returns 'presidential electio'
+
+str = removeLast( 'javaScript' );
+// returns 'javaScrip'
+
+str = removeLast( 'Hidden Treasures' );
+// returns 'Hidden Treasure'
+```
+
+</section>
+
+<!-- /.examples -->
+
+* * *
+
+<section class="cli">
+
+## CLI
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: remove-last [options] [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ remove-last beep
+bee
+```
+
+To use as a [standard stream][standard-streams],
+
+```bash
+$ echo -n 'beep' | remove-last
+bee
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
+
+<section class="links">
+
+[standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+
+</section>
+
+<!-- /.links -->
