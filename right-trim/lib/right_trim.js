@@ -21,7 +21,7 @@
 // MODULES //
 
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
-var replace = require( '@stdlib/string/replace' );
+var replace = require( './../../replace' );
 
 
 // VARIABLES //

@@ -21,7 +21,7 @@
 // MODULES //
 
 var isStringArray = require( '@stdlib/assert/is-string-array' );
-var uppercase = require( '@stdlib/string/uppercase' );
+var uppercase = require( './../../uppercase' );
 var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var tokenize = require( '@stdlib/nlp/tokenize' );

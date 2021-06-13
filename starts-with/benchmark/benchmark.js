@@ -22,7 +22,7 @@
 
 var bench = require( '@stdlib/bench' );
 var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
-var fromCodePoint = require( '@stdlib/string/from-code-point' );
+var fromCodePoint = require( './../../from-code-point' );
 var pkg = require( './../package.json' ).name;
 var startsWith = require( './../lib' );
 

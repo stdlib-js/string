@@ -24,7 +24,7 @@ var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var writeFileSync = require( '@stdlib/fs/write-file' ).sync;
-var startsWith = require( '@stdlib/string/starts-with' );
+var startsWith = require( './../../../starts-with' );
 var inmap = require( '@stdlib/utils/inmap' );
 
 

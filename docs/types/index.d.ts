@@ -21,33 +21,33 @@
 /* tslint:disable:max-line-length */
 /* tslint:disable:max-file-line-count */
 
-import capitalize = require( '@stdlib/string/capitalize' );
-import codePointAt = require( '@stdlib/string/code-point-at' );
-import endsWith = require( '@stdlib/string/ends-with' );
-import fromCodePoint = require( '@stdlib/string/from-code-point' );
-import lpad = require( '@stdlib/string/left-pad' );
-import ltrim = require( '@stdlib/string/left-trim' );
-import lowercase = require( '@stdlib/string/lowercase' );
-import nextGraphemeClusterBreak = require( '@stdlib/string/next-grapheme-cluster-break' );
-import numGraphemeClusters = require( '@stdlib/string/num-grapheme-clusters' );
-import pad = require( '@stdlib/string/pad' );
-import percentEncode = require( '@stdlib/string/percent-encode' );
-import removeFirst = require( '@stdlib/string/remove-first' );
-import removeLast = require( '@stdlib/string/remove-last' );
-import removePunctuation = require( '@stdlib/string/remove-punctuation' );
-import removeUTF8BOM = require( '@stdlib/string/remove-utf8-bom' );
-import removeWords = require( '@stdlib/string/remove-words' );
-import repeat = require( '@stdlib/string/repeat' );
-import replace = require( '@stdlib/string/replace' );
-import reverseString = require( '@stdlib/string/reverse' );
-import rpad = require( '@stdlib/string/right-pad' );
-import rtrim = require( '@stdlib/string/right-trim' );
-import startcase = require( '@stdlib/string/startcase' );
-import startsWith = require( '@stdlib/string/starts-with' );
-import trim = require( '@stdlib/string/trim' );
-import uncapitalize = require( '@stdlib/string/uncapitalize' );
-import uppercase = require( '@stdlib/string/uppercase' );
-import utf16ToUTF8Array = require( '@stdlib/string/utf16-to-utf8-array' );
+import capitalize = require( './../../capitalize' );
+import codePointAt = require( './../../code-point-at' );
+import endsWith = require( './../../ends-with' );
+import fromCodePoint = require( './../../from-code-point' );
+import lpad = require( './../../left-pad' );
+import ltrim = require( './../../left-trim' );
+import lowercase = require( './../../lowercase' );
+import nextGraphemeClusterBreak = require( './../../next-grapheme-cluster-break' );
+import numGraphemeClusters = require( './../../num-grapheme-clusters' );
+import pad = require( './../../pad' );
+import percentEncode = require( './../../percent-encode' );
+import removeFirst = require( './../../remove-first' );
+import removeLast = require( './../../remove-last' );
+import removePunctuation = require( './../../remove-punctuation' );
+import removeUTF8BOM = require( './../../remove-utf8-bom' );
+import removeWords = require( './../../remove-words' );
+import repeat = require( './../../repeat' );
+import replace = require( './../../replace' );
+import reverseString = require( './../../reverse' );
+import rpad = require( './../../right-pad' );
+import rtrim = require( './../../right-trim' );
+import startcase = require( './../../startcase' );
+import startsWith = require( './../../starts-with' );
+import trim = require( './../../trim' );
+import uncapitalize = require( './../../uncapitalize' );
+import uppercase = require( './../../uppercase' );
+import utf16ToUTF8Array = require( './../../utf16-to-utf8-array' );
 
 /**
 * Interface describing the `string` namespace.

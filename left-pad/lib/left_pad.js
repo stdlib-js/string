@@ -22,7 +22,7 @@
 
 var isNonNegativeInteger = require( '@stdlib/assert/is-nonnegative-integer' ).isPrimitive;
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
-var repeat = require( '@stdlib/string/repeat' );
+var repeat = require( './../../repeat' );
 var ceil = require( '@stdlib/math/base/special/ceil' );
 var FLOAT64_MAX_SAFE_INTEGER = require( '@stdlib/constants/float64/max-safe-integer' );
 

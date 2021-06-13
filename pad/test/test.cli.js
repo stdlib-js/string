@@ -23,7 +23,7 @@
 var resolve = require( 'path' ).resolve;
 var exec = require( 'child_process' ).exec;
 var tape = require( 'tape' );
-var replace = require( '@stdlib/string/replace' );
+var replace = require( './../../replace' );
 var IS_BROWSER = require( '@stdlib/assert/is-browser' );
 var IS_WINDOWS = require( '@stdlib/assert/is-windows' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;

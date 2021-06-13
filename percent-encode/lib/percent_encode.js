@@ -21,7 +21,7 @@
 // MODULES //
 
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
-var utf16ToUTF8Array = require( '@stdlib/string/utf16-to-utf8-array' );
+var utf16ToUTF8Array = require( './../../utf16-to-utf8-array' );
 
 
 // VARIABLES //

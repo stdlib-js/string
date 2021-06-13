@@ -22,11 +22,11 @@
 
 var isNonNegativeInteger = require( '@stdlib/assert/is-nonnegative-integer' ).isPrimitive;
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
-var repeat = require( '@stdlib/string/repeat' );
+var repeat = require( './../../repeat' );
 var floor = require( '@stdlib/math/base/special/floor' );
 var ceil = require( '@stdlib/math/base/special/ceil' );
-var lpad = require( '@stdlib/string/left-pad' );
-var rpad = require( '@stdlib/string/right-pad' );
+var lpad = require( './../../left-pad' );
+var rpad = require( './../../right-pad' );
 var abs = require( '@stdlib/math/base/special/abs' );
 var FLOAT64_MAX_SAFE_INTEGER = require( '@stdlib/constants/float64/max-safe-integer' );
 var validate = require( './validate.js' );

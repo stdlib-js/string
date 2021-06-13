@@ -21,7 +21,7 @@
 // MODULES //
 
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
-var nextGraphemeClusterBreak = require( '@stdlib/string/next-grapheme-cluster-break' );
+var nextGraphemeClusterBreak = require( './../../next-grapheme-cluster-break' );
 
 
 // MAIN //

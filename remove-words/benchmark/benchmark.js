@@ -22,9 +22,9 @@
 
 var bench = require( '@stdlib/bench' );
 var stopwords = require( '@stdlib/datasets/stopwords-en' );
-var uppercase = require( '@stdlib/string/uppercase' );
+var uppercase = require( './../../uppercase' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
-var replace = require( '@stdlib/string/replace' );
+var replace = require( './../../replace' );
 var pkg = require( './../package.json' ).name;
 var removeWords = require( './../lib' );
 

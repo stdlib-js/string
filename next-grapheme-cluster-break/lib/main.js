@@ -22,7 +22,7 @@
 
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isInteger = require( '@stdlib/assert/is-integer' ).isPrimitive;
-var codePointAt = require( '@stdlib/string/code-point-at' );
+var codePointAt = require( './../../code-point-at' );
 var hasUTF16SurrogatePairAt = require( '@stdlib/assert/has-utf16-surrogate-pair-at' );
 var breakType = require( './break_type.js' );
 var graphemeBreakProperty = require( './grapheme_break_property.js' );

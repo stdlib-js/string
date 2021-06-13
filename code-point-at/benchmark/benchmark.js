@@ -23,7 +23,7 @@
 var bench = require( '@stdlib/bench' );
 var randu = require( '@stdlib/random/base/randu' );
 var floor = require( '@stdlib/math/base/special/floor' );
-var fromCodePoint = require( '@stdlib/string/from-code-point' );
+var fromCodePoint = require( './../../from-code-point' );
 var isNonNegativeInteger = require( '@stdlib/assert/is-nonnegative-integer' ).isPrimitive;
 var UNICODE_MAX = require( '@stdlib/constants/unicode/max' );
 var pkg = require( './../package.json' ).name;

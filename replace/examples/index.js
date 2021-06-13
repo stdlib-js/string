@@ -18,7 +18,7 @@
 
 'use strict';
 
-var capitalize = require( '@stdlib/string/capitalize' );
+var capitalize = require( './../../capitalize' );
 var replace = require( './../lib' );
 
 var out;
