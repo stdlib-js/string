@@ -60,6 +60,7 @@ The namespace exposes the following string manipulation functions:
 -   <span class="signature">[`camelcase( str )`][@stdlib/string/camelcase]</span><span class="delimiter">: </span><span class="description">convert a string to camel case.</span>
 -   <span class="signature">[`capitalize( str )`][@stdlib/string/capitalize]</span><span class="delimiter">: </span><span class="description">capitalize the first character in a string.</span>
 -   <span class="signature">[`codePointAt( string, position[, backward] )`][@stdlib/string/code-point-at]</span><span class="delimiter">: </span><span class="description">return a Unicode code point from a string at a specified position.</span>
+-   <span class="signature">[`constantcase( str )`][@stdlib/string/constantcase]</span><span class="delimiter">: </span><span class="description">returns a string converted to a constant case.</span>
 -   <span class="signature">[`endsWith( str, search[, len] )`][@stdlib/string/ends-with]</span><span class="delimiter">: </span><span class="description">test if a string ends with the characters of another string.</span>
 -   <span class="signature">[`fromCodePoint( pt1[, pt2[, pt3[, ...]]] )`][@stdlib/string/from-code-point]</span><span class="delimiter">: </span><span class="description">create a string from a sequence of Unicode code points.</span>
 -   <span class="signature">[`kebabcase( str )`][@stdlib/string/kebabcase]</span><span class="delimiter">: </span><span class="description">convert a string to kebab case.</span>
@@ -176,6 +177,8 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [@stdlib/string/capitalize]: https://github.com/stdlib-js/string/tree/main/capitalize
 
 [@stdlib/string/code-point-at]: https://github.com/stdlib-js/string/tree/main/code-point-at
+
+[@stdlib/string/constantcase]: https://github.com/stdlib-js/string/tree/main/constantcase
 
 [@stdlib/string/ends-with]: https://github.com/stdlib-js/string/tree/main/ends-with
 
