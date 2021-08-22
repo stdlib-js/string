@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/string",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Standard library string manipulation functions.",
   "license": "Apache-2.0",
   "author": {
@@ -36,17 +36,17 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert": "github:stdlib-js/assert",
-    "@stdlib/cli": "github:stdlib-js/cli",
-    "@stdlib/constants": "github:stdlib-js/constants",
-    "@stdlib/fs": "github:stdlib-js/fs",
-    "@stdlib/math": "github:stdlib-js/math",
-    "@stdlib/nlp": "github:stdlib-js/nlp",
-    "@stdlib/process": "github:stdlib-js/process",
-    "@stdlib/regexp": "github:stdlib-js/regexp",
-    "@stdlib/streams": "github:stdlib-js/streams",
-    "@stdlib/types": "github:stdlib-js/types",
-    "@stdlib/utils": "github:stdlib-js/utils"
+    "@stdlib/assert": "github:stdlib-js/assert#main",
+    "@stdlib/cli": "github:stdlib-js/cli#main",
+    "@stdlib/constants": "github:stdlib-js/constants#main",
+    "@stdlib/fs": "github:stdlib-js/fs#main",
+    "@stdlib/math": "github:stdlib-js/math#main",
+    "@stdlib/nlp": "github:stdlib-js/nlp#main",
+    "@stdlib/process": "github:stdlib-js/process#main",
+    "@stdlib/regexp": "github:stdlib-js/regexp#main",
+    "@stdlib/streams": "github:stdlib-js/streams#main",
+    "@stdlib/types": "github:stdlib-js/types#main",
+    "@stdlib/utils": "github:stdlib-js/utils#main"
   },
   "devDependencies": {
     "@stdlib/array": "github:stdlib-js/array",
