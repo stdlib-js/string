@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# constantcase
+# snakecase
 
-> Returns a string converted to a constant case.
+> Convert a string to snake case.
 
 <!-- Package usage documentation. -->
 
@@ -29,22 +29,22 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var constantcase = require( '@stdlib/string/constantcase' );
+var snakecase = require( '@stdlib/string/snakecase' );
 ```
 
-#### constantcase( str )
+#### snakecase( str )
 
-Converts a string to constant case.
+Converts a string to snake case.
 
 ```javascript
-var str = constantcase( 'foo bar' );
-// returns 'FOO_BAR'
+var str = snakecase( 'Foo Bar' );
+// returns 'foo_bar'
 
-str = constantcase( 'foo bar baz' );
-// returns 'FOO_BAR_BAZ'
+str = snakecase( 'I am a tiny little house' );
+// returns 'i_am_a_tiny_little_house'
 
-str = constantcase( 'foo_bar' );
-// returns 'FOO_BAR'
+str = snakecase( 'Hello World!' );
+// returns 'hello_world'
 ```
 
 </section>
@@ -58,27 +58,31 @@ str = constantcase( 'foo_bar' );
 ## Examples
 
 ```javascript
-var constantcase = require( '@stdlib/string/constantcase' );
+var snakecase = require( '@stdlib/string/snakecase' );
 
-var str = 'Hello World!';
-var out = constantcase( str );
-// returns 'HELLO_WORLD'
+var str = 'foo bar baz';
+var out = snakecase( str );
+// returns 'foo_bar_baz'
 
-str = 'I am a tiny little teapot';
-out = constantcase( str );
-// returns 'I_AM_A_TINY_LITTLE_TEAPOT'
+str = 'foo_baz';
+out = snakecase( str );
+// returns 'foo_baz'
 
-str = 'with big problems';
-out = constantcase( str );
-// returns 'WITH_BIG_PROBLEMS'
+str = 'foo_bar_baz!';
+out = snakecase( str );
+// returns 'foo_bar_baz'
 
-str = 'To be, or not to be: that is the question.';
-out = constantcase( str );
-// returns 'TO_BE_OR_NOT_TO_BE_THAT_IS_THE_QUESTION'
+str = 'beep    boop!';
+out = snakecase( str );
+// returns 'beep_boop'
 
-str = 'isMobile';
-out = constantcase( str );
-// returns 'IS_MOBILE'
+str = 'foo-baz';
+out = snakecase( str );
+// returns 'foo_baz'
+
+str = 'Welcome! 😀';
+out = snakecase( str );
+// returns 'welcome_😀'
 ```
 
 </section>
@@ -96,7 +100,7 @@ out = constantcase( str );
 ### Usage
 
 ```text
-Usage: constantcase [options] [<string>]
+Usage: snakecase [options] [<string>]
 
 Options:
 
@@ -113,15 +117,15 @@ Options:
 ### Examples
 
 ```bash
-$ constantcase 'hello world'
-HELLO_WORLD
+$ snakecase 'hello world!'
+hello_world
 ```
 
 To use as a [standard stream][standard-streams],
 
 ```bash
-$ echo -n 'beEp booP' | constantcase
-BEEP_BOOP
+$ echo -n 'beEp booP' | snakecase
+beep_boop
 ```
 
 </section>
@@ -141,8 +145,8 @@ BEEP_BOOP
 ## See Also
 
 -   [`@stdlib/string/camelcase`][@stdlib/string/camelcase]: https://github.com/stdlib-js/string/tree/main/camelcase`][@stdlib/string/camelcase
+-   [`@stdlib/string/constantcase`][@stdlib/string/constantcase]: https://github.com/stdlib-js/string/tree/main/constantcase`][@stdlib/string/constantcase
 -   [`@stdlib/string/kebabcase`][@stdlib/string/kebabcase]: https://github.com/stdlib-js/string/tree/main/kebabcase`][@stdlib/string/kebabcase
--   [`@stdlib/string/snakecase`][@stdlib/string/snakecase]: https://github.com/stdlib-js/string/tree/main/snakecase`][@stdlib/string/snakecase
 
 </section>
 
@@ -158,9 +162,9 @@ BEEP_BOOP
 
 [@stdlib/string/camelcase]: https://github.com/stdlib-js/string/tree/main/camelcase
 
-[@stdlib/string/kebabcase]: https://github.com/stdlib-js/string/tree/main/kebabcase
+[@stdlib/string/constantcase]: https://github.com/stdlib-js/string/tree/main/constantcase
 
-[@stdlib/string/snakecase]: https://github.com/stdlib-js/string/tree/main/snakecase
+[@stdlib/string/kebabcase]: https://github.com/stdlib-js/string/tree/main/kebabcase
 
 <!-- </related-links> -->
 

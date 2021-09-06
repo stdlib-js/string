@@ -127,9 +127,34 @@ BEEP
 
 <!-- /.cli -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/string/capitalize`][@stdlib/string/capitalize]: https://github.com/stdlib-js/string/tree/main/capitalize`][@stdlib/string/capitalize
+-   [`@stdlib/string/lowercase`][@stdlib/string/lowercase]: https://github.com/stdlib-js/string/tree/main/lowercase`][@stdlib/string/lowercase
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 <section class="links">
 
 [standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+
+<!-- <related-links> -->
+
+[@stdlib/string/capitalize]: https://github.com/stdlib-js/string/tree/main/capitalize
+
+[@stdlib/string/lowercase]: https://github.com/stdlib-js/string/tree/main/lowercase
+
+<!-- </related-links> -->
 
 </section>
 

@@ -242,13 +242,34 @@ aabeepoo0
 
 <!-- /.cli -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/string/left-pad`][@stdlib/string/left-pad]: https://github.com/stdlib-js/string/tree/main/left-pad`][@stdlib/string/left-pad
+-   [`@stdlib/string/right-pad`][@stdlib/string/right-pad]: https://github.com/stdlib-js/string/tree/main/right-pad`][@stdlib/string/right-pad
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 <section class="links">
+
+[standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+
+<!-- <related-links> -->
 
 [@stdlib/string/left-pad]: https://github.com/stdlib-js/string/tree/main/left-pad
 
 [@stdlib/string/right-pad]: https://github.com/stdlib-js/string/tree/main/right-pad
 
-[standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+<!-- </related-links> -->
 
 </section>
 

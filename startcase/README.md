@@ -125,9 +125,34 @@ Beep Boop Foo Bar
 
 <!-- /.cli -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/string/lowercase`][@stdlib/string/lowercase]: https://github.com/stdlib-js/string/tree/main/lowercase`][@stdlib/string/lowercase
+-   [`@stdlib/string/uppercase`][@stdlib/string/uppercase]: https://github.com/stdlib-js/string/tree/main/uppercase`][@stdlib/string/uppercase
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 <section class="links">
 
 [standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+
+<!-- <related-links> -->
+
+[@stdlib/string/lowercase]: https://github.com/stdlib-js/string/tree/main/lowercase
+
+[@stdlib/string/uppercase]: https://github.com/stdlib-js/string/tree/main/uppercase
+
+<!-- </related-links> -->
 
 </section>
 

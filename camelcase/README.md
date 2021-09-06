@@ -54,7 +54,6 @@ out = camelcase( '--foo-bar--' );
 
 <!-- /.usage -->
 
-
 <!-- Package usage examples. -->
 
 <section class="examples">
@@ -80,7 +79,6 @@ out = camelcase( str );
 </section>
 
 <!-- /.examples -->
-
 
 * * *
 
@@ -129,9 +127,37 @@ beEpBooP
 
 <!-- /.cli -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/string/constantcase`][@stdlib/string/constantcase]: https://github.com/stdlib-js/string/tree/main/constantcase`][@stdlib/string/constantcase
+-   [`@stdlib/string/kebabcase`][@stdlib/string/kebabcase]: https://github.com/stdlib-js/string/tree/main/kebabcase`][@stdlib/string/kebabcase
+-   [`@stdlib/string/snakecase`][@stdlib/string/snakecase]: https://github.com/stdlib-js/string/tree/main/snakecase`][@stdlib/string/snakecase
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 <section class="links">
 
 [standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+
+<!-- <related-links> -->
+
+[@stdlib/string/constantcase]: https://github.com/stdlib-js/string/tree/main/constantcase
+
+[@stdlib/string/kebabcase]: https://github.com/stdlib-js/string/tree/main/kebabcase
+
+[@stdlib/string/snakecase]: https://github.com/stdlib-js/string/tree/main/snakecase
+
+<!-- </related-links> -->
 
 </section>
 
