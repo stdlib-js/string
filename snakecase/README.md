@@ -144,9 +144,9 @@ beep_boop
 
 ## See Also
 
--   [`@stdlib/string/camelcase`][@stdlib/string/camelcase]: https://github.com/stdlib-js/string/tree/main/camelcase`][@stdlib/string/camelcase
--   [`@stdlib/string/constantcase`][@stdlib/string/constantcase]: https://github.com/stdlib-js/string/tree/main/constantcase`][@stdlib/string/constantcase
--   [`@stdlib/string/kebabcase`][@stdlib/string/kebabcase]: https://github.com/stdlib-js/string/tree/main/kebabcase`][@stdlib/string/kebabcase
+-   [`@stdlib/string/camelcase`][@stdlib/string/camelcase]: convert a string to camel case.
+-   [`@stdlib/string/constantcase`][@stdlib/string/constantcase]: convert a string to constant case.
+-   [`@stdlib/string/kebabcase`][@stdlib/string/kebabcase]: convert a string to kebab case.
 
 </section>
 

@@ -153,8 +153,8 @@ $ echo -n 'beep' | lpad --len 8
 
 ## See Also
 
--   [`@stdlib/string/pad`][@stdlib/string/pad]: https://github.com/stdlib-js/string/tree/main/pad`][@stdlib/string/pad
--   [`@stdlib/string/right-pad`][@stdlib/string/right-pad]: https://github.com/stdlib-js/string/tree/main/right-pad`][@stdlib/string/right-pad
+-   <span class="package-name">[`@stdlib/string/pad`][@stdlib/string/pad]</span><span class="delimiter">: </span><span class="description">pad a string.</span>
+-   <span class="package-name">[`@stdlib/string/right-pad`][@stdlib/string/right-pad]</span><span class="delimiter">: </span><span class="description">right pad a string.</span>
 
 </section>
 

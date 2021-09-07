@@ -129,8 +129,8 @@ BeEp
 
 ## See Also
 
--   [`@stdlib/string/uncapitalize`][@stdlib/string/uncapitalize]: https://github.com/stdlib-js/string/tree/main/uncapitalize`][@stdlib/string/uncapitalize
--   [`@stdlib/string/uppercase`][@stdlib/string/uppercase]: https://github.com/stdlib-js/string/tree/main/uppercase`][@stdlib/string/uppercase
+-   [`@stdlib/string/uncapitalize`][@stdlib/string/uncapitalize]: uncapitalize the first character of a string.
+-   [`@stdlib/string/uppercase`][@stdlib/string/uppercase]: convert a string to uppercase.
 
 </section>
 

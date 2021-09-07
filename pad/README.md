@@ -250,8 +250,8 @@ aabeepoo0
 
 ## See Also
 
--   [`@stdlib/string/left-pad`][@stdlib/string/left-pad]: https://github.com/stdlib-js/string/tree/main/left-pad`][@stdlib/string/left-pad
--   [`@stdlib/string/right-pad`][@stdlib/string/right-pad]: https://github.com/stdlib-js/string/tree/main/right-pad`][@stdlib/string/right-pad
+-   [`@stdlib/string/left-pad`][@stdlib/string/left-pad]: left pad a string.
+-   [`@stdlib/string/right-pad`][@stdlib/string/right-pad]: right pad a string.
 
 </section>
 

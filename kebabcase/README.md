@@ -144,9 +144,9 @@ beep-boop
 
 ## See Also
 
--   [`@stdlib/string/camelcase`][@stdlib/string/camelcase]: https://github.com/stdlib-js/string/tree/main/camelcase`][@stdlib/string/camelcase
--   [`@stdlib/string/constantcase`][@stdlib/string/constantcase]: https://github.com/stdlib-js/string/tree/main/constantcase`][@stdlib/string/constantcase
--   [`@stdlib/string/snakecase`][@stdlib/string/snakecase]: https://github.com/stdlib-js/string/tree/main/snakecase`][@stdlib/string/snakecase
+-   [`@stdlib/string/camelcase`][@stdlib/string/camelcase]: convert a string to camel case.
+-   [`@stdlib/string/constantcase`][@stdlib/string/constantcase]: convert a string to constant case.
+-   [`@stdlib/string/snakecase`][@stdlib/string/snakecase]: convert a string to snake case.
 
 </section>
 

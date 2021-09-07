@@ -134,7 +134,7 @@ $ echo -n 'beep\nboop🌷' | num-grapheme-clusters -l
 
 ## See Also
 
--   [`@stdlib/string/next-grapheme-cluster-break`][@stdlib/string/next-grapheme-cluster-break]: https://github.com/stdlib-js/string/tree/main/next-grapheme-cluster-break`][@stdlib/string/next-grapheme-cluster-break
+-   [`@stdlib/string/next-grapheme-cluster-break`][@stdlib/string/next-grapheme-cluster-break]: return the next extended grapheme cluster break in a string after a specified position.
 
 </section>
 

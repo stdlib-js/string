@@ -181,7 +181,7 @@ $ echo -n 'अनुच्छेद' | code-point-at --pos=2
 
 ## See Also
 
--   [`@stdlib/string/from-code-point`][@stdlib/string/from-code-point]: https://github.com/stdlib-js/string/tree/main/from-code-point`][@stdlib/string/from-code-point
+-   [`@stdlib/string/from-code-point`][@stdlib/string/from-code-point]: create a string from a sequence of Unicode code points.
 
 </section>
 

@@ -133,8 +133,8 @@ Beep Boop Foo Bar
 
 ## See Also
 
--   [`@stdlib/string/lowercase`][@stdlib/string/lowercase]: https://github.com/stdlib-js/string/tree/main/lowercase`][@stdlib/string/lowercase
--   [`@stdlib/string/uppercase`][@stdlib/string/uppercase]: https://github.com/stdlib-js/string/tree/main/uppercase`][@stdlib/string/uppercase
+-   [`@stdlib/string/lowercase`][@stdlib/string/lowercase]: convert a string to lowercase.
+-   [`@stdlib/string/uppercase`][@stdlib/string/uppercase]: convert a string to uppercase.
 
 </section>
 

@@ -127,7 +127,7 @@ bee
 
 ## See Also
 
--   [`@stdlib/string/remove-first`][@stdlib/string/remove-first]: https://github.com/stdlib-js/string/tree/main/remove-first`][@stdlib/string/remove-first
+-   [`@stdlib/string/remove-first`][@stdlib/string/remove-first]: remove the first character of a string.
 
 </section>
 

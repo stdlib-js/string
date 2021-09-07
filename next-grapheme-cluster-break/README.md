@@ -180,7 +180,7 @@ $ echo -n 'अनुच्छेद' | next-grapheme-cluster-break --from=1
 
 ## See Also
 
--   [`@stdlib/string/num-grapheme-clusters`][@stdlib/string/num-grapheme-clusters]: https://github.com/stdlib-js/string/tree/main/num-grapheme-clusters`][@stdlib/string/num-grapheme-clusters
+-   [`@stdlib/string/num-grapheme-clusters`][@stdlib/string/num-grapheme-clusters]: return the number of grapheme clusters in a string.
 
 </section>
 

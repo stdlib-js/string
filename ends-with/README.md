@@ -163,7 +163,7 @@ false
 
 ## See Also
 
--   [`@stdlib/string/starts-with`][@stdlib/string/starts-with]: https://github.com/stdlib-js/string/tree/main/starts-with`][@stdlib/string/starts-with
+-   [`@stdlib/string/starts-with`][@stdlib/string/starts-with]: test if a string starts with the characters of another string.
 
 </section>
 

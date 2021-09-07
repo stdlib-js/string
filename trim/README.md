@@ -131,9 +131,9 @@ beep boop
 
 ## See Also
 
--   [`@stdlib/string/left-trim`][@stdlib/string/left-trim]: https://github.com/stdlib-js/string/tree/main/left-trim`][@stdlib/string/left-trim
--   [`@stdlib/string/pad`][@stdlib/string/pad]: https://github.com/stdlib-js/string/tree/main/pad`][@stdlib/string/pad
--   [`@stdlib/string/right-trim`][@stdlib/string/right-trim]: https://github.com/stdlib-js/string/tree/main/right-trim`][@stdlib/string/right-trim
+-   [`@stdlib/string/left-trim`][@stdlib/string/left-trim]: trim whitespace characters from the beginning of a string.
+-   [`@stdlib/string/pad`][@stdlib/string/pad]: pad a string.
+-   [`@stdlib/string/right-trim`][@stdlib/string/right-trim]: trim whitespace characters from the end of a string.
 
 </section>
 

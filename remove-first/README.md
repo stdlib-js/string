@@ -127,7 +127,7 @@ eep
 
 ## See Also
 
--   [`@stdlib/string/remove-last`][@stdlib/string/remove-last]: https://github.com/stdlib-js/string/tree/main/remove-last`][@stdlib/string/remove-last
+-   [`@stdlib/string/remove-last`][@stdlib/string/remove-last]: remove the last character of a string.
 
 </section>
 

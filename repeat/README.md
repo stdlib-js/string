@@ -130,7 +130,7 @@ ababab
 
 ## See Also
 
--   [`@stdlib/string/pad`][@stdlib/string/pad]: https://github.com/stdlib-js/string/tree/main/pad`][@stdlib/string/pad
+-   [`@stdlib/string/pad`][@stdlib/string/pad]: pad a string.
 
 </section>
 

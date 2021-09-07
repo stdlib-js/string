@@ -131,8 +131,8 @@ beep boop
 
 ## See Also
 
--   [`@stdlib/string/trim`][@stdlib/string/trim]: https://github.com/stdlib-js/string/tree/main/trim`][@stdlib/string/trim
--   [`@stdlib/string/right-trim`][@stdlib/string/right-trim]: https://github.com/stdlib-js/string/tree/main/right-trim`][@stdlib/string/right-trim
+-   [`@stdlib/string/trim`][@stdlib/string/trim]: trim whitespace characters from the beginning and end of a string.
+-   [`@stdlib/string/right-trim`][@stdlib/string/right-trim]: trim whitespace characters from the end of a string.
 
 </section>
 

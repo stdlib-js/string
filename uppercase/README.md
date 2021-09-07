@@ -135,8 +135,8 @@ BEEP
 
 ## See Also
 
--   [`@stdlib/string/capitalize`][@stdlib/string/capitalize]: https://github.com/stdlib-js/string/tree/main/capitalize`][@stdlib/string/capitalize
--   [`@stdlib/string/lowercase`][@stdlib/string/lowercase]: https://github.com/stdlib-js/string/tree/main/lowercase`][@stdlib/string/lowercase
+-   [`@stdlib/string/capitalize`][@stdlib/string/capitalize]: capitalize the first character in a string.
+-   [`@stdlib/string/lowercase`][@stdlib/string/lowercase]: convert a string to lowercase.
 
 </section>
 

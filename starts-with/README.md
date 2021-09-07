@@ -166,7 +166,7 @@ true
 
 ## See Also
 
--   [`@stdlib/string/ends-with`][@stdlib/string/ends-with]: https://github.com/stdlib-js/string/tree/main/ends-with`][@stdlib/string/ends-with
+-   [`@stdlib/string/ends-with`][@stdlib/string/ends-with]: test if a string ends with the characters of another string.
 
 </section>
 

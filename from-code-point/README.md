@@ -211,7 +211,7 @@ abc
 
 ## See Also
 
--   [`@stdlib/string/code-point-at`][@stdlib/string/code-point-at]: https://github.com/stdlib-js/string/tree/main/code-point-at`][@stdlib/string/code-point-at
+-   [`@stdlib/string/code-point-at`][@stdlib/string/code-point-at]: return a Unicode code point from a string at a specified position.
 
 </section>
 

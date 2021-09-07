@@ -153,8 +153,8 @@ boop%%%%
 
 ## See Also
 
--   [`@stdlib/string/left-pad`][@stdlib/string/left-pad]: https://github.com/stdlib-js/string/tree/main/left-pad`][@stdlib/string/left-pad
--   [`@stdlib/string/pad`][@stdlib/string/pad]: https://github.com/stdlib-js/string/tree/main/pad`][@stdlib/string/pad
+-   [`@stdlib/string/left-pad`][@stdlib/string/left-pad]: left pad a string.
+-   [`@stdlib/string/pad`][@stdlib/string/pad]: pad a string.
 
 </section>
 
