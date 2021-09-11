@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2021 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,54 +18,62 @@ limitations under the License.
 
 -->
 
-# Uncapitalize
+# pascalcase
 
-> Uncapitalize the first character of a string.
+> Convert a string to Pascal case.
+
+<!-- Package usage documentation. -->
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var uncapitalize = require( '@stdlib/string/uncapitalize' );
+var pascalcase = require( '@stdlib/string/pascalcase' );
 ```
 
-#### uncapitalize( str )
+#### pascalcase( str )
 
-Uncapitalizes the first character of a `string`.
+Converts a string to Pascal case.
 
 ```javascript
-var out = uncapitalize( 'Last man standing' );
-// returns 'last man standing'
+var out = pascalcase( 'foo bar' );
+// returns 'FooBar'
 
-out = uncapitalize( 'Hidden Treasures' );
-// returns 'hidden Treasures'
+out = pascalcase( 'IS_MOBILE' );
+// returns 'IsMobile'
+
+out = pascalcase( 'Hello World!' );
+// returns 'HelloWorld'
+
+out = pascalcase( '--foo-bar--' );
+// returns 'FooBar'
 ```
 
 </section>
 
 <!-- /.usage -->
 
+<!-- Package usage examples. -->
+
 <section class="examples">
 
 ## Examples
 
-<!-- eslint no-undef: "error" -->
-
 ```javascript
-var uncapitalize = require( '@stdlib/string/uncapitalize' );
+var pascalcase = require( '@stdlib/string/pascalcase' );
 
-var out = uncapitalize( 'Last man standing' );
-// returns 'last man standing'
+var str = 'Hello World!';
+var out = pascalcase( str );
+// returns 'HelloWorld'
 
-out = uncapitalize( 'Presidential election' );
-// returns 'presidential election'
+str = 'HELLO WORLD!';
+out = pascalcase( str );
+// returns 'HelloWorld'
 
-out = uncapitalize( 'JavaScript' );
-// returns 'javaScript'
-
-out = uncapitalize( 'Hidden Treasures' );
-// returns 'hidden Treasures'
+str = 'To be, or not to be: that is the question.';
+out = pascalcase( str );
+// returns 'ToBeOrNotToBeThatIsTheQuestion'
 ```
 
 </section>
@@ -83,7 +91,7 @@ out = uncapitalize( 'Hidden Treasures' );
 ### Usage
 
 ```text
-Usage: uncapitalize [options] [<string>]
+Usage: pascalcase [options] [<string>]
 
 Options:
 
@@ -100,15 +108,15 @@ Options:
 ### Examples
 
 ```bash
-$ uncapitalize Beep
-beep
+$ pascalcase 'hello world!'
+HelloWorld
 ```
 
 To use as a [standard stream][standard-streams],
 
 ```bash
-$ echo -n 'Beep' | uncapitalize
-beep
+$ echo -n 'beEp booP' | pascalcase
+BeEpBooP
 ```
 
 </section>
@@ -123,13 +131,6 @@ beep
 
 <section class="related">
 
-* * *
-
-## See Also
-
--   <span class="package-name">[`@stdlib/string/capitalize`][@stdlib/string/capitalize]</span><span class="delimiter">: </span><span class="description">capitalize the first character in a string.</span>
--   <span class="package-name">[`@stdlib/string/lowercase`][@stdlib/string/lowercase]</span><span class="delimiter">: </span><span class="description">convert a string to lowercase.</span>
-
 </section>
 
 <!-- /.related -->
@@ -141,10 +142,6 @@ beep
 [standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
 
 <!-- <related-links> -->
-
-[@stdlib/string/capitalize]: https://github.com/stdlib-js/string/tree/main/capitalize
-
-[@stdlib/string/lowercase]: https://github.com/stdlib-js/string/tree/main/lowercase
 
 <!-- </related-links> -->
 
