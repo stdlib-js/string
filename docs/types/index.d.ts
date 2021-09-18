@@ -21,6 +21,7 @@
 /* tslint:disable:max-line-length */
 /* tslint:disable:max-file-line-count */
 
+import acronym = require( './../../acronym' );
 import camelcase = require( './../../camelcase' );
 import capitalize = require( './../../capitalize' );
 import codePointAt = require( './../../code-point-at' );
@@ -34,6 +35,7 @@ import lowercase = require( './../../lowercase' );
 import nextGraphemeClusterBreak = require( './../../next-grapheme-cluster-break' );
 import numGraphemeClusters = require( './../../num-grapheme-clusters' );
 import pad = require( './../../pad' );
+import pascalcase = require( './../../pascalcase' );
 import percentEncode = require( './../../percent-encode' );
 import removeFirst = require( './../../remove-first' );
 import removeLast = require( './../../remove-last' );
@@ -45,9 +47,16 @@ import replace = require( './../../replace' );
 import reverseString = require( './../../reverse' );
 import rpad = require( './../../right-pad' );
 import rtrim = require( './../../right-trim' );
+import snakecase = require( './../../snakecase' );
 import startcase = require( './../../startcase' );
 import startsWith = require( './../../starts-with' );
+import substringAfter = require( './../../substring-after' );
+import substringAfterLast = require( './../../substring-after-last' );
+import substringBefore = require( './../../substring-before' );
+import substringBeforeLast = require( './../../substring-before-last' );
 import trim = require( './../../trim' );
+import truncate = require( './../../truncate' );
+import truncateMiddle = require( './../../truncate-middle' );
 import uncapitalize = require( './../../uncapitalize' );
 import uppercase = require( './../../uppercase' );
 import utf16ToUTF8Array = require( './../../utf16-to-utf8-array' );
@@ -56,6 +65,28 @@ import utf16ToUTF8Array = require( './../../utf16-to-utf8-array' );
 * Interface describing the `string` namespace.
 */
 interface Namespace {
+	/**
+	* Generates an acronym for a given string.
+	*
+	* @param str - input string
+	* @param options - function options
+	* @param options.stopwords - custom stop words
+	* @returns generated acronym
+	*
+	* @example
+	* var out = ns.acronym( 'the quick brown fox' );
+	* // returns 'QBF'
+	*
+	* @example
+	* var out = ns.acronym( 'Hard-boiled eggs' );
+	* // returns 'HBE'
+	*
+	* @example
+	* var out = ns.acronym( 'National Association of Securities Dealers Automated Quotation' );
+	* // returns 'NASDAQ'
+	*/
+	acronym: typeof acronym;
+
 	/**
 	* Converts a string to camel case.
 	*
@@ -362,6 +393,26 @@ interface Namespace {
 	pad: typeof pad;
 
 	/**
+	* Converts a string to Pascal case.
+	*
+	* @param str - string to convert
+	* @returns a Pascal-cased string
+	*
+	* @example
+	* var str = ns.pascalcase( 'Hello World!' );
+	* // returns 'HelloWorld'
+	*
+	* @example
+	* var str = ns.pascalcase( 'foo_bar' );
+	* // returns 'FooBar'
+	*
+	* @example
+	* var str = ns.pascalcase( 'foo-bar' );
+	* // returns 'FooBar'
+	*/
+	pascalcase: typeof pascalcase;
+
+	/**
 	* Percent-encode a UTF-16 encoded string according to [RFC 3986][1].
 	*
 	* [1]: https://tools.ietf.org/html/rfc3986#section-2.1
@@ -618,6 +669,26 @@ interface Namespace {
 	rtrim: typeof rtrim;
 
 	/**
+	* Converts a string to snake case.
+	*
+	* @param str - string to convert
+	* @returns a snake-cased string
+	*
+	* @example
+	* var str = ns.snakecase( 'fooBar' );
+	* // returns 'foo_bar'
+	*
+	* @example
+	* var str = ns.snakecase( 'foo-bar' );
+	* // returns 'foo_bar'
+	*
+	* @example
+	* var str = ns.snakecase( 'foo_bar' );
+	* // returns 'foo_bar'
+	*/
+	snakecase: typeof snakecase;
+
+	/**
 	* Capitalizes the first letter of each word in an input string.
 	*
 	* @param str - string to convert
@@ -664,6 +735,110 @@ interface Namespace {
 	startsWith: typeof startsWith;
 
 	/**
+	* Returns the part of a string after a specified substring.
+	*
+	* @param str - input string
+	* @param search - search string
+	* @returns substring
+	*
+	* @example
+	* var out = ns.substringAfter( 'Hello, world!', ', ' );
+	* // returns 'world!'
+	*
+	* @example
+	* var out = ns.substringAfter( 'beep boop', 'beep' );
+	* // returns ' boop'
+	*
+	* @example
+	* var out = ns.substringAfter( 'beep boop', 'boop' );
+	* // returns ''
+	*
+	* @example
+	* var out = ns.substringAfter( 'beep boop', 'xyz' );
+	* // returns ''
+	*/
+	substringAfter: typeof substringAfter;
+
+	/**
+	* Returns the part of a string after the last occurrence of a specified substring
+	*
+	* @param str - input string
+	* @param search - search value
+	* @returns substring
+	*
+	* @example
+	* var out = ns.substringAfterLast( 'beep boop', 'b' );
+	* // returns 'oop'
+	*
+	* @example
+	* var out = ns.substringAfterLast( 'beep boop', 'o' );
+	* // returns 'p'
+	*
+	* @example
+	* var out = ns.substringAfterLast( 'Hello World', 'o' );
+	* // returns 'rld'
+	*
+	* @example
+	* var out = ns.substringAfterLast( 'Hello World', '!' );
+	* // returns ''
+	*
+	* @example
+	* var out = ns.substringAfterLast( 'Hello World', '' );
+	* // returns ''
+	*/
+	substringAfterLast: typeof substringAfterLast;
+
+	/**
+	* Returns the part of a string before a specified substring.
+	*
+	* @param str - input string
+	* @param search - search string
+	* @returns substring
+	*
+	* @example
+	* var out = ns.substringBefore( 'beep boop', ' ' );
+	* // returns 'beep'
+	*
+	* @example
+	* var out = ns.substringBefore( 'beep boop', 'p' );
+	* // returns 'bee'
+	*
+	* @example
+	* var out = ns.substringBefore( 'Hello World!', '' );
+	* // returns ''
+	*
+	* @example
+	* var out = ns.substringBefore( 'Hello World!', 'XYZ' );
+	* // returns 'Hello World!'
+	*/
+	substringBefore: typeof substringBefore;
+
+	/**
+	* Returns the part of a string before the last occurrence of a specified substring.
+	*
+	* @param str - input string
+	* @param search - search value
+	* @returns substring
+	*
+	* @example
+	* var out = ns.substringBeforeLast( 'abcba', 'b' );
+	* // returns 'abc'
+	*
+	* @example
+	* var out = ns.substringBeforeLast( 'Hello World, my friend!', ' ' );
+	* // returns 'Hello World, my'
+	*
+	* @example
+	* var out = ns.substringBeforeLast( 'abcba', ' ' );
+	* // returns 'abcba'
+	*
+	* @example
+	* var out = ns.substringBeforeLast( 'abcba', '' );
+	* // returns 'abcba'
+	*/
+	substringBeforeLast: typeof substringBeforeLast;
+
+	/**
 	* Trim whitespace characters from beginning and end of a string.
 	*
 	* @param str - input string
@@ -682,6 +857,64 @@ interface Namespace {
 	* // returns 'New Lines'
 	*/
 	trim: typeof trim;
+
+	/**
+	* Truncates a string to a specified length.
+	*
+	* @param str - input string
+	* @param len - output string length (including ending)
+	* @param ending - custom ending (default: `...`)
+	* @returns truncated string
+	*
+	* @example
+	* var out = ns.truncate( 'beep boop', 7 );
+	* // returns 'beep...'
+	*
+	* @example
+	* var out = ns.truncate( 'beep boop', 7, '|' );
+	* // returns 'beep b|'
+	*/
+	truncate: typeof truncate;
+
+	/**
+	* Truncates a string in the middle to a specified length.
+	*
+	* @param str - input string
+	* @param len - output string length (including sequence)
+	* @param seq - custom replacement sequence (default: `...`)
+	* @returns truncated string
+	*
+	* @example
+	* var str = 'beep boop';
+	* var out = ns.truncateMiddle( str, 5 );
+	* // returns 'b...p'
+	*
+	* @example
+	* var str = 'beep boop';
+	* var out = ns.truncateMiddle( str, 5, '>>>' );
+	* // returns 'b>>>p'
+	*
+	* @example
+	* var str = 'beep boop';
+	* var out = ns.truncateMiddle( str, 10 );
+	* // returns 'beep boop'
+	*
+	* @example
+	* var str = 'beep boop';
+	* var out = ns.truncateMiddle( str, 0 );
+	* // returns ''
+	*
+	* @example
+	* var str = 'beep boop';
+	* var out = ns.truncateMiddle( str, 2 );
+	* // returns '..'
+	*
+	* @example
+	* var str = '🐺 Wolf Brothers 🐺';
+	* var out = ns.truncateMiddle( str, 7 );
+	* // returns '🐺 ... 🐺'
+	*/
+	truncateMiddle: typeof truncateMiddle;
 
 	/**
 	* Uncapitalizes the first character of a string.
