@@ -21,10 +21,11 @@
 /// <reference types="@stdlib/types"/>
 
 /**
-* Returns the part of a string after the last occurrence of a specified substring
+* Returns the part of a string after the last occurrence of a specified substring.
 *
 * @param str - input string
 * @param search - search value
+* @param fromIndex - index of last character to be considered beginning of a match (default: `+Infinity`)
 * @returns substring
 *
 * @example
@@ -46,8 +47,12 @@
 * @example
 * var out = substringAfterLast( 'Hello World', '' );
 * // returns ''
+*
+* @example
+* var out = substringAfterLast( 'beep boop baz', 'p b', 6 );
+* // returns 'oop baz'
 */
-declare function substringAfterLast( str: string,  search: string ): string;
+declare function substringAfterLast( str: string,  search: string, fromIndex?: number ): string; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //

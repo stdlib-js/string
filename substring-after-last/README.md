@@ -20,7 +20,7 @@ limitations under the License.
 
 # substringAfterLast
 
-> Return the part of a string after the last occurrence of a specified substring
+> Return the part of a string after the last occurrence of a specified substring.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -40,9 +40,9 @@ limitations under the License.
 var substringAfterLast = require( '@stdlib/string/substring-after-last' );
 ```
 
-#### substringAfterLast( str, search )
+#### substringAfterLast( str, search\[, fromIndex=+Infinity] ) 
 
-Returns the part of a string after the last occurrence of a specified substring
+Returns the part of a string after the last occurrence of a specified substring.
 
 ```javascript
 var str = 'beep boop';
@@ -53,6 +53,14 @@ out = substringAfterLast( str, 'o' );
 // returns 'p'
 ```
 
+By default, the search starts at the end of the string and proceeds backwards to the beginning. To start the search at a specified index, specify an integer for the `fromIndex` argument.
+
+```javascript
+var str = 'beep boop';
+var out = substringAfterLast( str, 'b', 3 );
+// returns 'eep boop'
+```
+
 </section>
 
 <!-- /.usage -->
@@ -60,6 +68,11 @@ out = substringAfterLast( str, 'o' );
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+## Notes
+
+-   If a substring is not present in a provided string, the function returns an empty string.
+-   If provided an empty substring, the function returns an empty string.
 
 </section>
 
@@ -119,6 +132,7 @@ Options:
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
          --search string       Search string.
+         --fromIndex int       Backwards-search start index. Default: +Infinity.
 ```
 
 </section>
