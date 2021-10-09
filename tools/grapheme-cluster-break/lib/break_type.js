@@ -133,6 +133,10 @@ function lastIndexOf( arr, start, end, value ) {
 * @param {Array} breaks - list of grapheme break properties
 * @param {Array} emoji - list of emoji properties
 * @returns {NonNegativeInteger} break type
+*
+* @example
+* var out = breakType( [ 11, 3, 11 ], [ 11, 11, 11 ] );
+* // returns 1
 */
 function breakType( breaks, emoji ) {
 	var nextEmoji;
