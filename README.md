@@ -22,7 +22,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
 
-> Standard library string manipulation functions.
+> String manipulation functions.
 
 <section class="installation">
 
@@ -44,7 +44,7 @@ var string = require( '@stdlib/string' );
 
 #### string
 
-Standard library string manipulation functions.
+Namespace containing string manipulation functions.
 
 ```javascript
 var str = string;
