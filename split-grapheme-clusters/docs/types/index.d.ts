@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,31 +16,27 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="@stdlib/types"/>
 
 /**
-* Remove the last character(s) of a string.
+* Splits a string by its grapheme cluster breaks.
 *
-* @module @stdlib/string/remove-last
+* @param str - input string
+* @returns array of grapheme clusters
 *
 * @example
-* var removeLast = require( '@stdlib/string/remove-last' );
+* var out = splitGraphemeClusters( 'café' );
+* // returns [ 'c', 'a', 'f', 'é' ]
 *
-* var out = removeLast( 'last man standing' );
-* // returns 'last man standin'
-*
-* out = removeLast( 'Hidden Treasures' );
-* // returns 'Hidden Treasure';
-*
-* out = removeLast( '🐮🐷🐸🐵', 2 ) );
-* // returns '🐮🐷'
+* @example
+* var out = splitGraphemeClusters( '🍕🍕🍕' );
+* // returns [ '🍕', '🍕', '🍕' ]
 */
-
-// MODULES //
-
-var removeLast = require( './main.js' );
+declare function splitGraphemeClusters( str: string ): Array<string>;
 
 
 // EXPORTS //
 
-module.exports = removeLast;
+export = splitGraphemeClusters;
