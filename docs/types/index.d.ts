@@ -31,6 +31,7 @@ import fromCodePoint = require( './../../from-code-point' );
 import kebabcase = require( './../../kebabcase' );
 import lpad = require( './../../left-pad' );
 import ltrim = require( './../../left-trim' );
+import leftTrimN = require( './../../left-trim-n' );
 import lowercase = require( './../../lowercase' );
 import nextGraphemeClusterBreak = require( './../../next-grapheme-cluster-break' );
 import numGraphemeClusters = require( './../../num-grapheme-clusters' );
@@ -48,7 +49,9 @@ import replace = require( './../../replace' );
 import reverseString = require( './../../reverse' );
 import rpad = require( './../../right-pad' );
 import rtrim = require( './../../right-trim' );
+import rightTrimN = require( './../../right-trim-n' );
 import snakecase = require( './../../snakecase' );
+import splitGraphemeClusters = require( './../../split-grapheme-clusters' );
 import startcase = require( './../../startcase' );
 import startsWith = require( './../../starts-with' );
 import substringAfter = require( './../../substring-after' );
@@ -291,6 +294,36 @@ interface Namespace {
 	ltrim: typeof ltrim;
 
 	/**
+	* Trims `n` whitespace characters from the beginning of a string.
+	*
+	* @param str - input string
+	* @param n - number of characters to trim
+	* @param chars - characters to trim (default: whitespace characters)
+	* @returns trimmed string
+	*
+	* @example
+	* var str = '   abc   ';
+	* var out = ns.leftTrimN( str, 2 );
+	* // returns ' abc   '
+	*
+	* @example
+	* var str = '   abc   ';
+	* var out = ns.leftTrimN( str, str.length );
+	* // returns 'abc   '
+	*
+	* @example
+	* var str = '~~abc!~~';
+	* var out = ns.leftTrimN( str, str.length, [ '~', '!' ] );
+	* // returns 'abc!~~'
+	*
+	* @example
+	* var str = '🤖👨🏼‍🎨🤖👨🏼‍🎨🤖👨🏼‍🎨';
+	* var out = ns.leftTrimN( str, str.length, '👨🏼‍🎨🤖' );
+	* // returns ''
+	*/
+	leftTrimN: typeof leftTrimN;
+
+	/**
 	* Converts a string to lowercase.
 	*
 	* @param str - string to convert
@@ -448,9 +481,10 @@ interface Namespace {
 	prevGraphemeClusterBreak: typeof prevGraphemeClusterBreak;
 
 	/**
-	* Removes the first character of a string.
+	* Removes the first character(s) of a string.
 	*
 	* @param str - input string
+	* @param n - number of characters to remove (default: 1)
 	* @returns updated string
 	*
 	* @example
@@ -468,13 +502,22 @@ interface Namespace {
 	* @example
 	* var out = ns.removeFirst( 'Hidden Treasures' );
 	* // returns 'idden Treasures'
+	*
+	* @example
+	* var out = ns.removeFirst( '🐶🐮🐷🐰🐸', 2 );
+	* // returns '🐷🐰🐸'
+	*
+	* @example
+	* var out = ns.removeFirst( 'foo bar', 4 );
+	* // returns 'bar'
 	*/
 	removeFirst: typeof removeFirst;
 
 	/**
-	* Removes the last character of a string.
+	* Removes the last character(s) of a string.
 	*
 	* @param str - input string
+	* @param n - number of characters to remove (default: 1)
 	* @returns updated string
 	*
 	* @example
@@ -492,6 +535,10 @@ interface Namespace {
 	* @example
 	* var out = ns.removeLast( 'Hidden Treasures' );
 	* // returns 'Hidden Treasure'
+	*
+	* @example
+	* var out = ns.removeLast( 'leader', 2 );
+	* // returns 'lead'
 	*/
 	removeLast: typeof removeLast;
 
@@ -688,6 +735,36 @@ interface Namespace {
 	rtrim: typeof rtrim;
 
 	/**
+	* Trims `n` whitespace characters from the end of a string.
+	*
+	* @param str - input string
+	* @param n - number of characters to trim
+	* @param chars - characters to trim (default: whitespace characters)
+	* @returns trimmed string
+	*
+	* @example
+	* var str = '   abc   ';
+	* var out = ns.rightTrimN( str, 2 );
+	* // returns '   abc '
+	*
+	* @example
+	* var str = '   abc   ';
+	* var out = ns.rightTrimN( str, str.length );
+	* // returns '   abc'
+	*
+	* @example
+	* var str = '~~abc!~~';
+	* var out = ns.rightTrimN( str, str.length, [ '~', '!' ] );
+	* // returns '~~abc'
+	*
+	* @example
+	* var str = '🤖👨🏼‍🎨🤖👨🏼‍🎨🤖👨🏼‍🎨';
+	* var out = ns.rightTrimN( str, str.length, '👨🏼‍🎨🤖' );
+	* // returns ''
+	*/
+	rightTrimN: typeof rightTrimN;
+
+	/**
 	* Converts a string to snake case.
 	*
 	* @param str - string to convert
@@ -706,6 +783,22 @@ interface Namespace {
 	* // returns 'foo_bar'
 	*/
 	snakecase: typeof snakecase;
+
+	/**
+	* Splits a string by its grapheme cluster breaks.
+	*
+	* @param str - input string
+	* @returns array of grapheme clusters
+	*
+	* @example
+	* var out = ns.splitGraphemeClusters( 'café' );
+	* // returns [ 'c', 'a', 'f', 'é' ]
+	*
+	* @example
+	* var out = ns.splitGraphemeClusters( '🍕🍕🍕' );
+	* // returns [ '🍕', '🍕', '🍕' ]
+	*/
+	splitGraphemeClusters: typeof splitGraphemeClusters;
 
 	/**
 	* Capitalizes the first letter of each word in an input string.

@@ -20,7 +20,7 @@ limitations under the License.
 
 # splitGraphemeClusters
 
-> Split a string by its grapheme cluster breaks.
+> Split a string by its [grapheme cluster][unicode-text-segmentation] breaks.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -42,7 +42,7 @@ var splitGraphemeClusters = require( '@stdlib/string/split-grapheme-clusters' );
 
 #### splitGraphemeClusters( str )
 
-Splits a string by its grapheme cluster breaks.
+Splits a string by its [grapheme cluster][unicode-text-segmentation] breaks.
 
 ```javascript
 var out = splitGraphemeClusters( 'café' );
@@ -75,20 +75,19 @@ out = splitGraphemeClusters( '🍕🍕🍕' );
 ```javascript
 var splitGraphemeClusters = require( '@stdlib/string/split-grapheme-clusters' );
 
-var str = 'abc';
-var out = splitGraphemeClusters( str );
+var out = splitGraphemeClusters( 'abc' );
 // returns [ 'a', 'b', 'c' ]
 
-str = 'Iñtërnâtiônàlizætiøn';
-out = splitGraphemeClusters( str );
+out = splitGraphemeClusters( 'Iñtërnâtiônàlizætiøn' );
 // returns [ 'I', 'ñ', 't', 'ë', 'r', 'n', 'â', 't', 'i', 'ô', 'n', 'à', 'l', 'i', 'z', 'æ', 't', 'i', 'ø', 'n' ]
 
-str = '\uD834\uDD1E';
-out = splitGraphemeClusters( str );
+out = splitGraphemeClusters( '\uD834\uDD1E' );
 // returns [ '𝄞' ]
 
-str = '';
-out = splitGraphemeClusters( str );
+out = splitGraphemeClusters( '! !' );
+// returns [ '!', ' ', '!' ]
+
+out = splitGraphemeClusters( '' );
 // returns []
 ```
 
@@ -115,6 +114,8 @@ out = splitGraphemeClusters( str );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[unicode-text-segmentation]: http://www.unicode.org/reports/tr29/
 
 </section>
 
