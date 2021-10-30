@@ -31,7 +31,7 @@ import fromCodePoint = require( './../../from-code-point' );
 import kebabcase = require( './../../kebabcase' );
 import lpad = require( './../../left-pad' );
 import ltrim = require( './../../left-trim' );
-import leftTrimN = require( './../../left-trim-n' );
+import ltrimN = require( './../../left-trim-n' );
 import lowercase = require( './../../lowercase' );
 import nextGraphemeClusterBreak = require( './../../next-grapheme-cluster-break' );
 import numGraphemeClusters = require( './../../num-grapheme-clusters' );
@@ -49,7 +49,7 @@ import replace = require( './../../replace' );
 import reverseString = require( './../../reverse' );
 import rpad = require( './../../right-pad' );
 import rtrim = require( './../../right-trim' );
-import rightTrimN = require( './../../right-trim-n' );
+import rtrimN = require( './../../right-trim-n' );
 import snakecase = require( './../../snakecase' );
 import splitGraphemeClusters = require( './../../split-grapheme-clusters' );
 import startcase = require( './../../startcase' );
@@ -294,7 +294,7 @@ interface Namespace {
 	ltrim: typeof ltrim;
 
 	/**
-	* Trims `n` whitespace characters from the beginning of a string.
+	* Trims `n` characters from the beginning of a string.
 	*
 	* @param str - input string
 	* @param n - number of characters to trim
@@ -303,25 +303,25 @@ interface Namespace {
 	*
 	* @example
 	* var str = '   abc   ';
-	* var out = ns.leftTrimN( str, 2 );
+	* var out = ns.ltrimN( str, 2 );
 	* // returns ' abc   '
 	*
 	* @example
 	* var str = '   abc   ';
-	* var out = ns.leftTrimN( str, str.length );
+	* var out = ns.ltrimN( str, str.length );
 	* // returns 'abc   '
 	*
 	* @example
 	* var str = '~~abc!~~';
-	* var out = ns.leftTrimN( str, str.length, [ '~', '!' ] );
+	* var out = ns.ltrimN( str, str.length, [ '~', '!' ] );
 	* // returns 'abc!~~'
 	*
 	* @example
 	* var str = '🤖👨🏼‍🎨🤖👨🏼‍🎨🤖👨🏼‍🎨';
-	* var out = ns.leftTrimN( str, str.length, '👨🏼‍🎨🤖' );
+	* var out = ns.ltrimN( str, str.length, '👨🏼‍🎨🤖' );
 	* // returns ''
 	*/
-	leftTrimN: typeof leftTrimN;
+	ltrimN: typeof ltrimN;
 
 	/**
 	* Converts a string to lowercase.
@@ -735,7 +735,7 @@ interface Namespace {
 	rtrim: typeof rtrim;
 
 	/**
-	* Trims `n` whitespace characters from the end of a string.
+	* Trims `n` characters from the end of a string.
 	*
 	* @param str - input string
 	* @param n - number of characters to trim
@@ -744,25 +744,25 @@ interface Namespace {
 	*
 	* @example
 	* var str = '   abc   ';
-	* var out = ns.rightTrimN( str, 2 );
+	* var out = ns.rtrimN( str, 2 );
 	* // returns '   abc '
 	*
 	* @example
 	* var str = '   abc   ';
-	* var out = ns.rightTrimN( str, str.length );
+	* var out = ns.rtrimN( str, str.length );
 	* // returns '   abc'
 	*
 	* @example
 	* var str = '~~abc!~~';
-	* var out = ns.rightTrimN( str, str.length, [ '~', '!' ] );
+	* var out = ns.rtrimN( str, str.length, [ '~', '!' ] );
 	* // returns '~~abc'
 	*
 	* @example
 	* var str = '🤖👨🏼‍🎨🤖👨🏼‍🎨🤖👨🏼‍🎨';
-	* var out = ns.rightTrimN( str, str.length, '👨🏼‍🎨🤖' );
+	* var out = ns.rtrimN( str, str.length, '👨🏼‍🎨🤖' );
 	* // returns ''
 	*/
-	rightTrimN: typeof rightTrimN;
+	rtrimN: typeof rtrimN;
 
 	/**
 	* Converts a string to snake case.
