@@ -20,7 +20,6 @@
 
 // MODULES //
 
-var englishStopwords = require( '@stdlib/datasets/stopwords-en' );
 var removePunctuation = require( './../../remove-punctuation' );
 var tokenize = require( '@stdlib/nlp/tokenize' );
 var replace = require( './../../replace' );
@@ -28,6 +27,7 @@ var uppercase = require( './../../uppercase' );
 var lowercase = require( './../../lowercase' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var validate = require( './validate.js' );
+var STOPWORDS = require( './stopwords.json' );
 
 
 // VARIABLES //
@@ -83,7 +83,7 @@ function acronym( str, options ) {
 			throw err;
 		}
 	}
-	stopwords = opts.stopwords || englishStopwords();
+	stopwords = opts.stopwords || STOPWORDS;
 	str = removePunctuation( str );
 	str = replace( str, RE_HYPHEN, ' ' );
 	words = tokenize( str );
