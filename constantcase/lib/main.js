@@ -23,6 +23,7 @@
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var uppercase = require( './../../uppercase' );
 var replace = require( './../../replace' );
+var format = require( './../../format' );
 var trim = require( './../../trim' );
 
 
@@ -60,7 +61,7 @@ var RE_CAMEL = /([a-z0-9])([A-Z])/g;
 */
 function constantcase( str ) {
 	if ( !isString( str ) ) {
-		throw new TypeError( 'invalid argument. Must provide a string. Value: `' + str + '`.' );
+		throw new TypeError( format( 'invalid argument. Must provide a string. Value: `%s`.', str ) );
 	}
 	str = replace( str, RE_SPECIAL, ' ' );
 	str = replace( str, RE_CAMEL, '$1 $2' );

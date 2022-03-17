@@ -22,6 +22,7 @@
 
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var nextGraphemeClusterBreak = require( './../../next-grapheme-cluster-break' );
+var format = require( './../../format' );
 
 
 // MAIN //
@@ -47,7 +48,7 @@ function splitGraphemeClusters( str ) {
 	var out;
 
 	if ( !isString( str ) ) {
-		throw new TypeError( 'invalid argument. Must provide a string. Value: `' + str + '`.' );
+		throw new TypeError( format( 'invalid argument. Must provide a string. Value: `%s`.', str ) );
 	}
 	idx = 0;
 	out = [];

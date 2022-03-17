@@ -24,6 +24,7 @@ var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var capitalize = require( './../../capitalize' );
 var lowercase = require( './../../lowercase' );
 var replace = require( './../../replace' );
+var format = require( './../../format' );
 var trim = require( './../../trim' );
 
 
@@ -77,7 +78,7 @@ function replacer( match, p1 ) {
 */
 function pascalcase( str ) {
 	if ( !isString( str ) ) {
-		throw new TypeError( 'invalid argument. First argument must be a string. Value: `' + str + '`.' );
+		throw new TypeError( format( 'invalid argument. First argument must be a string primitive. Value: `%s`.', str ) );
 	}
 	str = replace( str, RE_SPECIAL, ' ' );
 	str = replace( str, RE_WHITESPACE, ' ' );

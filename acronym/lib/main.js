@@ -26,6 +26,7 @@ var replace = require( './../../replace' );
 var uppercase = require( './../../uppercase' );
 var lowercase = require( './../../lowercase' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
+var format = require( './../../format' );
 var validate = require( './validate.js' );
 var STOPWORDS = require( './stopwords.json' );
 
@@ -74,7 +75,7 @@ function acronym( str, options ) {
 	var i;
 
 	if ( !isString( str ) ) {
-		throw new TypeError( 'invalid argument. First argument must be a string primitive. Value: `' + str + '`.' );
+		throw new TypeError( format( 'invalid argument. First argument must be a string primitive. Value: `%s`.', str ) );
 	}
 	opts = {};
 	if ( arguments.length > 1 ) {
