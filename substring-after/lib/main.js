@@ -33,9 +33,9 @@ var format = require( './../../format' );
 * @param {string} str - input string
 * @param {string} search - search string
 * @param {integer} [fromIndex=0] - index at which to start the search
-* @throws {TypeError} first argument must be a string primitive
-* @throws {TypeError} second argument must be a string primitive
-* @throws {TypeError} third argument must be an integer primitive
+* @throws {TypeError} first argument must be a string
+* @throws {TypeError} second argument must be a string
+* @throws {TypeError} third argument must be an integer
 * @returns {string} substring
 *
 * @example
@@ -65,14 +65,14 @@ var format = require( './../../format' );
 function substringAfter( str, search, fromIndex ) {
 	var idx;
 	if ( !isString( str ) ) {
-		throw new TypeError( format( 'invalid argument. First argument must be a string primitive. Value: `%s`.', str ) );
+		throw new TypeError( format( 'invalid argument. First argument must be a string. Value: `%s`.', str ) );
 	}
 	if ( !isString( search ) ) {
-		throw new TypeError( format( 'invalid argument. Second argument must be a string primitive. Value: `%s`.', search ) );
+		throw new TypeError( format( 'invalid argument. Second argument must be a string. Value: `%s`.', search ) );
 	}
 	if ( arguments.length > 2 ) {
 		if ( !isInteger( fromIndex ) ) {
-			throw new TypeError( format( 'invalid argument. Third argument must be an integer primitive. Value: `%s`.', fromIndex ) );
+			throw new TypeError( format( 'invalid argument. Third argument must be an integer. Value: `%s`.', fromIndex ) );
 		}
 		idx = str.indexOf( search, fromIndex );
 	} else {

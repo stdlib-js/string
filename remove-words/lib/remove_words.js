@@ -36,9 +36,9 @@ var format = require( './../../format' );
 * @param {string} str - input string
 * @param {StringArray} words - array of words to be removed
 * @param {boolean} [ignoreCase=false] - boolean indicating whether to perform a case-insensitive operation
-* @throws {TypeError} first argument must be a string primitive
+* @throws {TypeError} first argument must be a string
 * @throws {TypeError} second argument must be an array of strings
-* @throws {TypeError} third argument must be a boolean primitive
+* @throws {TypeError} third argument must be a boolean
 * @returns {string} output string
 *
 * @example
@@ -62,14 +62,14 @@ function removeWords( str, words, ignoreCase ) {
 	var j;
 
 	if ( !isString( str ) ) {
-		throw new TypeError( format( 'invalid argument. First argument must be a string primitive. Value: `%s`.', str ) );
+		throw new TypeError( format( 'invalid argument. First argument must be a string. Value: `%s`.', str ) );
 	}
 	if ( !isStringArray( words ) ) {
 		throw new TypeError( format( 'invalid argument. Second argument must be an array of strings. Value: `%s`.', words ) );
 	}
 	if ( arguments.length > 2 ) {
 		if ( !isBoolean( ignoreCase ) ) {
-			throw new TypeError( format( 'invalid argument. Third argument must be a boolean primitive. Value: `%s`.', ignoreCase ) );
+			throw new TypeError( format( 'invalid argument. Third argument must be a boolean. Value: `%s`.', ignoreCase ) );
 		}
 	}
 	tokens = tokenize( str, true );
