@@ -41,7 +41,7 @@ var isnan = isNaN; // NOTE: We use the global `isNaN` function here instead of `
 *
 * @param {string} str - input string
 * @param {Array} ...args - variable values
-* @throws {TypeError} must provide a string
+* @throws {TypeError} first argument must be a string
 * @throws {Error} invalid flags
 * @returns {string} formatted string
 *
@@ -65,7 +65,7 @@ function format( str ) {
 	var j;
 
 	if ( !isString( str ) ) {
-		throw new TypeError( 'invalid argument. Must provide a string. Value: `' + str + '`.' );
+		throw new TypeError( format( 'invalid argument. First argument must be a string. Value: `%s`.', str ) );
 	}
 	tokens = tokenize( str );
 	out = '';
@@ -74,8 +74,7 @@ function format( str ) {
 		token = tokens[ i ];
 		if ( isString( token ) ) {
 			out += token;
-		}
-		else {
+		} else {
 			if ( token.mapping ) {
 				pos = token.mapping;
 			}
