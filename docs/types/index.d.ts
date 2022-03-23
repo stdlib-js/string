@@ -52,6 +52,7 @@ import rtrim = require( './../../right-trim' );
 import rtrimN = require( './../../right-trim-n' );
 import snakecase = require( './../../snakecase' );
 import splitGraphemeClusters = require( './../../split-grapheme-clusters' );
+import format = require( './../../format' );
 import startcase = require( './../../startcase' );
 import startsWith = require( './../../starts-with' );
 import substringAfter = require( './../../substring-after' );
@@ -799,6 +800,24 @@ interface Namespace {
 	* // returns [ '🍕', '🍕', '🍕' ]
 	*/
 	splitGraphemeClusters: typeof splitGraphemeClusters;
+
+	/**
+	* Inserts supplied variable values into a format string.
+	*
+	* @param str - input string
+	* @param ...args - variable values
+	* @throws invalid flags
+	* @returns formatted string
+	*
+	* @example
+	* var str = ns.format( 'Hello %s!', 'world' );
+	* // returns 'Hello world!'
+	*
+	* @example
+	* var str = ns.format( 'Pi: ~%.2f', 3.141592653589793 );
+	* // returns 'Pi: ~3.14'
+	*/
+	format: typeof format;
 
 	/**
 	* Capitalizes the first letter of each word in an input string.
