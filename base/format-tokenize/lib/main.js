@@ -33,27 +33,33 @@ var RE = /%(?:([1-9]\d*)\$)?([0 +\-#]*)(\*|\d+)?(?:(\.)(\*|\d+)?)?[hlL]?([%A-Za-
 * @returns {Object} delimiter token object
 */
 function parse( match ) {
-	return {
+	var token = {
 		'mapping': ( match[ 1 ] ) ? parseInt( match[ 1 ], 10 ) : void 0,
 		'flags': match[ 2 ],
 		'width': match[ 3 ],
-		'hasPeriod': match[ 4 ] === '.',
 		'precision': match[ 5 ],
 		'specifier': match[ 6 ]
 	};
+	if ( match[ 4 ] === '.' && match[ 5 ] === void 0 ) {
+		token.precision = '1';
+	}
+	return token;
 }
 
 
 // MAIN //
 
 /**
-* Tokenizes a string.
+* Tokenizes a string into an array of string parts and format identifier objects.
 *
-* @private
 * @param {string} str - input string
 * @returns {Array} tokens
+*
+* @example
+* var tokens = formatTokenize( 'Hello %s!' );
+* // returns [ 'Hello ', {...}, '!' ]
 */
-function tokenize( str ) {
+function formatTokenize( str ) {
 	var content;
 	var tokens;
 	var match;
@@ -81,4 +87,4 @@ function tokenize( str ) {
 
 // EXPORTS //
 
-module.exports = tokenize;
+module.exports = formatTokenize;

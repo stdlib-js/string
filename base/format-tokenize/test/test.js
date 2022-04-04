@@ -21,14 +21,14 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var tokenize = require( './../lib/tokenize.js' );
+var formatTokenize = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof tokenize, 'function', 'main export is a function' );
+	t.strictEqual( typeof formatTokenize, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -44,13 +44,12 @@ tape( 'the function tokenizes a string', function test( t ) {
 			'flags': '',
 			'mapping': void 0,
 			'width': void 0,
-			'hasPeriod': false,
 			'precision': void 0,
 			'specifier': 's'
 		},
 		'!'
 	];
-	actual = tokenize( str );
+	actual = formatTokenize( str );
 	t.deepEqual( actual, expected, 'deep equal' );
 
 	str = 'Current year: %d';
@@ -60,12 +59,11 @@ tape( 'the function tokenizes a string', function test( t ) {
 			'flags': '',
 			'mapping': void 0,
 			'width': void 0,
-			'hasPeriod': false,
 			'precision': void 0,
 			'specifier': 'd'
 		}
 	];
-	actual = tokenize( str );
+	actual = formatTokenize( str );
 	t.deepEqual( actual, expected, 'deep equal' );
 
 	t.end();
@@ -83,13 +81,12 @@ tape( 'the function tokenizes a string (extracting flags)', function test( t ) {
 			'flags': '+',
 			'mapping': void 0,
 			'width': void 0,
-			'hasPeriod': false,
 			'precision': void 0,
 			'specifier': 's'
 		},
 		'!'
 	];
-	actual = tokenize( str );
+	actual = formatTokenize( str );
 	t.deepEqual( actual, expected, 'deep equal' );
 
 	str = 'Hello %-+s!';
@@ -99,13 +96,12 @@ tape( 'the function tokenizes a string (extracting flags)', function test( t ) {
 			'flags': '-+',
 			'mapping': void 0,
 			'width': void 0,
-			'hasPeriod': false,
 			'precision': void 0,
 			'specifier': 's'
 		},
 		'!'
 	];
-	actual = tokenize( str );
+	actual = formatTokenize( str );
 	t.deepEqual( actual, expected, 'deep equal' );
 
 	str = 'Hello %#+s!';
@@ -115,13 +111,12 @@ tape( 'the function tokenizes a string (extracting flags)', function test( t ) {
 			'flags': '#+',
 			'mapping': void 0,
 			'width': void 0,
-			'hasPeriod': false,
 			'precision': void 0,
 			'specifier': 's'
 		},
 		'!'
 	];
-	actual = tokenize( str );
+	actual = formatTokenize( str );
 	t.deepEqual( actual, expected, 'deep equal' );
 
 	t.end();
@@ -139,13 +134,12 @@ tape( 'the function tokenizes a string (extracting positional arguments)', funct
 			'flags': '',
 			'mapping': 1,
 			'width': void 0,
-			'hasPeriod': false,
 			'precision': void 0,
 			'specifier': 's'
 		},
 		'!'
 	];
-	actual = tokenize( str );
+	actual = formatTokenize( str );
 	t.deepEqual( actual, expected, 'deep equal' );
 
 	str = 'Hello %1$s %2$s!';
@@ -155,7 +149,6 @@ tape( 'the function tokenizes a string (extracting positional arguments)', funct
 			'flags': '',
 			'mapping': 1,
 			'width': void 0,
-			'hasPeriod': false,
 			'precision': void 0,
 			'specifier': 's'
 		},
@@ -164,13 +157,12 @@ tape( 'the function tokenizes a string (extracting positional arguments)', funct
 			'flags': '',
 			'mapping': 2,
 			'width': void 0,
-			'hasPeriod': false,
 			'precision': void 0,
 			'specifier': 's'
 		},
 		'!'
 	];
-	actual = tokenize( str );
+	actual = formatTokenize( str );
 	t.deepEqual( actual, expected, 'deep equal' );
 
 	t.end();
@@ -188,13 +180,12 @@ tape( 'the function tokenizes a string (extracting width)', function test( t ) {
 			'flags': '',
 			'mapping': void 0,
 			'width': '5',
-			'hasPeriod': false,
 			'precision': void 0,
 			'specifier': 's'
 		},
 		'!'
 	];
-	actual = tokenize( str );
+	actual = formatTokenize( str );
 	t.deepEqual( actual, expected, 'deep equal' );
 
 	str = 'Hello %05s!';
@@ -204,13 +195,12 @@ tape( 'the function tokenizes a string (extracting width)', function test( t ) {
 			'flags': '0',
 			'mapping': void 0,
 			'width': '5',
-			'hasPeriod': false,
 			'precision': void 0,
 			'specifier': 's'
 		},
 		'!'
 	];
-	actual = tokenize( str );
+	actual = formatTokenize( str );
 	t.deepEqual( actual, expected, 'deep equal' );
 
 	str = 'Hello %5d!';
@@ -220,13 +210,12 @@ tape( 'the function tokenizes a string (extracting width)', function test( t ) {
 			'flags': '',
 			'mapping': void 0,
 			'width': '5',
-			'hasPeriod': false,
 			'precision': void 0,
 			'specifier': 'd'
 		},
 		'!'
 	];
-	actual = tokenize( str );
+	actual = formatTokenize( str );
 	t.deepEqual( actual, expected, 'deep equal' );
 
 	str = 'Hello %05d!';
@@ -236,13 +225,12 @@ tape( 'the function tokenizes a string (extracting width)', function test( t ) {
 			'flags': '0',
 			'mapping': void 0,
 			'width': '5',
-			'hasPeriod': false,
 			'precision': void 0,
 			'specifier': 'd'
 		},
 		'!'
 	];
-	actual = tokenize( str );
+	actual = formatTokenize( str );
 	t.deepEqual( actual, expected, 'deep equal' );
 
 	t.end();
@@ -260,12 +248,11 @@ tape( 'the function tokenizes a string (extracting precision)', function test( t
 			'flags': '',
 			'mapping': void 0,
 			'width': void 0,
-			'hasPeriod': true,
 			'precision': '3',
 			'specifier': 'f'
 		}
 	];
-	actual = tokenize( str );
+	actual = formatTokenize( str );
 	t.deepEqual( actual, expected, 'deep equal' );
 
 	str = 'Pi: ~%.3g';
@@ -275,12 +262,11 @@ tape( 'the function tokenizes a string (extracting precision)', function test( t
 			'flags': '',
 			'mapping': void 0,
 			'width': void 0,
-			'hasPeriod': true,
 			'precision': '3',
 			'specifier': 'g'
 		}
 	];
-	actual = tokenize( str );
+	actual = formatTokenize( str );
 	t.deepEqual( actual, expected, 'deep equal' );
 
 	t.end();
