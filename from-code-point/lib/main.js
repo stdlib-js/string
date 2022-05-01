@@ -85,13 +85,13 @@ function fromCodePoint( args ) {
 		}
 	}
 	if ( len === 0 ) {
-		throw new Error( 'insufficient input arguments. Must provide either an array of code points or one or more code points as separate arguments.' );
+		throw new Error( 'insufficient arguments. Must provide either an array of code points or one or more code points as separate arguments.' );
 	}
 	str = '';
 	for ( i = 0; i < len; i++ ) {
 		pt = arr[ i ];
 		if ( !isNonNegativeInteger( pt ) ) {
-			throw new TypeError( format( 'invalid argument. Must provide valid code points (nonnegative integers). Value: `%s`.', pt ) );
+			throw new TypeError( format( 'invalid argument. Must provide valid code points (i.e., nonnegative integers). Value: `%s`.', pt ) );
 		}
 		if ( pt > UNICODE_MAX ) {
 			throw new RangeError( format( 'invalid argument. Must provide a valid code point (cannot exceed max). Value: `%s`.', pt ) );
