@@ -31,8 +31,8 @@ var format = require( './../../format' );
 * Returns the number of grapheme clusters in a string.
 *
 * @param {string} str - input string
-* @throws {TypeError} must provide a string primitive
-* @returns {NonNegative} number of grapheme clusters
+* @throws {TypeError} must provide a string
+* @returns {NonNegativeInteger} number of grapheme clusters
 *
 * @example
 * var out = numGraphemeClusters( 'last man standing' );
