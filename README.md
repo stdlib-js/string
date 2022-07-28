@@ -66,11 +66,13 @@ The namespace exposes the following string manipulation functions:
 <div class="namespace-toc">
 
 -   <span class="signature">[`acronym( str[, options] )`][@stdlib/string/acronym]</span><span class="delimiter">: </span><span class="description">generate an acronym for a given string.</span>
+-   <span class="signature">[`base`][@stdlib/string/base]</span><span class="delimiter">: </span><span class="description">base (i.e., lower-level) string functions.</span>
 -   <span class="signature">[`camelcase( str )`][@stdlib/string/camelcase]</span><span class="delimiter">: </span><span class="description">convert a string to camel case.</span>
 -   <span class="signature">[`capitalize( str )`][@stdlib/string/capitalize]</span><span class="delimiter">: </span><span class="description">capitalize the first character in a string.</span>
 -   <span class="signature">[`codePointAt( string, position[, backward] )`][@stdlib/string/code-point-at]</span><span class="delimiter">: </span><span class="description">return a Unicode code point from a string at a specified position.</span>
 -   <span class="signature">[`constantcase( str )`][@stdlib/string/constantcase]</span><span class="delimiter">: </span><span class="description">returns a string converted to a constant case.</span>
 -   <span class="signature">[`endsWith( str, search[, len] )`][@stdlib/string/ends-with]</span><span class="delimiter">: </span><span class="description">test if a string ends with the characters of another string.</span>
+-   <span class="signature">[`format( str, ...args )`][@stdlib/string/format]</span><span class="delimiter">: </span><span class="description">insert supplied variable values into a format string.</span>
 -   <span class="signature">[`fromCodePoint( pt1[, pt2[, pt3[, ...]]] )`][@stdlib/string/from-code-point]</span><span class="delimiter">: </span><span class="description">create a string from a sequence of Unicode code points.</span>
 -   <span class="signature">[`kebabcase( str )`][@stdlib/string/kebabcase]</span><span class="delimiter">: </span><span class="description">convert a string to kebab case.</span>
 -   <span class="signature">[`lpad( str, len[, pad] )`][@stdlib/string/left-pad]</span><span class="delimiter">: </span><span class="description">left pad a string.</span>
@@ -217,6 +219,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/string/acronym]: https://github.com/stdlib-js/string/tree/main/acronym
 
+[@stdlib/string/base]: https://github.com/stdlib-js/string/tree/main/base
+
 [@stdlib/string/camelcase]: https://github.com/stdlib-js/string/tree/main/camelcase
 
 [@stdlib/string/capitalize]: https://github.com/stdlib-js/string/tree/main/capitalize
@@ -226,6 +230,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [@stdlib/string/constantcase]: https://github.com/stdlib-js/string/tree/main/constantcase
 
 [@stdlib/string/ends-with]: https://github.com/stdlib-js/string/tree/main/ends-with
+
+[@stdlib/string/format]: https://github.com/stdlib-js/string/tree/main/format
 
 [@stdlib/string/from-code-point]: https://github.com/stdlib-js/string/tree/main/from-code-point
 
