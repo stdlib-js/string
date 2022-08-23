@@ -45,6 +45,7 @@
     "@stdlib/process": "github:stdlib-js/process#main",
     "@stdlib/regexp": "github:stdlib-js/regexp#main",
     "@stdlib/streams": "github:stdlib-js/streams#main",
+    "@stdlib/symbol": "github:stdlib-js/symbol#main",
     "@stdlib/types": "github:stdlib-js/types#main",
     "@stdlib/utils": "github:stdlib-js/utils#main"
   },
@@ -54,8 +55,8 @@
     "@stdlib/buffer": "github:stdlib-js/buffer",
     "@stdlib/datasets": "github:stdlib-js/datasets",
     "@stdlib/random": "github:stdlib-js/random",
-    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "proxyquire": "^2.0.0",
+    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-spec": "5.x.x"
   },
