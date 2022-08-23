@@ -52,6 +52,7 @@
   "devDependencies": {
     "@stdlib/array": "github:stdlib-js/array",
     "@stdlib/bench": "github:stdlib-js/bench",
+    "@stdlib/blas": "github:stdlib-js/blas",
     "@stdlib/buffer": "github:stdlib-js/buffer",
     "@stdlib/datasets": "github:stdlib-js/datasets",
     "@stdlib/random": "github:stdlib-js/random",
