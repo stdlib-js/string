@@ -24,20 +24,30 @@ limitations under the License.
 
 > String manipulation functions.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { acronym, base, camelcase, capitalize, codePointAt, constantcase, endsWith, format, fromCodePoint, graphemeClusters2iterator, graphemeClusters2iteratorRight, kebabcase, lowercase, lpad, ltrim, ltrimN, nextGraphemeClusterBreak, numGraphemeClusters, pad, pascalcase, percentEncode, prevGraphemeClusterBreak, removeFirst, removeLast, removePunctuation, removeUTF8BOM, removeWords, repeat, replace, reverseString, rpad, rtrim, rtrimN, snakecase, splitGraphemeClusters, startcase, startsWith, substringAfter, substringAfterLast, substringBefore, substringBeforeLast, trim, truncate, truncateMiddle, uncapitalize, uppercase, utf16ToUTF8Array } from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@deno/mod.js';
+var string = require( '@stdlib/string' );
 ```
 
 #### string
@@ -94,6 +104,8 @@ The namespace exposes the following string manipulation functions:
 -   <span class="signature">[`substringAfter( str, search[, fromIndex] )`][@stdlib/string/substring-after]</span><span class="delimiter">: </span><span class="description">return the part of a string after a specified substring.</span>
 -   <span class="signature">[`substringBeforeLast( str, search )`][@stdlib/string/substring-before-last]</span><span class="delimiter">: </span><span class="description">return the part of a string before the last occurrence of a specified substring.</span>
 -   <span class="signature">[`substringBefore( str, search )`][@stdlib/string/substring-before]</span><span class="delimiter">: </span><span class="description">return the part of a string before a specified substring.</span>
+-   <span class="signature">[`graphemeClusters2iteratorRight( src[, mapFcn[, thisArg]] )`][@stdlib/string/to-grapheme-cluster-iterator-right]</span><span class="delimiter">: </span><span class="description">create an iterator which iterates from right to left over grapheme clusters.</span>
+-   <span class="signature">[`graphemeClusters2iterator( src[, mapFcn[, thisArg]] )`][@stdlib/string/to-grapheme-cluster-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator which iterates over grapheme clusters.</span>
 -   <span class="signature">[`trim( str )`][@stdlib/string/trim]</span><span class="delimiter">: </span><span class="description">trim whitespace characters from the beginning and end of a string.</span>
 -   <span class="signature">[`truncateMiddle( str, len[, seq] )`][@stdlib/string/truncate-middle]</span><span class="delimiter">: </span><span class="description">truncate a string in the middle to a specified length.</span>
 -   <span class="signature">[`truncate( str, len[, ending] )`][@stdlib/string/truncate]</span><span class="delimiter">: </span><span class="description">truncate a string to a specified length.</span>
@@ -118,8 +130,8 @@ The namespace exposes the following string manipulation functions:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import getKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@deno/mod.js';
+var getKeys = require( '@stdlib/utils/keys' );
+var string = require( '@stdlib/string' );
 
 console.log( getKeys( string ) );
 ```
@@ -145,7 +157,7 @@ console.log( getKeys( string ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -284,6 +296,10 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [@stdlib/string/substring-before-last]: https://github.com/stdlib-js/string/tree/main/substring-before-last
 
 [@stdlib/string/substring-before]: https://github.com/stdlib-js/string/tree/main/substring-before
+
+[@stdlib/string/to-grapheme-cluster-iterator-right]: https://github.com/stdlib-js/string/tree/main/to-grapheme-cluster-iterator-right
+
+[@stdlib/string/to-grapheme-cluster-iterator]: https://github.com/stdlib-js/string/tree/main/to-grapheme-cluster-iterator
 
 [@stdlib/string/trim]: https://github.com/stdlib-js/string/tree/main/trim
 
