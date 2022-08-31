@@ -21,23 +21,17 @@
 // MODULES //
 
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
-var replace = require( './../../replace' );
 var format = require( './../../format' );
-
-
-// VARIABLES //
-
-// The following regular expression should suffice to polyfill (most?) all environments.
-var RE = /^[\u0020\f\n\r\t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]*([\S\s]*?)[\u0020\f\n\r\t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]*$/;
+var base = require( './../../base/trim' );
 
 
 // MAIN //
 
 /**
-* Trim whitespace characters from beginning and end of a string.
+* Trims whitespace characters from the beginning and end of a string.
 *
 * @param {string} str - input string
-* @throws {TypeError} must provide a string primitive
+* @throws {TypeError} must provide a string
 * @returns {string} trimmed string
 *
 * @example
@@ -56,7 +50,7 @@ function trim( str ) {
 	if ( !isString( str ) ) {
 		throw new TypeError( format( 'invalid argument. Must provide a string. Value: `%s`.', str ) );
 	}
-	return replace( str, RE, '$1' );
+	return base( str );
 }
 
 

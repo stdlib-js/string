@@ -37,6 +37,15 @@ var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
 var ns = {};
 
 /**
+* @name endsWith
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/ends-with}
+*/
+setReadOnly( ns, 'endsWith', require( './../../base/ends-with' ) );
+
+/**
 * @name formatInterpolate
 * @memberof ns
 * @readonly
@@ -53,6 +62,24 @@ setReadOnly( ns, 'formatInterpolate', require( './../../base/format-interpolate'
 * @see {@link module:@stdlib/string/base/format-tokenize}
 */
 setReadOnly( ns, 'formatTokenize', require( './../../base/format-tokenize' ) );
+
+/**
+* @name replace
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/replace}
+*/
+setReadOnly( ns, 'replace', require( './../../base/replace' ) );
+
+/**
+* @name trim
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/trim}
+*/
+setReadOnly( ns, 'trim', require( './../../base/trim' ) );
 
 
 // EXPORTS //
