@@ -73,6 +73,15 @@ setReadOnly( ns, 'formatInterpolate', require( './../../base/format-interpolate'
 setReadOnly( ns, 'formatTokenize', require( './../../base/format-tokenize' ) );
 
 /**
+* @name ltrim
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/left-trim}
+*/
+setReadOnly( ns, 'ltrim', require( './../../base/left-trim' ) );
+
+/**
 * @name replace
 * @memberof ns
 * @readonly

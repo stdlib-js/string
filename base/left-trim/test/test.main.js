@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,42 +21,23 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var ltrim = require( './../lib' );
+var HAS_BUILTIN = require( './../lib/has_builtin.js' );
+var ltrim = require( './../lib/main.js' );
+
+
+// VARIABLES //
+
+var opts = {
+	'skip': !HAS_BUILTIN
+};
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is a function', opts, function test( t ) {
 	t.ok( true, __filename );
 	t.equal( typeof ltrim, 'function', 'main export is a function' );
 	t.end();
-});
-
-tape( 'the function throws an error if not provided a string', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		5,
-		null,
-		true,
-		void 0,
-		NaN,
-		[],
-		{},
-		function noop() {}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			ltrim( value );
-		};
-	}
 });
 
 tape( 'the function removes all whitespace characters at the beginning of a string', function test( t ) {
@@ -174,7 +155,7 @@ tape( 'the function removes all whitespace characters at the beginning of a stri
 	t.end();
 });
 
-tape( 'the function does not remove the Mongolian space separator in accordance with Unicode 6.3.0 and later', function test( t ) {
+tape( 'the function does not remove the Mongolian space separator in accordance with Unicode 6.3.0 and later', opts, function test( t ) {
 	var expected;
 	var actual;
 

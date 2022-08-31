@@ -18,26 +18,42 @@
 
 'use strict';
 
+// MODULES //
+
+var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
+var format = require( './../../format' );
+var base = require( './../../base/left-trim' );
+
+
+// MAIN //
+
 /**
-* Trim whitespace characters from the beginning of a string.
+* Trims whitespace characters from the beginning of a string.
 *
-* @module @stdlib/string/left-trim
+* @param {string} str - input string
+* @throws {TypeError} must provide a string
+* @returns {string} trimmed string
 *
 * @example
-* var ltrim = require( '@stdlib/string/left-trim' );
-*
 * var out = ltrim( '   Whitespace   ' );
 * // returns 'Whitespace   '
 *
-* out = ltrim( '\t\t\tTabs\t\t\t' );
+* @example
+* var out = ltrim( '\t\t\tTabs\t\t\t' );
 * // returns 'Tabs\t\t\t'
+*
+* @example
+* var out = ltrim( '\n\n\nNew Lines\n\n\n' );
+* // returns 'New Lines\n\n\n'
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+function ltrim( str ) {
+	if ( !isString( str ) ) {
+		throw new TypeError( format( 'invalid argument. Must provide a string. Value: `%s`.', str ) );
+	}
+	return base( str );
+}
 
 
 // EXPORTS //
 
-module.exports = main;
+module.exports = ltrim;

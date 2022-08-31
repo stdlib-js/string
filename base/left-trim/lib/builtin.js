@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,26 +18,11 @@
 
 'use strict';
 
-/**
-* Trim whitespace characters from the beginning of a string.
-*
-* @module @stdlib/string/left-trim
-*
-* @example
-* var ltrim = require( '@stdlib/string/left-trim' );
-*
-* var out = ltrim( '   Whitespace   ' );
-* // returns 'Whitespace   '
-*
-* out = ltrim( '\t\t\tTabs\t\t\t' );
-* // returns 'Tabs\t\t\t'
-*/
+// MAIN //
 
-// MODULES //
-
-var main = require( './main.js' );
+var ltrim = String.prototype.trimLeft;
 
 
 // EXPORTS //
 
-module.exports = main;
+module.exports = ltrim;

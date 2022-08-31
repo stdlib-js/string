@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,26 +18,36 @@
 
 'use strict';
 
+// MODULES //
+
+var builtin = require( './builtin.js' );
+
+
+// MAIN //
+
 /**
-* Trim whitespace characters from the beginning of a string.
+* Trims whitespace characters from the beginning of a string.
 *
-* @module @stdlib/string/left-trim
+* @param {string} str - input string
+* @returns {string} trimmed string
 *
 * @example
-* var ltrim = require( '@stdlib/string/left-trim' );
-*
 * var out = ltrim( '   Whitespace   ' );
 * // returns 'Whitespace   '
 *
-* out = ltrim( '\t\t\tTabs\t\t\t' );
+* @example
+* var out = ltrim( '\t\t\tTabs\t\t\t' );
 * // returns 'Tabs\t\t\t'
+*
+* @example
+* var out = ltrim( '\n\n\nNew Lines\n\n\n' );
+* // returns 'New Lines\n\n\n'
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+function ltrim( str ) {
+	return builtin.call( str );
+}
 
 
 // EXPORTS //
 
-module.exports = main;
+module.exports = ltrim;
