@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var replace = require( './../../../replace' );
+var replace = require( './../../../base/replace' );
 
 
 // VARIABLES //
