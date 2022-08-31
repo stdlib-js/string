@@ -18,17 +18,16 @@
 
 'use strict';
 
-var capitalize = require( './../../../base/capitalize' );
-var replace = require( './../lib' );
+var capitalize = require( './../lib' );
 
-var out = replace( 'Hello World', /world/i, 'Mr. President' );
-console.log( out );
-// => 'Hello Mr. President'
+console.log( capitalize( 'last man standing' ) );
+// => 'Last man standing'
 
-function replacer( match, p1 ) {
-	return capitalize( p1 );
-}
-var str = 'Oranges and lemons say the bells of St. Clement\'s';
-out = replace( str, /([^\s]*)/gi, replacer );
-console.log( out );
-// => 'Oranges And Lemons Say The Bells Of St. Clement\'s'
+console.log( capitalize( 'presidential election' ) );
+// => 'Presidential election'
+
+console.log( capitalize( 'javaScript' ) );
+// => 'JavaScript'
+
+console.log( capitalize( 'Hidden Treasures' ) );
+// => 'Hidden Treasures'

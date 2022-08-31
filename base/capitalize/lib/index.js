@@ -18,17 +18,26 @@
 
 'use strict';
 
-var capitalize = require( './../../../base/capitalize' );
-var replace = require( './../lib' );
+/**
+* Capitalize the first character in a string.
+*
+* @module @stdlib/string/base/capitalize
+*
+* @example
+* var capitalize = require( '@stdlib/string/base/capitalize' );
+*
+* var out = capitalize( 'last man standing' );
+* // returns 'Last man standing'
+*
+* out = capitalize( 'Hidden Treasures' );
+* // returns 'Hidden Treasures';
+*/
 
-var out = replace( 'Hello World', /world/i, 'Mr. President' );
-console.log( out );
-// => 'Hello Mr. President'
+// MODULES //
 
-function replacer( match, p1 ) {
-	return capitalize( p1 );
-}
-var str = 'Oranges and lemons say the bells of St. Clement\'s';
-out = replace( str, /([^\s]*)/gi, replacer );
-console.log( out );
-// => 'Oranges And Lemons Say The Bells Of St. Clement\'s'
+var main = require( './main.js' );
+
+
+// EXPORTS //
+
+module.exports = main;

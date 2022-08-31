@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,19 +18,12 @@
 
 'use strict';
 
-// MODULES //
-
-var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
-var format = require( './../../format' );
-
-
 // MAIN //
 
 /**
 * Capitalizes the first character in a string.
 *
 * @param {string} str - input string
-* @throws {TypeError} must provide a string primitive
 * @returns {string} capitalized string
 *
 * @example
@@ -50,9 +43,6 @@ var format = require( './../../format' );
 * // returns 'Hidden Treasures'
 */
 function capitalize( str ) {
-	if ( !isString( str ) ) {
-		throw new TypeError( format( 'invalid argument. First argument must be a string. Value: `%s`.', str ) );
-	}
 	if ( str === '' ) {
 		return '';
 	}

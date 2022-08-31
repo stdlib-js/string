@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2022 The Stdlib Authors.
@@ -16,19 +16,33 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
-var capitalize = require( './../../../base/capitalize' );
-var replace = require( './../lib' );
+/**
+* Capitalizes the first character in a string.
+*
+* @param str - input string
+* @returns capitalized string
+*
+* @example
+* var out = capitalize( 'last man standing' );
+* // returns 'Last man standing'
+*
+* @example
+* var out = capitalize( 'presidential election' );
+* // returns 'Presidential election'
+*
+* @example
+* var out = capitalize( 'javaScript' );
+* // returns 'JavaScript'
+*
+* @example
+* var out = capitalize( 'Hidden Treasures' );
+* // returns 'Hidden Treasures'
+*/
+declare function capitalize( str: string ): string;
 
-var out = replace( 'Hello World', /world/i, 'Mr. President' );
-console.log( out );
-// => 'Hello Mr. President'
 
-function replacer( match, p1 ) {
-	return capitalize( p1 );
-}
-var str = 'Oranges and lemons say the bells of St. Clement\'s';
-out = replace( str, /([^\s]*)/gi, replacer );
-console.log( out );
-// => 'Oranges And Lemons Say The Bells Of St. Clement\'s'
+// EXPORTS //
+
+export = capitalize;

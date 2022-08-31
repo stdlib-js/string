@@ -18,47 +18,33 @@ limitations under the License.
 
 -->
 
-# replace
+# capitalize
 
-> Replace search occurrences with a replacement string.
+> Capitalize the first character in a string.
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var replace = require( '@stdlib/string/base/replace' );
+var capitalize = require( '@stdlib/string/base/capitalize' );
 ```
 
-#### replace( str, search, newval )
+#### capitalize( str )
 
-Replaces search occurrences with a replacement string.
-
-```javascript
-var out = replace( 'beep', /e/g, 'o' );
-// returns 'boop'
-```
-
-If provided a function as the [third argument][mdn-string-replace], the function is invoked for each match, and the function's return value is used as the replacement string.
+Capitalizes the first character in a string.
 
 ```javascript
-function replacer( match, p1 ) {
-    return '/' + p1 + '/';
-}
-var str = 'Oranges and lemons';
-var out = replace( str, /([^\s]+)/gi, replacer );
-// returns '/Oranges/ /and/ /lemons/'
+var out = capitalize( 'last man standing' );
+// returns 'Last man standing'
+
+out = capitalize( 'Hidden Treasures' );
+// returns 'Hidden Treasures'
 ```
 
 </section>
 
 <!-- /.usage -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
 
 <section class="examples">
 
@@ -68,17 +54,18 @@ var out = replace( str, /([^\s]+)/gi, replacer );
 
 ```javascript
 var capitalize = require( '@stdlib/string/base/capitalize' );
-var replace = require( '@stdlib/string/base/replace' );
 
-var out = replace( 'Hello World', /world/i, 'Mr. President' );
-// returns 'Hello Mr. President'
+var str = capitalize( 'last man standing' );
+// returns 'Last man standing'
 
-function replacer( match, p1 ) {
-    return capitalize( p1 );
-}
-var str = 'Oranges and lemons say the bells of St. Clement\'s';
-out = replace( str, /([^\s]*)/gi, replacer );
-// returns 'Oranges And Lemons Say The Bells Of St. Clement\'s'
+str = capitalize( 'presidential election' );
+// returns 'Presidential election'
+
+str = capitalize( 'javaScript' );
+// returns 'JavaScript'
+
+str = capitalize( 'Hidden Treasures' );
+// returns 'Hidden Treasures'
 ```
 
 </section>
@@ -96,8 +83,6 @@ out = replace( str, /([^\s]*)/gi, replacer );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
-
-[mdn-string-replace]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
 
 </section>
 
