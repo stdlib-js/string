@@ -21,34 +21,8 @@
 // MODULES //
 
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
-var capitalize = require( './../../capitalize' );
-var lowercase = require( './../../lowercase' );
-var replace = require( './../../replace' );
 var format = require( './../../format' );
-var trim = require( './../../trim' );
-
-
-// VARIABLES //
-
-var RE_WHITESPACE = /\s+/g;
-var RE_SPECIAL = /[-!"'(),–.:;<>?`{}|~\/\\\[\]_#$*&^@%]+/g; // eslint-disable-line no-useless-escape
-var RE_TO_PASCAL = /(?:\s|^)([^\s]+)(?=\s|$)/g;
-var RE_CAMEL = /([a-z0-9])([A-Z])/g;
-
-
-// FUNCTIONS //
-
-/**
-* Callback invoked upon a match.
-*
-* @private
-* @param {string} match - entire match
-* @param {string} p1 - first capture group
-* @returns {string} capitalized capture group
-*/
-function replacer( match, p1 ) {
-	return capitalize( lowercase( p1 ) );
-}
+var base = require( './../../base/pascalcase' );
 
 
 // MAIN //
@@ -57,7 +31,7 @@ function replacer( match, p1 ) {
 * Converts a string to Pascal case.
 *
 * @param {string} str - string to convert
-* @throws {TypeError} must provide a string primitive
+* @throws {TypeError} must provide a string
 * @returns {string} Pascal-cased string
 *
 * @example
@@ -80,12 +54,7 @@ function pascalcase( str ) {
 	if ( !isString( str ) ) {
 		throw new TypeError( format( 'invalid argument. First argument must be a string. Value: `%s`.', str ) );
 	}
-	str = replace( str, RE_SPECIAL, ' ' );
-	str = replace( str, RE_WHITESPACE, ' ' );
-	str = replace( str, RE_CAMEL, '$1 $2' );
-	str = trim( str );
-	str = replace( str, RE_TO_PASCAL, replacer );
-	return str;
+	return base( str );
 }
 
 

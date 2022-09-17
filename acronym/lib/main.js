@@ -22,9 +22,9 @@
 
 var removePunctuation = require( './../../remove-punctuation' );
 var tokenize = require( '@stdlib/nlp/tokenize' );
-var replace = require( './../../replace' );
-var uppercase = require( './../../uppercase' );
-var lowercase = require( './../../lowercase' );
+var replace = require( './../../base/replace' );
+var uppercase = require( './../../base/uppercase' );
+var lowercase = require( './../../base/lowercase' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var format = require( './../../format' );
 var validate = require( './validate.js' );

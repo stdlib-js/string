@@ -38,7 +38,7 @@ var lowercase = require( '@stdlib/string/lowercase' );
 
 #### lowercase( str )
 
-Converts a `string` to lowercase.
+Converts a string to lowercase.
 
 ```javascript
 var str = lowercase( 'bEEp' );
@@ -58,9 +58,7 @@ var str = lowercase( 'bEEp' );
 ```javascript
 var lowercase = require( '@stdlib/string/lowercase' );
 
-var str;
-
-str = lowercase( 'Beep' );
+var str = lowercase( 'Beep' );
 // returns 'beep'
 
 str = lowercase( 'BeEp' );

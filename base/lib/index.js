@@ -37,6 +37,15 @@ var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
 var ns = {};
 
 /**
+* @name camelcase
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/camelcase}
+*/
+setReadOnly( ns, 'camelcase', require( './../../base/camelcase' ) );
+
+/**
 * @name capitalize
 * @memberof ns
 * @readonly
@@ -44,6 +53,24 @@ var ns = {};
 * @see {@link module:@stdlib/string/base/capitalize}
 */
 setReadOnly( ns, 'capitalize', require( './../../base/capitalize' ) );
+
+/**
+* @name codePointAt
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/code-point-at}
+*/
+setReadOnly( ns, 'codePointAt', require( './../../base/code-point-at' ) );
+
+/**
+* @name constantcase
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/constantcase}
+*/
+setReadOnly( ns, 'constantcase', require( './../../base/constantcase' ) );
 
 /**
 * @name endsWith
@@ -73,6 +100,24 @@ setReadOnly( ns, 'formatInterpolate', require( './../../base/format-interpolate'
 setReadOnly( ns, 'formatTokenize', require( './../../base/format-tokenize' ) );
 
 /**
+* @name kebabcase
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/kebabcase}
+*/
+setReadOnly( ns, 'kebabcase', require( './../../base/kebabcase' ) );
+
+/**
+* @name lpad
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/left-pad}
+*/
+setReadOnly( ns, 'lpad', require( './../../base/left-pad' ) );
+
+/**
 * @name ltrim
 * @memberof ns
 * @readonly
@@ -80,6 +125,42 @@ setReadOnly( ns, 'formatTokenize', require( './../../base/format-tokenize' ) );
 * @see {@link module:@stdlib/string/base/left-trim}
 */
 setReadOnly( ns, 'ltrim', require( './../../base/left-trim' ) );
+
+/**
+* @name lowercase
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/lowercase}
+*/
+setReadOnly( ns, 'lowercase', require( './../../base/lowercase' ) );
+
+/**
+* @name pascalcase
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/pascalcase}
+*/
+setReadOnly( ns, 'pascalcase', require( './../../base/pascalcase' ) );
+
+/**
+* @name percentEncode
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/percent-encode}
+*/
+setReadOnly( ns, 'percentEncode', require( './../../base/percent-encode' ) );
+
+/**
+* @name repeat
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/repeat}
+*/
+setReadOnly( ns, 'repeat', require( './../../base/repeat' ) );
 
 /**
 * @name replace
@@ -91,6 +172,42 @@ setReadOnly( ns, 'ltrim', require( './../../base/left-trim' ) );
 setReadOnly( ns, 'replace', require( './../../base/replace' ) );
 
 /**
+* @name rtrim
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/right-trim}
+*/
+setReadOnly( ns, 'rtrim', require( './../../base/right-trim' ) );
+
+/**
+* @name snakecase
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/snakecase}
+*/
+setReadOnly( ns, 'snakecase', require( './../../base/snakecase' ) );
+
+/**
+* @name startcase
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/startcase}
+*/
+setReadOnly( ns, 'startcase', require( './../../base/startcase' ) );
+
+/**
+* @name startsWith
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/starts-with}
+*/
+setReadOnly( ns, 'startsWith', require( './../../base/starts-with' ) );
+
+/**
 * @name trim
 * @memberof ns
 * @readonly
@@ -98,6 +215,24 @@ setReadOnly( ns, 'replace', require( './../../base/replace' ) );
 * @see {@link module:@stdlib/string/base/trim}
 */
 setReadOnly( ns, 'trim', require( './../../base/trim' ) );
+
+/**
+* @name uncapitalize
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/uncapitalize}
+*/
+setReadOnly( ns, 'uncapitalize', require( './../../base/uncapitalize' ) );
+
+/**
+* @name uppercase
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/uppercase}
+*/
+setReadOnly( ns, 'uppercase', require( './../../base/uppercase' ) );
 
 
 // EXPORTS //

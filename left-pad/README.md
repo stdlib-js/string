@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Left Pad
+# lpad
 
 > Left pad a string.
 
@@ -32,14 +32,14 @@ var lpad = require( '@stdlib/string/left-pad' );
 
 #### lpad( str, len\[, pad] )
 
-Left pads a `string` such that the padded `string` has a `length` of **at least** `len`.
+Left pads a string such that the padded string has a length of **at least** `len`.
 
 ```javascript
 var str = lpad( 'a', 5 );
 // returns '    a'
 ```
 
-By default, an input `string` is padded with `spaces`. To pad with a different character or sequence of characters, provide a `pad` string.
+By default, an input string is padded with a Unicode "space" character (U+0020). To pad with a different character or sequence of characters, provide a `pad` string.
 
 ```javascript
 var str = lpad( 'beep', 10, 'b' );
@@ -57,7 +57,7 @@ str = lpad( 'boop', 12, 'beep' );
 
 ## Notes
 
--   An output `string` is **not** guaranteed to have a length of **exactly** `len`, but to have a `length` of **at least** `len`. To generate a padded `string` having a `length` equal to `len`
+-   An output string is **not** guaranteed to have a length of **exactly** `len`, but to have a length of **at least** `len`. To generate a padded string having a length equal to `len`
 
     ```javascript
     var str = lpad( 'boop', 10, 'beep' ); // => length 12
@@ -65,6 +65,29 @@ str = lpad( 'boop', 12, 'beep' );
 
     str = str.substring( str.length-10 ); // => length 10
     // returns 'epbeepboop'
+    ```
+
+-   This function differs from [`String.prototype.padStart`][mdn-string-padstart] in the following ways:
+
+    -   The function is **not** guaranteed to return a string having a length exactly equal to `len` (as explained above).
+    -   The function does **not** truncate `pad` (from the end) in order to ensure the returned string has length `len`.
+    
+    To replicate [`String.prototype.padStart`][mdn-string-padstart] truncation behavior
+
+    ```javascript
+    var floorb = require( '@stdlib/math/base/special/floorb' );
+
+    function padStart( str, len, pad ) {
+        var n;
+        if ( len <= str.length ) {
+            return str;
+        }
+        n = floorb( len-str.length, 1, pad.length ) + str.length;
+        return pad.substring( 0, len-n ) + lpad( str, n, pad );
+    }
+
+    var str = padStart( 'boop', 10, 'beep' );
+    // returns 'bebeepboop'
     ```
 
 </section>
@@ -78,17 +101,13 @@ str = lpad( 'boop', 12, 'beep' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var round = require( '@stdlib/math/base/special/round' );
-var randu = require( '@stdlib/random/base/randu' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var lpad = require( '@stdlib/string/left-pad' );
 
 var str = 'beep';
-var n;
 var i;
-
 for ( i = 0; i < 100; i++ ) {
-    n = round( randu()*10 ) + str.length;
-    console.log( lpad( str, n, 'b' ) );
+    console.log( lpad( str, discreteUniform( str.length, str.length+10 ), 'b' ) );
 }
 ```
 
@@ -107,7 +126,7 @@ for ( i = 0; i < 100; i++ ) {
 ### Usage
 
 ```text
-Usage: lpad [options] [<string>] --len=<length>
+Usage: lpad [options] --len=<length> [<string>]
 
 Options:
 
@@ -198,6 +217,8 @@ $ echo -n 'boop\tbeep' |  lpad --len 8 --split '\t'
 [standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
 
 [mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+
+[mdn-string-padstart]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
 
 <!-- <related-links> -->
 

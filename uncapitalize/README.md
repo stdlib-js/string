@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Uncapitalize
+# uncapitalize
 
 > Uncapitalize the first character of a string.
 
@@ -32,7 +32,7 @@ var uncapitalize = require( '@stdlib/string/uncapitalize' );
 
 #### uncapitalize( str )
 
-Uncapitalizes the first character of a `string`.
+Uncapitalizes the first character of a string.
 
 ```javascript
 var out = uncapitalize( 'Last man standing' );
