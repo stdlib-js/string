@@ -37,6 +37,7 @@ import ltrimN = require( './../../left-trim-n' );
 import lowercase = require( './../../lowercase' );
 import nextGraphemeClusterBreak = require( './../../next-grapheme-cluster-break' );
 import numGraphemeClusters = require( './../../num-grapheme-clusters' );
+import num2words = require( './../../num2words' );
 import pad = require( './../../pad' );
 import pascalcase = require( './../../pascalcase' );
 import percentEncode = require( './../../percent-encode' );
@@ -405,6 +406,32 @@ interface Namespace {
 	* // returns 5
 	*/
 	numGraphemeClusters: typeof numGraphemeClusters;
+
+	/**
+	* Converts a number to a word representation.
+	*
+	* @param num - number to convert
+	* @param options - options
+	* @param options.lang - language code (default: 'en')
+	* @returns string representation of a number
+	*
+	* @example
+	* var out = ns.num2words( 12 );
+	* // returns 'twelve'
+	*
+	* @example
+	* var out = ns.num2words( 21.8 );
+	* // returns 'twenty-one point eight'
+	*
+	* @example
+	* var out = ns.num2words( 1234 );
+	* // returns 'one thousand two hundred thirty-four'
+	*
+	* @example
+	* var out = ns.num2words( 100381 );
+	* // returns 'one hundred thousand three hundred eighty-one'
+	*/
+	num2words: typeof num2words;
 
 	/**
 	* Pads a string such that the padded string has a length of `len`.

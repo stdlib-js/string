@@ -50,12 +50,12 @@
     "@stdlib/utils": "github:stdlib-js/utils#main"
   },
   "devDependencies": {
-    "@stdlib/array": "github:stdlib-js/array",
-    "@stdlib/bench": "github:stdlib-js/bench",
-    "@stdlib/blas": "github:stdlib-js/blas",
-    "@stdlib/buffer": "github:stdlib-js/buffer",
-    "@stdlib/datasets": "github:stdlib-js/datasets",
-    "@stdlib/random": "github:stdlib-js/random",
+    "@stdlib/array": "github:stdlib-js/array#main",
+    "@stdlib/bench": "github:stdlib-js/bench#main",
+    "@stdlib/blas": "github:stdlib-js/blas#main",
+    "@stdlib/buffer": "github:stdlib-js/buffer#main",
+    "@stdlib/datasets": "github:stdlib-js/datasets#main",
+    "@stdlib/random": "github:stdlib-js/random#main",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
