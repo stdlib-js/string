@@ -42,6 +42,7 @@
     "@stdlib/fs": "github:stdlib-js/fs#main",
     "@stdlib/math": "github:stdlib-js/math#main",
     "@stdlib/nlp": "github:stdlib-js/nlp#main",
+    "@stdlib/number": "github:stdlib-js/number#main",
     "@stdlib/process": "github:stdlib-js/process#main",
     "@stdlib/regexp": "github:stdlib-js/regexp#main",
     "@stdlib/streams": "github:stdlib-js/streams#main",
