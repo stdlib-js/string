@@ -31,13 +31,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@deno/mod.js';
+import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@vnull-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { acronym, base, camelcase, capitalize, codePointAt, constantcase, endsWith, format, fromCodePoint, graphemeClusters2iterator, graphemeClusters2iteratorRight, kebabcase, lowercase, lpad, ltrim, ltrimN, nextGraphemeClusterBreak, num2words, numGraphemeClusters, pad, pascalcase, percentEncode, prevGraphemeClusterBreak, removeFirst, removeLast, removePunctuation, removeUTF8BOM, removeWords, repeat, replace, reverseString, rpad, rtrim, rtrimN, snakecase, splitGraphemeClusters, startcase, startsWith, substringAfter, substringAfterLast, substringBefore, substringBeforeLast, trim, truncate, truncateMiddle, uncapitalize, uppercase, utf16ToUTF8Array } from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@deno/mod.js';
+import { acronym, base, camelcase, capitalize, codePointAt, constantcase, endsWith, format, fromCodePoint, graphemeClusters2iterator, graphemeClusters2iteratorRight, kebabcase, lowercase, lpad, ltrim, ltrimN, nextGraphemeClusterBreak, num2words, numGraphemeClusters, pad, pascalcase, percentEncode, prevGraphemeClusterBreak, removeFirst, removeLast, removePunctuation, removeUTF8BOM, removeWords, repeat, replace, reverseString, rpad, rtrim, rtrimN, snakecase, splitGraphemeClusters, startcase, startsWith, substringAfter, substringAfterLast, substringBefore, substringBeforeLast, trim, truncate, truncateMiddle, uncapitalize, uppercase, utf16ToUTF8Array } from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@vnull-deno/mod.js';
 ```
 
 #### string
@@ -122,7 +122,7 @@ The namespace exposes the following string manipulation functions:
 
 ```javascript
 import getKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@deno/mod.js';
+import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@vnull-deno/mod.js';
 
 console.log( getKeys( string ) );
 ```
