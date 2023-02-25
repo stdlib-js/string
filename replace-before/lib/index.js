@@ -21,10 +21,10 @@
 /**
 * Replace the substring before the first occurrence of a specified search string.
 *
-* @module @stdlib/string/base/replace-before
+* @module @stdlib/string/replace-before
 *
 * @example
-* var replaceBefore = require( '@stdlib/string/base/replace-before' );
+* var replaceBefore = require( '@stdlib/string/replace-before' );
 *
 * var str = 'beep boop';
 *

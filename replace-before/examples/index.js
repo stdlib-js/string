@@ -18,28 +18,20 @@
 
 'use strict';
 
-/**
-* Replace the substring before the first occurrence of a specified search string.
-*
-* @module @stdlib/string/base/replace-before
-*
-* @example
-* var replaceBefore = require( '@stdlib/string/base/replace-before' );
-*
-* var str = 'beep boop';
-*
-* var out = replaceBefore( str, ' ', 'foo' );
-* // returns 'foo boop'
-*
-* out = replaceBefore( str, 'o', 'bar' );
-* // returns 'baroop'
-*/
+var replaceBefore = require( './../lib' );
 
-// MODULES //
+var out = replaceBefore( 'beep boop', 'p', 'see' );
+console.log( out );
+// => 'seep boop'
 
-var main = require( './main.js' );
+out = replaceBefore( 'Hello World!', 'xyz', 'foo' );
+console.log( out );
+// => 'Hello World!'
 
+out = replaceBefore( 'Hello World!', '', 'foo' );
+console.log( out );
+// => 'Hello World!'
 
-// EXPORTS //
-
-module.exports = main;
+out = replaceBefore( '', 'xyz', 'foo' );
+console.log( out );
+// => ''

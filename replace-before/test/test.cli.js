@@ -26,7 +26,7 @@ var tape = require( 'tape' );
 var IS_BROWSER = require( '@stdlib/assert/is-browser' );
 var IS_WINDOWS = require( '@stdlib/assert/is-windows' );
 var EXEC_PATH = require( '@stdlib/process/exec-path' );
-var replace = require( './../../../replace' );
+var replace = require( './../../replace' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 
 
@@ -146,7 +146,7 @@ tape( 'the command-line interface replaces the substring before the first occurr
 	var cmd = [
 		EXEC_PATH,
 		'-e',
-		'"process.stdin.isTTY = true; process.argv[ 2 ] = \'--search=p\'; process.argv[ 3 ] = \'boopbeep\'; process.argv[4] = \'--replacement=foo\'; require( \''+fpath+'\' );"'
+		'"process.stdin.isTTY = true; process.argv[ 2 ] = \'--search=p\'; process.argv[ 3 ] = \'boopbeep\'; process.argv[ 4 ] = \'--replacement=foo\'; require( \''+fpath+'\' );"'
 	];
 
 	exec( cmd.join( ' ' ), done );

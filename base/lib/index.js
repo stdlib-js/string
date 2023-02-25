@@ -172,6 +172,15 @@ setReadOnly( ns, 'repeat', require( './../../base/repeat' ) );
 setReadOnly( ns, 'replace', require( './../../base/replace' ) );
 
 /**
+* @name replaceBefore
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/replace-before}
+*/
+setReadOnly( ns, 'replaceBefore', require( './../../base/replace-before' ) );
+
+/**
 * @name rtrim
 * @memberof ns
 * @readonly

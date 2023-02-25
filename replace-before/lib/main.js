@@ -18,6 +18,13 @@
 
 'use strict';
 
+// MODULES //
+
+var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
+var format = require( './../../format' );
+var base = require( './../../base/replace-before' );
+
+
 // MAIN //
 
 /**
@@ -26,7 +33,10 @@
 * @param {string} str - input string
 * @param {string} search - search string
 * @param {string} replacement - replacement string
-* @returns {string} string
+* @throws {TypeError} first argument must be a string
+* @throws {TypeError} second argument must be a string
+* @throws {TypeError} third argument must be a string
+* @returns {string} output string
 *
 * @example
 * var out = replaceBefore( 'beep boop', ' ', 'foo' );
@@ -45,11 +55,16 @@
 * // returns 'Hello World!'
 */
 function replaceBefore( str, search, replacement ) {
-	var idx = str.indexOf( search );
-	if ( str === '' || search === '' || replacement === '' || idx < 0 ) {
-		return str;
+	if ( !isString( str ) ) {
+		throw new TypeError( format( 'invalid argument. First argument must be a string. Value: `%s`.', str ) );
 	}
-	return replacement + str.substring( idx );
+	if ( !isString( search ) ) {
+		throw new TypeError( format( 'invalid argument. Second argument must be a string. Value: `%s`.', search ) );
+	}
+	if ( !isString( replacement ) ) {
+		throw new TypeError( format( 'invalid argument. Third argument must be a string. Value: `%s`.', replacement ) );
+	}
+	return base( str, search, replacement );
 }
 
 
