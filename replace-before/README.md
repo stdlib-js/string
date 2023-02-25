@@ -37,7 +37,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var replaceBefore = require( '@stdlib/string/base/replace-before' );
+var replaceBefore = require( '@stdlib/string/replace-before' );
 ```
 
 #### replaceBefore( str, search, replacement )
@@ -78,7 +78,7 @@ out = replaceBefore( 'beep boop', 'o', 'bar' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var replaceBefore = require( '@stdlib/string/base/replace-before' );
+var replaceBefore = require( '@stdlib/string/replace-before' );
 
 var out = replaceBefore( 'beep boop', 'p', 'see' );
 // returns 'seep boop'
@@ -96,6 +96,93 @@ out = replaceBefore( '', 'xyz', 'foo');
 </section>
 
 <!-- /.examples -->
+
+<!-- Section for describing a command-line interface. -->
+
+* * *
+
+<section class="cli">
+
+## CLI
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: replace-before [options] --search=<string> --replacement=<string> [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --search string       Search string.
+         --replacement string  Replacement string.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+### Notes
+
+-   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is either properly escaped or enclosed in quotes.
+
+    ```bash
+    # Not escaped...
+    $ echo -n $'foo\nbar\nbaz' | replace-before --search a --replacement b --split /\r?\n/
+
+    # Escaped...
+    $ echo -n $'foo\nbar\nbaz' | replace-before --search a --replacement b --split /\\r?\\n/
+    ```
+
+-   The implementation ignores trailing delimiters.
+
+</section>
+
+<!-- /.notes -->
+
+<!-- CLI usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ replace-before abcdefg --search d --replacement pqr
+pqrdefg
+```
+
+To use as a [standard stream][standard-streams],
+
+```bash
+$ echo -n $'beep\nboop' | replace-before --search p --replacement see
+seep 
+seep
+```
+
+By default, when used as a [standard stream][standard-streams], the implementation assumes newline-delimited data. To specify an alternative delimiter, set the `split` option.
+
+```bash
+$ echo -n 'beep\tboop' | replace-before --search p --replacement see --split '\t'
+seep 
+seep
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
@@ -116,6 +203,10 @@ out = replaceBefore( '', 'xyz', 'foo');
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+
+[mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 </section>
 

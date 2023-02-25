@@ -1,5 +1,5 @@
 {
-    "name": "@stdlib/string/base/replace-before",
+    "name": "@stdlib/string/replace-before",
     "version": "0.0.0",
     "description": "Replace the substring before the first occurrence of a specified search string.",
     "license": "Apache-2.0",
@@ -13,6 +13,9 @@
         "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
       }
     ],
+    "bin": {
+      "replace-before": "./bin/cli"
+    },
     "main": "./lib",
     "directories": {
       "benchmark": "./benchmark",
@@ -55,7 +58,6 @@
       "utility",
       "utils",
       "util",
-      "base",
       "string",
       "str",
       "replace",
