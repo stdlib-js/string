@@ -31,13 +31,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@esm/index.mjs';
+import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@v0.0.14-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { acronym, base, camelcase, capitalize, codePointAt, constantcase, endsWith, format, fromCodePoint, graphemeClusters2iterator, graphemeClusters2iteratorRight, kebabcase, lowercase, lpad, ltrim, ltrimN, nextGraphemeClusterBreak, num2words, numGraphemeClusters, pad, pascalcase, percentEncode, prevGraphemeClusterBreak, removeFirst, removeLast, removePunctuation, removeUTF8BOM, removeWords, repeat, replace, replaceBefore, reverseString, rpad, rtrim, rtrimN, snakecase, splitGraphemeClusters, startcase, startsWith, substringAfter, substringAfterLast, substringBefore, substringBeforeLast, trim, truncate, truncateMiddle, uncapitalize, uppercase, utf16ToUTF8Array } from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@esm/index.mjs';
+import { acronym, base, camelcase, capitalize, codePointAt, constantcase, endsWith, format, fromCodePoint, graphemeClusters2iterator, graphemeClusters2iteratorRight, kebabcase, lowercase, lpad, ltrim, ltrimN, nextGraphemeClusterBreak, num2words, numGraphemeClusters, pad, pascalcase, percentEncode, prevGraphemeClusterBreak, removeFirst, removeLast, removePunctuation, removeUTF8BOM, removeWords, repeat, replace, replaceBefore, reverseString, rpad, rtrim, rtrimN, snakecase, splitGraphemeClusters, startcase, startsWith, substringAfter, substringAfterLast, substringBefore, substringBeforeLast, trim, truncate, truncateMiddle, uncapitalize, uppercase, utf16ToUTF8Array } from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@v0.0.14-esm/index.mjs';
 ```
 
 #### string
@@ -127,7 +127,7 @@ The namespace exposes the following string manipulation functions:
 <script type="module">
 
 import getKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@esm/index.mjs';
+import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@v0.0.14-esm/index.mjs';
 
 console.log( getKeys( string ) );
 
