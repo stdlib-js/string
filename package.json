@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/string",
-  "version": null,
+  "version": "0.0.14",
   "description": "String manipulation functions.",
   "license": "Apache-2.0",
   "author": {
