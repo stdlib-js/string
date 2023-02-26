@@ -33,6 +33,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+string = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string/tags). For example,
+
+```javascript
 string = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string@v0.0.14-umd/browser.js' )
 ```
 
@@ -45,7 +50,7 @@ var string = require( 'path/to/vendor/umd/string/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string@v0.0.14-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -143,7 +148,7 @@ The namespace exposes the following string manipulation functions:
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string@v0.0.14-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
