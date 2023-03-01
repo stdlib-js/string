@@ -36,6 +36,7 @@ import pascalcase = require( './../../../base/pascalcase' );
 import percentEncode = require( './../../../base/percent-encode' );
 import repeat = require( './../../../base/repeat' );
 import replace = require( './../../../base/replace' );
+import replaceBefore = require( './../../../base/replace-before' );
 import rtrim = require( './../../../base/right-trim' );
 import snakecase = require( './../../../base/snakecase' );
 import startcase = require( './../../../base/startcase' );
@@ -339,6 +340,32 @@ interface Namespace {
 	* // returns 'Oranges And Lemons Say The Bells Of St. Clement\'s'
 	*/
 	replace: typeof replace;
+
+	/**
+	* Replaces the substring before the first occurrence of a specified search string.
+	*
+	* @param str - input string
+	* @param search - search string
+	* @param replacement - replacement string
+	* @returns output string
+	*
+	* @example
+	* var out = ns.replaceBefore( 'beep boop', ' ', 'foo' );
+	* // returns 'foo boop'
+	*
+	* @example
+	* var out = ns.replaceBefore( 'beep boop', 'p', 'foo' );
+	* // returns 'foop boop'
+	*
+	* @example
+	* var out = ns.replaceBefore( 'Hello World!', '', 'foo' );
+	* // returns 'Hello world!'
+	*
+	* @example
+	* var out = ns.replaceBefore( 'Hello World!', 'xyz', 'foo' );
+	* // returns 'Hello World!'
+	*/
+	replaceBefore: typeof replaceBefore;
 
 	/**
 	* Trims whitespace from the end of a string.
