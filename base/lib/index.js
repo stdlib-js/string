@@ -100,6 +100,15 @@ setReadOnly( ns, 'formatInterpolate', require( './../../base/format-interpolate'
 setReadOnly( ns, 'formatTokenize', require( './../../base/format-tokenize' ) );
 
 /**
+* @name invcase
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/invcase}
+*/
+setReadOnly( ns, 'invcase', require( './../../base/invcase' ) );
+
+/**
 * @name kebabcase
 * @memberof ns
 * @readonly
