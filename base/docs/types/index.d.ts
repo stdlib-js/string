@@ -28,6 +28,7 @@ import constantcase = require( './../../../base/constantcase' );
 import endsWith = require( './../../../base/ends-with' );
 import formatInterpolate = require( './../../../base/format-interpolate' );
 import formatTokenize = require( './../../../base/format-tokenize' );
+import invcase = require( './../../../base/invcase' );
 import kebabcase = require( './../../../base/kebabcase' );
 import lpad = require( './../../../base/left-pad' );
 import ltrim = require( './../../../base/left-trim' );
@@ -178,6 +179,30 @@ interface Namespace {
 	* // returns [ 'Hello ', {...}, '!' ]
 	*/
 	formatTokenize: typeof formatTokenize;
+
+	/**
+	* Converts a string to inverse case.
+	*
+	* @param str - string to convert
+	* @returns inverse-cased string
+	*
+	* @example
+	* var str = ns.invcase( 'FOO bar' );
+	* // returns 'foo BAR'
+	*
+	* @example
+	* var str = ns.invcase( 'beep' );
+	* // returns 'BEEP'
+	*
+	* @example
+	* var str = ns.invcase( 'beep boop' );
+	* // returns 'BEEP BOOP'
+	*
+	* @example
+	* var str = ns.invcase( 'Hello World!' );
+	* // returns 'hELLO wORLD!'
+	*/
+	invcase: typeof invcase;
 
 	/**
 	* Converts a string to kebab case.
