@@ -55,6 +55,7 @@
     "@stdlib/bench": "github:stdlib-js/bench#main",
     "@stdlib/blas": "github:stdlib-js/blas#main",
     "@stdlib/buffer": "github:stdlib-js/buffer#main",
+    "@stdlib/console": "github:stdlib-js/console#main",
     "@stdlib/datasets": "github:stdlib-js/datasets#main",
     "@stdlib/random": "github:stdlib-js/random#main",
     "proxyquire": "^2.0.0",
