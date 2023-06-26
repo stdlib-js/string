@@ -73,6 +73,15 @@ setReadOnly( ns, 'codePointAt', require( './../../base/code-point-at' ) );
 setReadOnly( ns, 'constantcase', require( './../../base/constantcase' ) );
 
 /**
+* @name dotcase
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/dotcase}
+*/
+setReadOnly( ns, 'dotcase', require( './../../base/dotcase' ) );
+
+/**
 * @name endsWith
 * @memberof ns
 * @readonly
@@ -98,6 +107,15 @@ setReadOnly( ns, 'formatInterpolate', require( './../../base/format-interpolate'
 * @see {@link module:@stdlib/string/base/format-tokenize}
 */
 setReadOnly( ns, 'formatTokenize', require( './../../base/format-tokenize' ) );
+
+/**
+* @name headercase
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/headercase}
+*/
+setReadOnly( ns, 'headercase', require( './../../base/headercase' ) );
 
 /**
 * @name invcase
@@ -188,6 +206,15 @@ setReadOnly( ns, 'replace', require( './../../base/replace' ) );
 * @see {@link module:@stdlib/string/base/replace-before}
 */
 setReadOnly( ns, 'replaceBefore', require( './../../base/replace-before' ) );
+
+/**
+* @name rpad
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/right-pad}
+*/
+setReadOnly( ns, 'rpad', require( './../../base/right-pad' ) );
 
 /**
 * @name rtrim
