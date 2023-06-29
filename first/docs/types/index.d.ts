@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -19,10 +19,10 @@
 // TypeScript Version: 2.0
 
 /**
-* Removes the first character(s) of a string.
+* Removes the first visual character(s) of a string.
 *
 * @param str - input string
-* @param n - number of characters to remove (default: 1)
+* @param n - number of characters to return (default: 1)
 * @returns updated string
 *
 * @example
