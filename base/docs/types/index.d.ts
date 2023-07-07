@@ -25,9 +25,11 @@ import camelcase = require( './../../../base/camelcase' );
 import capitalize = require( './../../../base/capitalize' );
 import codePointAt = require( './../../../base/code-point-at' );
 import constantcase = require( './../../../base/constantcase' );
+import dotcase = require( './../../../base/dotcase' );
 import endsWith = require( './../../../base/ends-with' );
 import formatInterpolate = require( './../../../base/format-interpolate' );
 import formatTokenize = require( './../../../base/format-tokenize' );
+import headercase = require( './../../../base/headercase' );
 import invcase = require( './../../../base/invcase' );
 import kebabcase = require( './../../../base/kebabcase' );
 import lpad = require( './../../../base/left-pad' );
@@ -38,6 +40,7 @@ import percentEncode = require( './../../../base/percent-encode' );
 import repeat = require( './../../../base/repeat' );
 import replace = require( './../../../base/replace' );
 import replaceBefore = require( './../../../base/replace-before' );
+import rpad = require( './../../../base/right-pad' );
 import rtrim = require( './../../../base/right-trim' );
 import snakecase = require( './../../../base/snakecase' );
 import startcase = require( './../../../base/startcase' );
@@ -132,6 +135,26 @@ interface Namespace {
 	constantcase: typeof constantcase;
 
 	/**
+	* Converts a string to dot case.
+	*
+	* @param str - string to convert
+	* @returns dot-cased string
+	*
+	* @example
+	* var str = ns.dotcase( 'beepBoop' );
+	* // returns 'beep.boop'
+	*
+	* @example
+	* var str = ns.dotcase( 'beep boop' );
+	* // returns 'beep.boop'
+	*
+	* @example
+	* var str = ns.dotcase( 'Hello World!' );
+	* // returns 'hello.world'
+	*/
+	dotcase: typeof dotcase;
+
+	/**
 	* Tests if a string ends with the characters of another string.
 	*
 	* ## Notes
@@ -179,6 +202,26 @@ interface Namespace {
 	* // returns [ 'Hello ', {...}, '!' ]
 	*/
 	formatTokenize: typeof formatTokenize;
+
+	/**
+	* Converts a string to Header case.
+	*
+	* @param str - string to convert
+	* @returns Header-cased string
+	*
+	* @example
+	* var str = ns.headercase( 'Hello World!' );
+	* // returns 'Hello-World'
+	*
+	* @example
+	* var str = ns.headercase( 'foo_bar' );
+	* // returns 'Foo-Bar'
+	*
+	* @example
+	* var str = ns.headercase( 'foo-bar' );
+	* // returns 'Foo-Bar'
+	*/
+	headercase: typeof headercase;
 
 	/**
 	* Converts a string to inverse case.
@@ -391,6 +434,32 @@ interface Namespace {
 	* // returns 'Hello World!'
 	*/
 	replaceBefore: typeof replaceBefore;
+
+	/**
+	* Right pads a string such that the padded string has a length of at least `len`.
+	*
+	* ## Notes
+	*
+	* -   An output string is not guaranteed to have a length of exactly `len`, but to have a length of at least `len`. To generate a padded string having a length equal to `len`, post-process a padded string by trimming off excess characters.
+	*
+	* @param str - string to pad
+	* @param len - minimum string length
+	* @param pad - string used to pad
+	* @returns padded string
+	*
+	* @example
+	* var str = ns.rpad( 'a', 5, ' ' );
+	* // returns 'a    '
+	*
+	* @example
+	* var str = ns.rpad( 'beep', 10, 'b' );
+	* // returns 'beepbbbbbb'
+	*
+	* @example
+	* var str = ns.rpad( 'boop', 12, 'beep' );
+	* // returns 'boopbeepbeep'
+	*/
+	rpad: typeof rpad;
 
 	/**
 	* Trims whitespace from the end of a string.

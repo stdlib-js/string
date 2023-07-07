@@ -28,6 +28,7 @@ import capitalize = require( './../../capitalize' );
 import codePointAt = require( './../../code-point-at' );
 import constantcase = require( './../../constantcase' );
 import endsWith = require( './../../ends-with' );
+import first = require( './../../first' );
 import format = require( './../../format' );
 import fromCodePoint = require( './../../from-code-point' );
 import kebabcase = require( './../../kebabcase' );
@@ -218,6 +219,39 @@ interface Namespace {
 	* // returns true
 	*/
 	endsWith: typeof endsWith;
+
+	/**
+	* Removes the first visual character(s) of a string.
+	*
+	* @param str - input string
+	* @param n - number of characters to return (default: 1)
+	* @returns updated string
+	*
+	* @example
+	* var out = ns.first( 'last man standing' );
+	* // returns 'l'
+	*
+	* @example
+	* var out = ns.first( 'presidential election' );
+	* // returns 'p'
+	*
+	* @example
+	* var out = ns.first( 'javaScript' );
+	* // returns 'j'
+	*
+	* @example
+	* var out = ns.first( 'Hidden Treasures' );
+	* // returns 'H'
+	*
+	* @example
+	* var out = ns.first( '🐶🐮🐷🐰🐸', 2 );
+	* // returns '🐶🐮'
+	*
+	* @example
+	* var out = ns.first( 'foo bar', 5 );
+	* // returns 'foo b'
+	*/
+	first: typeof first;
 
 	/**
 	* Inserts supplied variable values into a format string.
