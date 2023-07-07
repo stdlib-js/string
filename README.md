@@ -24,20 +24,30 @@ limitations under the License.
 
 > String manipulation functions.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { acronym, base, camelcase, capitalize, codePointAt, constantcase, endsWith, first, forEach, format, fromCodePoint, graphemeClusters2iterator, graphemeClusters2iteratorRight, kebabcase, lowercase, lpad, ltrim, ltrimN, nextGraphemeClusterBreak, num2words, numGraphemeClusters, pad, pascalcase, percentEncode, prevGraphemeClusterBreak, removeFirst, removeLast, removePunctuation, removeUTF8BOM, removeWords, repeat, replace, replaceBefore, reverseString, rpad, rtrim, rtrimN, snakecase, splitGraphemeClusters, startcase, startsWith, substringAfter, substringAfterLast, substringBefore, substringBeforeLast, trim, truncate, truncateMiddle, uncapitalize, uppercase, utf16ToUTF8Array } from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@deno/mod.js';
+var string = require( '@stdlib/string' );
 ```
 
 #### string
@@ -63,6 +73,7 @@ The namespace exposes the following string manipulation functions:
 -   <span class="signature">[`constantcase( str )`][@stdlib/string/constantcase]</span><span class="delimiter">: </span><span class="description">convert a string to constant case.</span>
 -   <span class="signature">[`endsWith( str, search[, len] )`][@stdlib/string/ends-with]</span><span class="delimiter">: </span><span class="description">test if a string ends with the characters of another string.</span>
 -   <span class="signature">[`first( str[, n] )`][@stdlib/string/first]</span><span class="delimiter">: </span><span class="description">return the first visual character(s) of a string.</span>
+-   <span class="signature">[`forEach( str, clbk[, thisArg ] )`][@stdlib/string/for-each]</span><span class="delimiter">: </span><span class="description">invokes a callback once for each (visual) character of a string.</span>
 -   <span class="signature">[`format( str, ...args )`][@stdlib/string/format]</span><span class="delimiter">: </span><span class="description">insert supplied variable values into a format string.</span>
 -   <span class="signature">[`fromCodePoint( pt1[, pt2[, pt3[, ...]]] )`][@stdlib/string/from-code-point]</span><span class="delimiter">: </span><span class="description">create a string from a sequence of Unicode code points.</span>
 -   <span class="signature">[`kebabcase( str )`][@stdlib/string/kebabcase]</span><span class="delimiter">: </span><span class="description">convert a string to kebab case.</span>
@@ -123,8 +134,8 @@ The namespace exposes the following string manipulation functions:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import getKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@deno/mod.js';
+var getKeys = require( '@stdlib/utils/keys' );
+var string = require( '@stdlib/string' );
 
 console.log( getKeys( string ) );
 ```
@@ -150,7 +161,7 @@ console.log( getKeys( string ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -227,6 +238,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [@stdlib/string/ends-with]: https://github.com/stdlib-js/string/tree/main/ends-with
 
 [@stdlib/string/first]: https://github.com/stdlib-js/string/tree/main/first
+
+[@stdlib/string/for-each]: https://github.com/stdlib-js/string/tree/main/for-each
 
 [@stdlib/string/format]: https://github.com/stdlib-js/string/tree/main/format
 
