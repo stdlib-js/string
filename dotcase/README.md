@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2023 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,60 +18,62 @@ limitations under the License.
 
 -->
 
-# startcase
+# dotcase
 
-> Capitalize the first letter of each word in a string.
+> Convert a string to dot case.
 
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
+<!-- Package usage documentation. -->
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var startcase = require( '@stdlib/string/startcase' );
+var dotcase = require( '@stdlib/string/dotcase' );
 ```
 
-#### startcase( str )
+#### dotcase( str )
 
-Capitalizes the first letter of each word in a string.
+Converts a string to dot case.
 
 ```javascript
-var str = startcase( 'beep boop a foo bar' );
-// returns 'Beep Boop A Foo Bar'
+var out = dotcase( 'foo bar' );
+// returns 'foo.bar'
+
+out = dotcase( 'IS_MOBILE' );
+// returns 'is.mobile'
+
+out = dotcase( 'Hello World!' );
+// returns 'hello.world'
+
+out = dotcase( '--foo-bar--' );
+// returns 'foo.bar'
 ```
 
 </section>
 
 <!-- /.usage -->
 
+<!-- Package usage examples. -->
+
 <section class="examples">
 
 ## Examples
 
-<!-- eslint no-undef: "error" -->
-
 ```javascript
-var startcase = require( '@stdlib/string/startcase' );
+var dotcase = require( '@stdlib/string/dotcase' );
 
-var str = startcase( 'beep boop foo bar' );
-// returns 'Beep Boop Foo Bar'
+var str = 'Hello World!';
+var out = dotcase( str );
+// returns 'hello.world'
 
-str = startcase( 'Beep' );
-// returns 'Beep'
+str = 'HELLO WORLD!';
+out = dotcase( str );
+// returns 'hello.world'
 
-str = startcase( 'BeEp' );
-// returns 'BeEp'
-
-str = startcase( '$**_beep_BoOp_**$' );
-// returns '$**_beep_BoOp_**$'
-
-str = startcase( '' );
-// returns ''
+str = 'To be, or not to be: that is the question.';
+out = dotcase( str );
+// returns 'to.be.or.not.to.be.that.is.the.question'
 ```
 
 </section>
@@ -89,12 +91,13 @@ str = startcase( '' );
 ### Usage
 
 ```text
-Usage: startcase [options] [<string>]
+Usage: dotcase [options] [<string>]
 
 Options:
 
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
 ```
 
 </section>
@@ -105,6 +108,20 @@ Options:
 
 <section class="notes">
 
+### Notes
+
+-   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is either properly escaped or enclosed in quotes.
+
+    ```bash
+    # Not escaped...
+    $ echo -n $'beep\nfoo_bar' | dotcase --split /\r?\n/
+
+    # Escaped...
+    $ echo -n $'beep\nfoo_bar' | dotcase --split /\\r?\\n/
+    ```
+
+-   The implementation ignores trailing delimiters.
+
 </section>
 
 <!-- /.notes -->
@@ -114,15 +131,23 @@ Options:
 ### Examples
 
 ```bash
-$ startcase 'beep boop foo bar'
-Beep Boop Foo Bar
+$ dotcase 'hello world!'
+hello.world
 ```
 
 To use as a [standard stream][standard-streams],
 
 ```bash
-$ echo -n 'beep boop foo bar' | startcase
-Beep Boop Foo Bar 
+$ echo -n 'beEp booP' | dotcase
+beep.boop
+```
+
+By default, when used as a [standard stream][standard-streams], the implementation assumes newline-delimited data. To specify an alternative delimiter, set the `split` option.
+
+```bash
+$ echo -n 'beep\tfoo_bar' | dotcase --split '\t'
+beep
+foo.bar
 ```
 
 </section>
@@ -137,13 +162,6 @@ Beep Boop Foo Bar
 
 <section class="related">
 
-* * *
-
-## See Also
-
--   <span class="package-name">[`@stdlib/string/lowercase`][@stdlib/string/lowercase]</span><span class="delimiter">: </span><span class="description">convert a string to lowercase.</span>
--   <span class="package-name">[`@stdlib/string/uppercase`][@stdlib/string/uppercase]</span><span class="delimiter">: </span><span class="description">convert a string to uppercase.</span>
-
 </section>
 
 <!-- /.related -->
@@ -154,13 +172,7 @@ Beep Boop Foo Bar
 
 [standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
 
-<!-- <related-links> -->
-
-[@stdlib/string/lowercase]: https://github.com/stdlib-js/string/tree/main/lowercase
-
-[@stdlib/string/uppercase]: https://github.com/stdlib-js/string/tree/main/uppercase
-
-<!-- </related-links> -->
+[mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 </section>
 
