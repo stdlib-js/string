@@ -18,29 +18,16 @@
 
 'use strict';
 
-/**
-* Return the first character(s) of a string.
-*
-* @module @stdlib/string/first
-*
-* @example
-* var first = require( '@stdlib/string/first' );
-*
-* var out = first( 'last man standing' );
-* // returns 'l'
-*
-* out = first( 'Hidden Treasures' );
-* // returns 'H';
-*
-* out = first( '🐮🐷🐸🐵', 2 );
-* // returns '🐮🐷'
-*/
+var firstCodePoint = require( './../lib' );
 
-// MODULES //
+console.log( firstCodePoint( 'presidential election', 1 ) );
+// => 'p'
 
-var main = require( './main.js' );
+console.log( firstCodePoint( 'JavaScript', 1 ) );
+// => 'J'
 
+console.log( firstCodePoint( 'The Last of the Mohicans', 5 ) );
+// => 'The L'
 
-// EXPORTS //
-
-module.exports = main;
+console.log( firstCodePoint( 'अनुच्छेद', 1 ) );
+// => 'अ'

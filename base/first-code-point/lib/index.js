@@ -19,21 +19,18 @@
 'use strict';
 
 /**
-* Return the first character(s) of a string.
+* Return the first `n` Unicode code points of a string.
 *
-* @module @stdlib/string/first
+* @module @stdlib/string/base/first-code-point
 *
 * @example
-* var first = require( '@stdlib/string/first' );
+* var first = require( '@stdlib/string/base/first-code-point' );
 *
-* var out = first( 'last man standing' );
+* var out = first( 'last man standing', 1 );
 * // returns 'l'
 *
-* out = first( 'Hidden Treasures' );
+* out = first( 'Hidden Treasures', 1 );
 * // returns 'H';
-*
-* out = first( '🐮🐷🐸🐵', 2 );
-* // returns '🐮🐷'
 */
 
 // MODULES //

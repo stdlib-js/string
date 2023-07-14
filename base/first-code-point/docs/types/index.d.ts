@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,31 +16,38 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
 /**
-* Return the first character(s) of a string.
+* Returns the first `n` Unicode code points of a string.
 *
-* @module @stdlib/string/first
+* @param str - input string
+* @param n - number of code points to return
+* @returns output string
 *
 * @example
-* var first = require( '@stdlib/string/first' );
-*
-* var out = first( 'last man standing' );
+* var out = first( 'last man standing', 1 );
 * // returns 'l'
 *
-* out = first( 'Hidden Treasures' );
-* // returns 'H';
+* @example
+* var out = first( 'presidential election', 1 );
+* // returns 'p'
 *
-* out = first( '🐮🐷🐸🐵', 2 );
-* // returns '🐮🐷'
+* @example
+* var out = first( 'JavaScript', 1 );
+* // returns 'J'
+*
+* @example
+* var out = first( 'Hidden Treasures', 1 );
+* // returns 'H'
+*
+* @example
+* var out = first( 'foo bar', 5 );
+* // returns 'foo b'
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function first( str: string, n: number ): string;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = first;

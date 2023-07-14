@@ -73,6 +73,15 @@ setReadOnly( ns, 'codePointAt', require( './../../base/code-point-at' ) );
 setReadOnly( ns, 'constantcase', require( './../../base/constantcase' ) );
 
 /**
+* @name distances
+* @memberof ns
+* @readonly
+* @type {Namespace}
+* @see {@link module:@stdlib/string/base/distances}
+*/
+setReadOnly( ns, 'distances', require( './../../base/distances' ) );
+
+/**
 * @name dotcase
 * @memberof ns
 * @readonly
@@ -89,6 +98,33 @@ setReadOnly( ns, 'dotcase', require( './../../base/dotcase' ) );
 * @see {@link module:@stdlib/string/base/ends-with}
 */
 setReadOnly( ns, 'endsWith', require( './../../base/ends-with' ) );
+
+/**
+* @name first
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/first}
+*/
+setReadOnly( ns, 'first', require( './../../base/first' ) );
+
+/**
+* @name firstCodePoint
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/first-code-point}
+*/
+setReadOnly( ns, 'firstCodePoint', require( './../../base/first-code-point' ) );
+
+/**
+* @name firstGraphemeCluster
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/first-grapheme-cluster}
+*/
+setReadOnly( ns, 'firstGraphemeCluster', require( './../../base/first-grapheme-cluster' ) );
 
 /**
 * @name formatInterpolate
