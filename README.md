@@ -24,38 +24,30 @@ limitations under the License.
 
 > String manipulation functions.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-string = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var string = require( 'path/to/vendor/umd/string/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.string;
-})();
-</script>
+var string = require( '@stdlib/string' );
 ```
 
 #### string
@@ -79,6 +71,7 @@ The namespace exposes the following string manipulation functions:
 -   <span class="signature">[`capitalize( str )`][@stdlib/string/capitalize]</span><span class="delimiter">: </span><span class="description">capitalize the first character in a string.</span>
 -   <span class="signature">[`codePointAt( string, position[, backward] )`][@stdlib/string/code-point-at]</span><span class="delimiter">: </span><span class="description">return a Unicode code point from a string at a specified position.</span>
 -   <span class="signature">[`constantcase( str )`][@stdlib/string/constantcase]</span><span class="delimiter">: </span><span class="description">convert a string to constant case.</span>
+-   <span class="signature">[`dotcase( str )`][@stdlib/string/dotcase]</span><span class="delimiter">: </span><span class="description">convert a string to dot case.</span>
 -   <span class="signature">[`endsWith( str, search[, len] )`][@stdlib/string/ends-with]</span><span class="delimiter">: </span><span class="description">test if a string ends with the characters of another string.</span>
 -   <span class="signature">[`first( str[, n] )`][@stdlib/string/first]</span><span class="delimiter">: </span><span class="description">return the first visual character(s) of a string.</span>
 -   <span class="signature">[`forEach( str, clbk[, thisArg ] )`][@stdlib/string/for-each]</span><span class="delimiter">: </span><span class="description">invokes a callback once for each (visual) character of a string.</span>
@@ -141,21 +134,11 @@ The namespace exposes the following string manipulation functions:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var getKeys = require( '@stdlib/utils/keys' );
+var string = require( '@stdlib/string' );
 
 console.log( getKeys( string ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -252,6 +235,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [@stdlib/string/code-point-at]: https://github.com/stdlib-js/string/tree/main/code-point-at
 
 [@stdlib/string/constantcase]: https://github.com/stdlib-js/string/tree/main/constantcase
+
+[@stdlib/string/dotcase]: https://github.com/stdlib-js/string/tree/main/dotcase
 
 [@stdlib/string/ends-with]: https://github.com/stdlib-js/string/tree/main/ends-with
 
