@@ -33,120 +33,6 @@ tape( 'main export is a function', function test( t ) {
 	t.end();
 });
 
-tape( 'the function throws an error if provided a first argument which is not a string', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		[],
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		{},
-		function noop() {},
-		new Date()
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), TypeError, 'throws a type error when provided '+values[i] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			forEach( value, noop );
-		};
-	}
-});
-
-tape( 'the function throws an error if provided a first argument which is not a string (thisArg)', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		[],
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		{},
-		function noop() {},
-		new Date()
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), TypeError, 'throws a type error when provided '+values[i] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			forEach( value, noop );
-		};
-	}
-});
-
-tape( 'the function throws an error if provided a second argument which is not a function', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		{},
-		[]
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), TypeError, 'throws a type error when provided '+values[i] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			forEach( 'beep', value );
-		};
-	}
-});
-
-tape( 'the function throws an error if provided a second argument which is not a function (thisArg)', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		{},
-		[]
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), TypeError, 'throws a type error when provided '+values[i] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			forEach( 'beep', value );
-		};
-	}
-});
-
 tape( 'if provided an empty string, the function never invokes a provided function', function test( t ) {
 	var out = forEach( '', fcn );
 	t.strictEqual( out, '', 'returns expected value' );
@@ -169,7 +55,7 @@ tape( 'the function returns a provided string', function test( t ) {
 	t.end();
 });
 
-tape( 'the function invokes a provided function for each character of a provided string', function test( t ) {
+tape( 'the function invokes a provided function for each grapheme cluster of a provided string', function test( t ) {
 	var expected;
 	var actual;
 	var str;
@@ -201,7 +87,7 @@ tape( 'the function invokes a provided function for each character of a provided
 	}
 });
 
-tape( 'the function invokes a provided function for each character of the string (Unicode)', function test( t ) {
+tape( 'the function invokes a provided function for each grapheme cluster of the string (Unicode)', function test( t ) {
 	var expected;
 	var actual;
 	var str;
@@ -235,7 +121,7 @@ tape( 'the function invokes a provided function for each character of the string
 	}
 });
 
-tape( 'the function invokes a provided function for each character of the string (emoji)', function test( t ) {
+tape( 'the function invokes a provided function for each grapheme cluster of the string (emoji)', function test( t ) {
 	var expected;
 	var actual;
 	var str;

@@ -127,6 +127,15 @@ setReadOnly( ns, 'firstCodePoint', require( './../../base/first-code-point' ) );
 setReadOnly( ns, 'firstGraphemeCluster', require( './../../base/first-grapheme-cluster' ) );
 
 /**
+* @name forEachGraphemeCluster
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/for-each-grapheme-cluster}
+*/
+setReadOnly( ns, 'forEachGraphemeCluster', require( './../../base/for-each-grapheme-cluster' ) );
+
+/**
 * @name formatInterpolate
 * @memberof ns
 * @readonly

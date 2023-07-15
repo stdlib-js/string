@@ -18,39 +18,26 @@
 
 'use strict';
 
+/**
+* Invoke a function for each grapheme cluster (i.e., user-perceived character) in a string.
+*
+* @module @stdlib/string/base/for-each-grapheme-cluster
+*
+* @example
+* var forEach = require( '@stdlib/string/base/for-each-grapheme-cluster' );
+*
+* function log( value, index ) {
+*     console.log( '%d: %s', index, value );
+* }
+*
+* forEach( 'Hello', log );
+*/
+
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
-var pkg = require( './../package.json' ).name;
-var forEach = require( './../lib' );
+var main = require( './main.js' );
 
 
-// MAIN //
+// EXPORTS //
 
-bench( pkg, function benchmark( b ) {
-	var values;
-	var out;
-	var i;
-
-	values = [
-		'Iñtërnâtiônàlizætiøn',
-		'presidential election'
-	];
-
-	b.tic();
-	for ( i = 0; i < b.iterations; i++ ) {
-		out = forEach( values[ i%values.length ], clbk );
-	}
-	b.toc();
-	if ( typeof out !== 'string' ) {
-		b.fail( 'should return a string' );
-	}
-	b.pass( 'benchmark finished' );
-	b.end();
-
-	function clbk( v ) {
-		if ( typeof v !== 'string' ) {
-			b.fail( 'unexpected value' );
-		}
-	}
-});
+module.exports = main;

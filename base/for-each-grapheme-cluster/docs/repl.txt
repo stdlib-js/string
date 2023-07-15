@@ -1,11 +1,12 @@
 
 {{alias}}( str, clbk[, thisArg] )
-    Invokes a function for each character in a string.
+    Invokes a function for each grapheme cluster (i.e., user-perceived
+    character) in a string.
 
     When invoked, the provided function is provided three arguments:
 
-    - value: character
-    - index: starting character index
+    - value: grapheme cluster
+    - index: starting grapheme cluster index
     - str: input string
 
     Parameters
@@ -14,7 +15,7 @@
         Input string over which to iterate.
 
     clbk: Function
-        The function to invoke for each character in the input string.
+        The function to invoke for each grapheme cluster in the input string.
 
     thisArg: any (optional)
         Execution context.

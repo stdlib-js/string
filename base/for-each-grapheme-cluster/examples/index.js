@@ -18,39 +18,13 @@
 
 'use strict';
 
-// MODULES //
+var forEachGraphemeCluster = require( './../lib' );
 
-var bench = require( '@stdlib/bench' );
-var pkg = require( './../package.json' ).name;
-var forEach = require( './../lib' );
+function log( value, index ) {
+	console.log( '%d: %s', index, value );
+}
 
-
-// MAIN //
-
-bench( pkg, function benchmark( b ) {
-	var values;
-	var out;
-	var i;
-
-	values = [
-		'Iñtërnâtiônàlizætiøn',
-		'presidential election'
-	];
-
-	b.tic();
-	for ( i = 0; i < b.iterations; i++ ) {
-		out = forEach( values[ i%values.length ], clbk );
-	}
-	b.toc();
-	if ( typeof out !== 'string' ) {
-		b.fail( 'should return a string' );
-	}
-	b.pass( 'benchmark finished' );
-	b.end();
-
-	function clbk( v ) {
-		if ( typeof v !== 'string' ) {
-			b.fail( 'unexpected value' );
-		}
-	}
-});
+forEachGraphemeCluster( 'presidential election', log );
+forEachGraphemeCluster( 'Iñtërnâtiônàlizætiøn', log );
+forEachGraphemeCluster( '🌷🍕', log );
+forEachGraphemeCluster( '\uD834\uDD1E', log );

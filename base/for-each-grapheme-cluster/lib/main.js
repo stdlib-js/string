@@ -20,22 +20,17 @@
 
 // MODULES //
 
-var isFunction = require( '@stdlib/assert/is-function' );
-var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
-var format = require( './../../format' );
-var nextGraphemeClusterBreak = require( './../../next-grapheme-cluster-break' );
+var nextGraphemeClusterBreak = require( './../../../next-grapheme-cluster-break' );
 
 
 // MAIN //
 
 /**
-* Invokes a function for each character in a string.
+* Invokes a function for each grapheme cluster (i.e., user-perceived character) in a string.
 *
 * @param {string} str - input string
 * @param {Function} clbk - function to invoke
 * @param {*} [thisArg] - execution context
-* @throws {TypeError} first argument must be a string
-* @throws {TypeError} second argument must be a function
 * @returns {string} input string
 *
 * @example
@@ -49,12 +44,7 @@ function forEach( str, clbk, thisArg ) {
 	var len;
 	var idx;
 	var brk;
-	if ( !isString( str ) ) {
-		throw new TypeError( format( 'invalid argument. First argument must be a string. Value: `%s`.', str ) );
-	}
-	if ( !isFunction( clbk ) ) {
-		throw new TypeError( format( 'invalid argument. Second argument must be a function. Value: `%s`.', clbk ) );
-	}
+
 	len = str.length;
 	idx = 0;
 	while ( idx < len ) {

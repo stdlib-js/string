@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# forEach
+# forEachGraphemeCluster
 
-> Invokes a function for each character in a string.
+> Invokes a function for each grapheme cluster (i.e., user-perceived character) in a string.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,19 +37,19 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var forEach = require( '@stdlib/string/for-each' );
+var forEachGraphemeCluster = require( '@stdlib/string/base/for-each-grapheme-cluster' );
 ```
 
-#### forEach( str, clbk\[, thisArg ] )
+#### forEachGraphemeCluster( str, clbk\[, thisArg ] )
 
-Invokes a function for each character in a string.
+Invokes a function for each grapheme cluster (i.e., user-perceived character) in a string.
 
 ```javascript
 function log( value, index ) {
     console.log( '%d: %s', index, value );
 }
 
-forEach( 'Beep!', log );
+forEachGraphemeCluster( 'Beep!', log );
 /* =>
     0: B
     1: e
@@ -61,8 +61,8 @@ forEach( 'Beep!', log );
 
 The invoked function is provided three arguments:
 
--   **value**: character.
--   **index**: starting character index.
+-   **value**: grapheme cluster.
+-   **index**: starting grapheme cluster index.
 -   **str**: input string.
 
 To set the function execution context, provide a `thisArg`.
@@ -78,7 +78,7 @@ var ctx = {
     'count': 0
 };
 
-forEach( str, clbk, ctx );
+forEachGraphemeCluster( str, clbk, ctx );
 
 var bool = ( str.length === ctx.count );
 // returns true
@@ -105,16 +105,16 @@ var bool = ( str.length === ctx.count );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var forEach = require( '@stdlib/string/for-each' );
+var forEachGraphemeCluster = require( '@stdlib/string/base/for-each-grapheme-cluster' );
 
 function log( value, index ) {
     console.log( '%d: %s', index, value );
 }
 
-forEach( 'presidential election', log );
-forEach( 'Iñtërnâtiônàlizætiøn', log );
-forEach( '🌷🍕', log );
-forEach( '\uD834\uDD1E', log );
+forEachGraphemeCluster( 'presidential election', log );
+forEachGraphemeCluster( 'Iñtërnâtiônàlizætiøn', log );
+forEachGraphemeCluster( '🌷🍕', log );
+forEachGraphemeCluster( '\uD834\uDD1E', log );
 ```
 
 </section>

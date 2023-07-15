@@ -21,6 +21,7 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
+var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var pkg = require( './../package.json' ).name;
 var forEach = require( './../lib' );
 
@@ -34,15 +35,19 @@ bench( pkg, function benchmark( b ) {
 
 	values = [
 		'Iñtërnâtiônàlizætiøn',
-		'presidential election'
+		'presidential election',
+		'🐶🐮🐷🐰🐸'
 	];
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
 		out = forEach( values[ i%values.length ], clbk );
+		if ( typeof out !== 'string' ) {
+			b.fail( 'should return a string' );
+		}
 	}
 	b.toc();
-	if ( typeof out !== 'string' ) {
+	if ( !isString( out ) ) {
 		b.fail( 'should return a string' );
 	}
 	b.pass( 'benchmark finished' );
