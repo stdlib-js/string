@@ -19,58 +19,58 @@
 // TypeScript Version: 2.0
 
 /**
-* Callback invoked for each grapheme cluster (i.e., user-perceived character) in a string.
+* Callback invoked for each UTF-16 code unit in a string.
 *
 * @returns result
 */
 type Nullary = () => any;
 
 /**
-* Callback invoked for each grapheme cluster (i.e., user-perceived character) in a string.
+* Callback invoked for each UTF-16 code unit in a string.
 *
-* @param value - grapheme cluster
+* @param value - character
 * @returns result
 */
 type Unary = ( value: string ) => any;
 
 /**
-* Callback invoked for each grapheme cluster (i.e., user-perceived character) in a string.
+* Callback invoked for each UTF-16 code unit in a string.
 *
-* @param value - grapheme cluster
-* @param index - starting grapheme cluster index
+* @param value - character
+* @param index - character index
 * @returns result
 */
 type Binary = ( value: string, index: number ) => any;
 
 /**
-* Callback invoked for each grapheme cluster (i.e., user-perceived character) in a string.
+* Callback invoked for each UTF-16 code unit in a string.
 *
-* @param value - grapheme cluster
-* @param index - starting grapheme cluster index
+* @param value - character
+* @param index - character index
 * @param str - input string
 * @returns result
 */
 type Ternary = ( value: string, index: number, str: string ) => any;
 
 /**
-* Callback invoked for each grapheme cluster (i.e., user-perceived character) in a string.
+* Callback invoked for each UTF-16 code unit in a string.
 *
-* @param value - grapheme cluster
-* @param index - starting grapheme cluster index
+* @param value - character
+* @param index - character index
 * @param str - input string
 * @returns result
 */
 type Callback = Nullary | Unary | Binary | Ternary;
 
 /**
-* Invokes a function for each grapheme cluster (i.e., user-perceived character) in a string.
+* Invokes a function for each UTF-16 code unit in a string.
 *
 * ## Notes
 *
 * -   When invoked, the provided function is provided three arguments:
 *
-*     -   **value**: grapheme cluster.
-*     -   **index**: starting grapheme cluster index.
+*     -   **value**: character.
+*     -   **index**: character index.
 *     -   **str**: input string.
 *
 * @param str - input string

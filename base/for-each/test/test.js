@@ -55,7 +55,7 @@ tape( 'the function returns a provided string', function test( t ) {
 	t.end();
 });
 
-tape( 'the function invokes a provided function for each grapheme cluster of a provided string', function test( t ) {
+tape( 'the function invokes a provided function for each UTF-16 code unit in a provided string', function test( t ) {
 	var expected;
 	var actual;
 	var str;
@@ -87,7 +87,7 @@ tape( 'the function invokes a provided function for each grapheme cluster of a p
 	}
 });
 
-tape( 'the function invokes a provided function for each grapheme cluster of the string (Unicode)', function test( t ) {
+tape( 'the function invokes a provided function for each UTF-16 code unit in a provided string (Unicode)', function test( t ) {
 	var expected;
 	var actual;
 	var str;
@@ -107,7 +107,8 @@ tape( 'the function invokes a provided function for each grapheme cluster of the
 		'l',
 		'd',
 		' ',
-		'\uD834\uDD1E'
+		'\uD834',
+		'\uDD1E'
 	];
 
 	actual = [];
@@ -121,16 +122,21 @@ tape( 'the function invokes a provided function for each grapheme cluster of the
 	}
 });
 
-tape( 'the function invokes a provided function for each grapheme cluster of the string (emoji)', function test( t ) {
+tape( 'the function invokes a provided function for each UTF-16 code unit in a provided string (emoji)', function test( t ) {
 	var expected;
 	var actual;
 	var str;
 
 	str = '🌷🍕👉🏿';
 	expected = [
-		'🌷',
-		'🍕',
-		'👉🏿'
+		'\uD83C',
+		'\uDF37',
+		'\uD83C',
+		'\uDF55',
+		'\uD83D',
+		'\uDC49',
+		'\uD83C',
+		'\uDFFF'
 	];
 
 	actual = [];

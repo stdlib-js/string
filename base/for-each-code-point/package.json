@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/string/for-each",
+  "name": "@stdlib/string/base/for-each-code-point",
   "version": "0.0.0",
-  "description": "Invoke a function for each character in a string.",
+  "description": "Invoke a function for each Unicode code point in a string.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -63,9 +63,6 @@
     "stdstring",
     "string",
     "str",
-    "grapheme",
-    "unicode",
-    "utf16",
-    "utf-16"
+    "unicode"
   ]
 }

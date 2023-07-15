@@ -35,7 +35,8 @@ bench( pkg, function benchmark( b ) {
 
 	values = [
 		'Iñtërnâtiônàlizætiøn',
-		'presidential election'
+		'presidential election',
+		'🐶🐮🐷🐰🐸'
 	];
 
 	b.tic();
