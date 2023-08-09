@@ -244,6 +244,33 @@ setReadOnly( ns, 'pascalcase', require( './../../base/pascalcase' ) );
 setReadOnly( ns, 'percentEncode', require( './../../base/percent-encode' ) );
 
 /**
+* @name removeFirst
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/remove-first}
+*/
+setReadOnly( ns, 'removeFirst', require( './../../base/remove-first' ) );
+
+/**
+* @name removeFirstCodePoint
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/remove-first-code-point}
+*/
+setReadOnly( ns, 'removeFirstCodePoint', require( './../../base/remove-first-code-point' ) );
+
+/**
+* @name removeFirstGraphemeCluster
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/remove-first-grapheme-cluster}
+*/
+setReadOnly( ns, 'removeFirstGraphemeCluster', require( './../../base/remove-first-grapheme-cluster' ) );
+
+/**
 * @name repeat
 * @memberof ns
 * @readonly
