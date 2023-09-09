@@ -44,6 +44,9 @@ import ltrim = require( './../../../base/left-trim' );
 import lowercase = require( './../../../base/lowercase' );
 import pascalcase = require( './../../../base/pascalcase' );
 import percentEncode = require( './../../../base/percent-encode' );
+import removeFirst = require( './../../../base/remove-first' );
+import removeFirstCodePoint = require( './../../../base/remove-first-code-point' );
+import removeFirstGraphemeCluster = require( './../../../base/remove-first-grapheme-cluster' );
 import repeat = require( './../../../base/repeat' );
 import replace = require( './../../../base/replace' );
 import replaceBefore = require( './../../../base/replace-before' );
@@ -538,6 +541,97 @@ interface Namespace {
 	* // returns 'Ladies%20%2B%20Gentlemen'
 	*/
 	percentEncode: typeof percentEncode;
+
+	/**
+	* Removes the first `n` UTF-16 code units of a string.
+	*
+	* @param str - input string
+	* @param n - number of code units to remove
+	* @returns output string
+	*
+	* @example
+	* var out = ns.removeFirst( 'last man standing', 1 );
+	* // returns 'ast man standing'
+	*
+	* @example
+	* var out = ns.removeFirst( 'presidential election', 1 );
+	* // returns 'residential election'
+	*
+	* @example
+	* var out = ns.removeFirst( 'JavaScript', 1 );
+	* // returns 'avaScript'
+	*
+	* @example
+	* var out = ns.removeFirst( 'Hidden Treasures', 1 );
+	* // returns 'idden Treasures'
+	*
+	* @example
+	* var out = ns.removeFirst( 'foo bar', 5 );
+	* // returns 'ar'
+	*/
+	removeFirst: typeof removeFirst;
+
+	/**
+	* Removes the first `n` Unicode code points of a string.
+	*
+	* @param str - input string
+	* @param n - number of code points to remove
+	* @returns output string
+	*
+	* @example
+	* var out = ns.removeFirstCodePoint( 'last man standing', 1 );
+	* // returns 'ast man standing'
+	*
+	* @example
+	* var out = ns.removeFirstCodePoint( 'presidential election', 1 );
+	* // returns 'residential election'
+	*
+	* @example
+	* var out = ns.removeFirstCodePoint( 'JavaScript', 1 );
+	* // returns 'avaScript'
+	*
+	* @example
+	* var out = ns.removeFirstCodePoint( 'Hidden Treasures', 1 );
+	* // returns 'idden Treasures'
+	*
+	* @example
+	* var out = ns.removeFirstCodePoint( 'foo bar', 5 );
+	* // returns 'ar'
+	*/
+	removeFirstCodePoint: typeof removeFirstCodePoint;
+
+	/**
+	* Removes the first `n` grapheme clusters (i.e., user-perceived characters) of a string.
+	*
+	* @param str - input string
+	* @param n - number of grapheme clusters to remove
+	* @returns output string
+	*
+	* @example
+	* var out = ns.removeFirstGraphemeCluster( 'last man standing', 1 );
+	* // returns 'ast man standing'
+	*
+	* @example
+	* var out = ns.removeFirstGraphemeCluster( 'presidential election', 1 );
+	* // returns 'residential election'
+	*
+	* @example
+	* var out = ns.removeFirstGraphemeCluster( 'JavaScript', 1 );
+	* // returns 'avaScript'
+	*
+	* @example
+	* var out = ns.removeFirstGraphemeCluster( 'Hidden Treasures', 1 );
+	* // returns 'idden Treasures'
+	*
+	* @example
+	* var out = ns.removeFirstGraphemeCluster( '🐶🐮🐷🐰🐸', 2 );
+	* // returns '🐷🐰🐸'
+	*
+	* @example
+	* var out = ns.removeFirstGraphemeCluster( 'foo bar', 5 );
+	* // returns 'ar'
+	*/
+	removeFirstGraphemeCluster: typeof removeFirstGraphemeCluster;
 
 	/**
 	* Repeats a string `n` times and returns the concatenated result.
