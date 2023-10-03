@@ -35,38 +35,30 @@ limitations under the License.
 
 > String manipulation functions.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-string = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var string = require( 'path/to/vendor/umd/string/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.string;
-})();
-</script>
+var string = require( '@stdlib/string' );
 ```
 
 #### string
@@ -110,7 +102,7 @@ The namespace exposes the following string manipulation functions:
 -   <span class="signature">[`percentEncode( str )`][@stdlib/string/percent-encode]</span><span class="delimiter">: </span><span class="description">percent-encode a UTF-16 encoded string according to RFC 3986.</span>
 -   <span class="signature">[`prevGraphemeClusterBreak( string[, fromIndex] )`][@stdlib/string/prev-grapheme-cluster-break]</span><span class="delimiter">: </span><span class="description">return the previous extended grapheme cluster break in a string before a specified position.</span>
 -   <span class="signature">[`removeFirst( str[, n][, options] )`][@stdlib/string/remove-first]</span><span class="delimiter">: </span><span class="description">remove the first character(s) of a string.</span>
--   <span class="signature">[`removeLast( str[, n] )`][@stdlib/string/remove-last]</span><span class="delimiter">: </span><span class="description">remove the last character(s) of a string.</span>
+-   <span class="signature">[`removeLast( str[, n][, options] )`][@stdlib/string/remove-last]</span><span class="delimiter">: </span><span class="description">remove the last character(s) of a string.</span>
 -   <span class="signature">[`removePunctuation( str )`][@stdlib/string/remove-punctuation]</span><span class="delimiter">: </span><span class="description">remove punctuation characters from a string.</span>
 -   <span class="signature">[`removeUTF8BOM( str )`][@stdlib/string/remove-utf8-bom]</span><span class="delimiter">: </span><span class="description">remove a UTF-8 byte order mark (BOM) from the beginning of a string.</span>
 -   <span class="signature">[`removeWords( str, words[, ignoreCase] )`][@stdlib/string/remove-words]</span><span class="delimiter">: </span><span class="description">remove a list of words from a string.</span>
@@ -154,21 +146,11 @@ The namespace exposes the following string manipulation functions:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var getKeys = require( '@stdlib/utils/keys' );
+var string = require( '@stdlib/string' );
 
 console.log( getKeys( string ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
