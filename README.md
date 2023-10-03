@@ -35,20 +35,30 @@ limitations under the License.
 
 > String manipulation functions.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { acronym, base, camelcase, capitalize, codePointAt, constantcase, dotcase, endsWith, first, forEach, format, fromCodePoint, graphemeClusters2iterator, graphemeClusters2iteratorRight, headercase, kebabcase, lowercase, lpad, ltrim, ltrimN, nextGraphemeClusterBreak, num2words, numGraphemeClusters, pad, pascalcase, percentEncode, prevGraphemeClusterBreak, removeFirst, removeLast, removePunctuation, removeUTF8BOM, removeWords, repeat, replace, replaceBefore, reverseString, rpad, rtrim, rtrimN, snakecase, splitGraphemeClusters, startcase, startsWith, substringAfter, substringAfterLast, substringBefore, substringBeforeLast, trim, truncate, truncateMiddle, uncapitalize, uppercase, utf16ToUTF8Array } from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@deno/mod.js';
+var string = require( '@stdlib/string' );
 ```
 
 #### string
@@ -92,7 +102,7 @@ The namespace exposes the following string manipulation functions:
 -   <span class="signature">[`percentEncode( str )`][@stdlib/string/percent-encode]</span><span class="delimiter">: </span><span class="description">percent-encode a UTF-16 encoded string according to RFC 3986.</span>
 -   <span class="signature">[`prevGraphemeClusterBreak( string[, fromIndex] )`][@stdlib/string/prev-grapheme-cluster-break]</span><span class="delimiter">: </span><span class="description">return the previous extended grapheme cluster break in a string before a specified position.</span>
 -   <span class="signature">[`removeFirst( str[, n][, options] )`][@stdlib/string/remove-first]</span><span class="delimiter">: </span><span class="description">remove the first character(s) of a string.</span>
--   <span class="signature">[`removeLast( str[, n] )`][@stdlib/string/remove-last]</span><span class="delimiter">: </span><span class="description">remove the last character(s) of a string.</span>
+-   <span class="signature">[`removeLast( str[, n][, options] )`][@stdlib/string/remove-last]</span><span class="delimiter">: </span><span class="description">remove the last character(s) of a string.</span>
 -   <span class="signature">[`removePunctuation( str )`][@stdlib/string/remove-punctuation]</span><span class="delimiter">: </span><span class="description">remove punctuation characters from a string.</span>
 -   <span class="signature">[`removeUTF8BOM( str )`][@stdlib/string/remove-utf8-bom]</span><span class="delimiter">: </span><span class="description">remove a UTF-8 byte order mark (BOM) from the beginning of a string.</span>
 -   <span class="signature">[`removeWords( str, words[, ignoreCase] )`][@stdlib/string/remove-words]</span><span class="delimiter">: </span><span class="description">remove a list of words from a string.</span>
@@ -137,8 +147,8 @@ The namespace exposes the following string manipulation functions:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import getKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@deno/mod.js';
+var getKeys = require( '@stdlib/utils/keys' );
+var string = require( '@stdlib/string' );
 
 console.log( getKeys( string ) );
 ```
@@ -164,7 +174,7 @@ console.log( getKeys( string ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
