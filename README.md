@@ -35,20 +35,30 @@ limitations under the License.
 
 > String manipulation functions.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { acronym, base, camelcase, capitalize, codePointAt, constantcase, dotcase, endsWith, first, forEach, format, fromCodePoint, graphemeClusters2iterator, graphemeClusters2iteratorRight, headercase, kebabcase, lowercase, lpad, ltrim, ltrimN, nextGraphemeClusterBreak, num2words, numGraphemeClusters, pad, pascalcase, percentEncode, prevGraphemeClusterBreak, removeFirst, removeLast, removePunctuation, removeUTF8BOM, removeWords, repeat, replace, replaceBefore, reverseString, rpad, rtrim, rtrimN, snakecase, splitGraphemeClusters, startcase, startsWith, substringAfter, substringAfterLast, substringBefore, substringBeforeLast, trim, truncate, truncateMiddle, uncapitalize, uppercase, utf16ToUTF8Array } from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@esm/index.mjs';
+var string = require( '@stdlib/string' );
 ```
 
 #### string
@@ -99,7 +109,7 @@ The namespace exposes the following string manipulation functions:
 -   <span class="signature">[`repeat( str, n )`][@stdlib/string/repeat]</span><span class="delimiter">: </span><span class="description">repeat a string a specified number of times and return the concatenated result.</span>
 -   <span class="signature">[`replaceBefore( str, search, replacement )`][@stdlib/string/replace-before]</span><span class="delimiter">: </span><span class="description">replace the substring before the first occurrence of a specified search string.</span>
 -   <span class="signature">[`replace( str, search, newval )`][@stdlib/string/replace]</span><span class="delimiter">: </span><span class="description">replace search occurrences with a replacement string.</span>
--   <span class="signature">[`reverseString( str )`][@stdlib/string/reverse]</span><span class="delimiter">: </span><span class="description">reverse a string.</span>
+-   <span class="signature">[`reverseString( str[, options] )`][@stdlib/string/reverse]</span><span class="delimiter">: </span><span class="description">reverse a string.</span>
 -   <span class="signature">[`rpad( str, len[, pad] )`][@stdlib/string/right-pad]</span><span class="delimiter">: </span><span class="description">right pad a string.</span>
 -   <span class="signature">[`rtrimN( str, n[, chars] )`][@stdlib/string/right-trim-n]</span><span class="delimiter">: </span><span class="description">trim `n` characters from the end of a string.</span>
 -   <span class="signature">[`rtrim( str )`][@stdlib/string/right-trim]</span><span class="delimiter">: </span><span class="description">trim whitespace characters from the end of a string.</span>
@@ -136,20 +146,11 @@ The namespace exposes the following string manipulation functions:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import getKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@esm/index.mjs';
+```javascript
+var getKeys = require( '@stdlib/utils/keys' );
+var string = require( '@stdlib/string' );
 
 console.log( getKeys( string ) );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -173,7 +174,7 @@ console.log( getKeys( string ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
