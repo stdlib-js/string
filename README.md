@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string/tags). For example,
+
+```javascript
 import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@v0.1.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { acronym, base, camelcase, capitalize, codePointAt, constantcase, dotcase, endsWith, first, forEach, format, fromCodePoint, graphemeClusters2iterator, graphemeClusters2iteratorRight, headercase, kebabcase, lowercase, lpad, ltrim, ltrimN, nextGraphemeClusterBreak, num2words, numGraphemeClusters, pad, pascalcase, percentEncode, prevGraphemeClusterBreak, removeFirst, removeLast, removePunctuation, removeUTF8BOM, removeWords, repeat, replace, replaceBefore, reverseString, rpad, rtrim, rtrimN, snakecase, splitGraphemeClusters, startcase, startsWith, substringAfter, substringAfterLast, substringBefore, substringBeforeLast, trim, truncate, truncateMiddle, uncapitalize, uppercase, utf16ToUTF8Array } from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@v0.1.0-esm/index.mjs';
+import { acronym, base, camelcase, capitalize, codePointAt, constantcase, dotcase, endsWith, first, forEach, format, fromCodePoint, graphemeClusters2iterator, graphemeClusters2iteratorRight, headercase, kebabcase, lowercase, lpad, ltrim, ltrimN, nextGraphemeClusterBreak, num2words, numGraphemeClusters, pad, pascalcase, percentEncode, prevGraphemeClusterBreak, removeFirst, removeLast, removePunctuation, removeUTF8BOM, removeWords, repeat, replace, replaceBefore, reverseString, rpad, rtrim, rtrimN, snakecase, splitGraphemeClusters, startcase, startsWith, substringAfter, substringAfterLast, substringBefore, substringBeforeLast, trim, truncate, truncateMiddle, uncapitalize, uppercase, utf16ToUTF8Array } from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@esm/index.mjs';
 ```
 
 #### string
@@ -143,7 +148,7 @@ The namespace exposes the following string manipulation functions:
 <script type="module">
 
 import getKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@v0.1.0-esm/index.mjs';
+import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@esm/index.mjs';
 
 console.log( getKeys( string ) );
 
