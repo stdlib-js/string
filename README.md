@@ -94,6 +94,7 @@ The namespace exposes the following string manipulation functions:
 -   <span class="signature">[`ltrimN( str, n[, chars] )`][@stdlib/string/left-trim-n]</span><span class="delimiter">: </span><span class="description">trim `n` characters from the end of a string.</span>
 -   <span class="signature">[`ltrim( str )`][@stdlib/string/left-trim]</span><span class="delimiter">: </span><span class="description">trim whitespace characters from the beginning of a string.</span>
 -   <span class="signature">[`lowercase( str )`][@stdlib/string/lowercase]</span><span class="delimiter">: </span><span class="description">convert a string to lowercase.</span>
+-   <span class="signature">[`nextCodePointIndex( string[, fromIndex] )`][@stdlib/string/next-code-point-index]</span><span class="delimiter">: </span><span class="description">return the position of the next Unicode code point in a string after a specified position.</span>
 -   <span class="signature">[`nextGraphemeClusterBreak( string[, fromIndex] )`][@stdlib/string/next-grapheme-cluster-break]</span><span class="delimiter">: </span><span class="description">return the next extended grapheme cluster break in a string after a specified position.</span>
 -   <span class="signature">[`numGraphemeClusters( str )`][@stdlib/string/num-grapheme-clusters]</span><span class="delimiter">: </span><span class="description">return the number of grapheme clusters in a string.</span>
 -   <span class="signature">[`num2words( value[, options] )`][@stdlib/string/num2words]</span><span class="delimiter">: </span><span class="description">convert a number to a word representation.</span>
@@ -271,6 +272,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [@stdlib/string/left-trim]: https://github.com/stdlib-js/string/tree/main/left-trim
 
 [@stdlib/string/lowercase]: https://github.com/stdlib-js/string/tree/main/lowercase
+
+[@stdlib/string/next-code-point-index]: https://github.com/stdlib-js/string/tree/main/next-code-point-index
 
 [@stdlib/string/next-grapheme-cluster-break]: https://github.com/stdlib-js/string/tree/main/next-grapheme-cluster-break
 
