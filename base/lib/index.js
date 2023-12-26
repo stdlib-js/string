@@ -37,6 +37,15 @@ var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
 var ns = {};
 
 /**
+* @name altcase
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/altcase}
+*/
+setReadOnly( ns, 'altcase', require( './../../base/altcase' ) );
+
+/**
 * @name camelcase
 * @memberof ns
 * @readonly
@@ -271,6 +280,33 @@ setReadOnly( ns, 'removeFirstCodePoint', require( './../../base/remove-first-cod
 setReadOnly( ns, 'removeFirstGraphemeCluster', require( './../../base/remove-first-grapheme-cluster' ) );
 
 /**
+* @name removeLast
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/remove-last}
+*/
+setReadOnly( ns, 'removeLast', require( './../../base/remove-last' ) );
+
+/**
+* @name removeLastCodePoint
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/remove-last-code-point}
+*/
+setReadOnly( ns, 'removeLastCodePoint', require( './../../base/remove-last-code-point' ) );
+
+/**
+* @name removeLastGraphemeCluster
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/remove-last-grapheme-cluster}
+*/
+setReadOnly( ns, 'removeLastGraphemeCluster', require( './../../base/remove-last-grapheme-cluster' ) );
+
+/**
 * @name repeat
 * @memberof ns
 * @readonly
@@ -296,6 +332,33 @@ setReadOnly( ns, 'replace', require( './../../base/replace' ) );
 * @see {@link module:@stdlib/string/base/replace-before}
 */
 setReadOnly( ns, 'replaceBefore', require( './../../base/replace-before' ) );
+
+/**
+* @name reverse
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/reverse}
+*/
+setReadOnly( ns, 'reverse', require( './../../base/reverse' ) );
+
+/**
+* @name reverseCodePoints
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/reverse-code-points}
+*/
+setReadOnly( ns, 'reverseCodePoints', require( './../../base/reverse-code-points' ) );
+
+/**
+* @name reverseGraphemeClusters
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/reverse-grapheme-clusters}
+*/
+setReadOnly( ns, 'reverseGraphemeClusters', require( './../../base/reverse-grapheme-clusters' ) );
 
 /**
 * @name rpad
@@ -350,6 +413,15 @@ setReadOnly( ns, 'startsWith', require( './../../base/starts-with' ) );
 * @see {@link module:@stdlib/string/base/trim}
 */
 setReadOnly( ns, 'trim', require( './../../base/trim' ) );
+
+/**
+* @name truncateMiddle
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/truncate-middle}
+*/
+setReadOnly( ns, 'truncateMiddle', require( './../../base/truncate-middle' ) );
 
 /**
 * @name uncapitalize
