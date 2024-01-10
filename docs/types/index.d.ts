@@ -38,6 +38,7 @@ import lpad = require( './../../left-pad' );
 import ltrim = require( './../../left-trim' );
 import ltrimN = require( './../../left-trim-n' );
 import lowercase = require( './../../lowercase' );
+import nextCodePointIndex = require( './../../next-code-point-index' );
 import nextGraphemeClusterBreak = require( './../../next-grapheme-cluster-break' );
 import numGraphemeClusters = require( './../../num-grapheme-clusters' );
 import num2words = require( './../../num2words' );
@@ -472,6 +473,24 @@ interface Namespace {
 	lowercase: typeof lowercase;
 
 	/**
+	* Returns the position of the next Unicode code point in a string after a specified position.
+	*
+	* @param str - input string
+	* @param fromIndex - position (default: 0)
+	* @throws first argument must be a string
+	* @throws second argument must be an integer
+	* @returns next code point position
+	*
+	* @example
+	* var out = ns.nextCodePointIndex( '𐒻𐓟𐒻𐓟', 0 );
+	* // returns 2
+	*
+	* out = ns.nextCodePointIndex( '🌷' );
+	* // returns -1
+	*/
+	nextCodePointIndex: typeof nextCodePointIndex;
+
+	/**
 	* Returns the next extended grapheme cluster break in a string after a specified position.
 	*
 	* @param str - input string
@@ -811,7 +830,7 @@ interface Namespace {
 	* // returns 'Hello Mr. President'
 	*
 	* @example
-	* var capitalize = require( `@stdlib/string/capitalize` );
+	* var capitalize = require( './../../capitalize' );
 	*
 	* var str = 'Oranges and lemons say the bells of St. Clement\'s';
 	*
