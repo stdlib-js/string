@@ -163,6 +163,15 @@ IsMobile
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/string/camelcase`][@stdlib/string/camelcase]</span><span class="delimiter">: </span><span class="description">convert a string to camel case.</span>
+-   <span class="package-name">[`@stdlib/string/constantcase`][@stdlib/string/constantcase]</span><span class="delimiter">: </span><span class="description">convert a string to constant case.</span>
+-   <span class="package-name">[`@stdlib/string/kebabcase`][@stdlib/string/kebabcase]</span><span class="delimiter">: </span><span class="description">convert a string to kebab case.</span>
+-   <span class="package-name">[`@stdlib/string/snakecase`][@stdlib/string/snakecase]</span><span class="delimiter">: </span><span class="description">convert a string to snake case.</span>
+
 </section>
 
 <!-- /.related -->
@@ -176,6 +185,14 @@ IsMobile
 [mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 <!-- <related-links> -->
+
+[@stdlib/string/camelcase]: https://github.com/stdlib-js/string/tree/main/camelcase
+
+[@stdlib/string/constantcase]: https://github.com/stdlib-js/string/tree/main/constantcase
+
+[@stdlib/string/kebabcase]: https://github.com/stdlib-js/string/tree/main/kebabcase
+
+[@stdlib/string/snakecase]: https://github.com/stdlib-js/string/tree/main/snakecase
 
 <!-- </related-links> -->
 
