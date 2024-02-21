@@ -54,7 +54,7 @@ import removeWords = require( './../../remove-words' );
 import repeat = require( './../../repeat' );
 import replace = require( './../../replace' );
 import replaceBefore = require( './../../replace-before' );
-import reverseString = require( './../../reverse' );
+import reverse = require( './../../reverse' );
 import rpad = require( './../../right-pad' );
 import rtrim = require( './../../right-trim' );
 import rtrimN = require( './../../right-trim-n' );
@@ -877,18 +877,18 @@ interface Namespace {
 	* @returns reversed string
 	*
 	* @example
-	* var out = ns.reverseString( 'last man standing', {
+	* var out = ns.reverse( 'last man standing', {
 	*     'mode': 'code_unit'
 	* });
 	* // returns 'gnidnats nam tsal'
 	*
 	* @example
-	* var out = ns.reverseString( '🐶🐮🐷🐰🐸', {
+	* var out = ns.reverse( '🐶🐮🐷🐰🐸', {
 	*     'mode': 'grapheme'
 	* });
 	* // returns '🐸🐰🐷🐮🐶'
 	*/
-	reverseString: typeof reverseString;
+	reverse: typeof reverse;
 
 	/**
 	* Right pads a string such that the padded string has a length of at least `len`.
