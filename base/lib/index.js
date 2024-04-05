@@ -163,6 +163,15 @@ setReadOnly( ns, 'forEachCodePoint', require( './../../base/for-each-code-point'
 setReadOnly( ns, 'forEachGraphemeCluster', require( './../../base/for-each-grapheme-cluster' ) );
 
 /**
+* @name forEachRight
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/for-each-right}
+*/
+setReadOnly( ns, 'forEachRight', require( './../../base/for-each-right' ) );
+
+/**
 * @name formatInterpolate
 * @memberof ns
 * @readonly
