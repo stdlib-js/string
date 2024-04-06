@@ -1,0 +1,34 @@
+
+{{alias}}( str, search, replacement, fromIndex )
+    Replaces the substring before the first occurrence of a specified search
+    string. 
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    search: string
+        Search string.
+
+    replacement: string
+        Replacement string.
+
+    fromIndex: integer
+        Index from which to start the search.
+
+    Returns
+    -------
+    out: string
+        Output string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep boop', ' ', 'foo', 0 )
+    'foo boop'
+    > out = {{alias}}( 'beep boop', 'o', 'foo', 0 )
+    'foooop'
+
+    See Also
+    --------
+
