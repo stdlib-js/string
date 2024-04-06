@@ -352,6 +352,15 @@ setReadOnly( ns, 'replaceAfter', require( './../../base/replace-after' ) );
 setReadOnly( ns, 'replaceBefore', require( './../../base/replace-before' ) );
 
 /**
+* @name replaceBeforeLast
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/replace-before-last}
+*/
+setReadOnly( ns, 'replaceBeforeLast', require( './../../base/replace-before-last' ) );
+
+/**
 * @name reverse
 * @memberof ns
 * @readonly
