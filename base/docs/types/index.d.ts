@@ -34,6 +34,7 @@ import firstGraphemeCluster = require( './../../../base/first-grapheme-cluster' 
 import forEach = require( './../../../base/for-each' );
 import forEachCodePoint = require( './../../../base/for-each-code-point' );
 import forEachGraphemeCluster = require( './../../../base/for-each-grapheme-cluster' );
+import forEachRight = require( './../../../base/for-each-right' );
 import formatInterpolate = require( './../../../base/format-interpolate' );
 import formatTokenize = require( './../../../base/format-tokenize' );
 import headercase = require( './../../../base/headercase' );
@@ -52,6 +53,7 @@ import removeLastCodePoint = require( './../../../base/remove-last-code-point' )
 import removeLastGraphemeCluster = require( './../../../base/remove-last-grapheme-cluster' );
 import repeat = require( './../../../base/repeat' );
 import replace = require( './../../../base/replace' );
+import replaceAfter = require( './../../../base/replace-after' );
 import replaceBefore = require( './../../../base/replace-before' );
 import reverse = require( './../../../base/reverse' );
 import reverseCodePoints = require( './../../../base/reverse-code-points' );
@@ -383,6 +385,31 @@ interface Namespace {
 	* ns.forEachGraphemeCluster( 'Hello, World!', log );
 	*/
 	forEachGraphemeCluster: typeof forEachGraphemeCluster;
+
+	/**
+	* Invokes a function for each UTF-16 code unit in a string, iterating from right to left.
+	*
+	* ## Notes
+	*
+	* -   When invoked, the provided function is provided three arguments:
+	*
+	*     -   **value**: character.
+	*     -   **index**: character index.
+	*     -   **str**: input string.
+	*
+	* @param str - input string
+	* @param clbk - function to invoke
+	* @param thisArg - execution context
+	* @returns input string
+	*
+	* @example
+	* function log( value, index ) {
+	*     console.log( '%d: %s', index, value );
+	* }
+	*
+	* forEach( 'Hello, World!', log );
+	*/
+	forEachRight: typeof forEachRight;
 
 	/**
 	* Generates string from a token array by interpolating values.
@@ -800,27 +827,63 @@ interface Namespace {
 	replace: typeof replace;
 
 	/**
+	* Replaces the substring after the first occurrence of a specified search string.
+	*
+	* @param str - input string
+	* @param search - search string
+	* @param replacement - replacement string
+	* @param fromIndex - index at which to start the search
+	* @returns output string
+	*
+	* @example
+	* var out = ns.replaceAfter( 'beep boop', ' ', 'foo', 0 );
+	* // returns 'beep foo'
+	*
+	* @example
+	* var out = ns.replaceAfter( 'beep boop', 'p', 'foo', 5 );
+	* // returns 'beep boopfoo'
+	*
+	* @example
+	* var out = ns.replaceAfter( 'Hello World!', '', 'foo', 0 );
+	* // returns 'Hello World!'
+	*
+	* @example
+	* var out = ns.replaceAfter( 'Hello World!', 'xyz', 'foo', 0 );
+	* // returns 'Hello World!'
+	*
+	* @example
+	* var out = ns.replaceAfter( 'beep boop', ' ', 'foo' , 5 );
+	* // returns 'beep foo'
+	*
+	* @example
+	* var out = ns.replaceAfter( 'beep boop beep baz', 'beep', 'foo' , 5 );
+	* // returns 'beep boop beepfoo'
+	*/
+	replaceAfter: typeof replaceAfter;
+
+	/**
 	* Replaces the substring before the first occurrence of a specified search string.
 	*
 	* @param str - input string
 	* @param search - search string
 	* @param replacement - replacement string
+	* @param fromIndex - index at which to start the search
 	* @returns output string
 	*
 	* @example
-	* var out = ns.replaceBefore( 'beep boop', ' ', 'foo' );
+	* var out = ns.replaceBefore( 'beep boop', ' ', 'foo', 0 );
 	* // returns 'foo boop'
 	*
 	* @example
-	* var out = ns.replaceBefore( 'beep boop', 'p', 'foo' );
-	* // returns 'foop boop'
+	* var out = ns.replaceBefore( 'beep boop', 'p', 'foo', 5 );
+	* // returns 'foop'
 	*
 	* @example
-	* var out = ns.replaceBefore( 'Hello World!', '', 'foo' );
+	* var out = ns.replaceBefore( 'Hello World!', '', 'foo', 0 );
 	* // returns 'Hello world!'
 	*
 	* @example
-	* var out = ns.replaceBefore( 'Hello World!', 'xyz', 'foo' );
+	* var out = ns.replaceBefore( 'Hello World!', 'xyz', 'foo', 0 );
 	* // returns 'Hello World!'
 	*/
 	replaceBefore: typeof replaceBefore;
