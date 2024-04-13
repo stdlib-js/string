@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var stickycase = require( './../../../base/stickycase/lib' );
+var stickycase = require( './../lib' );
 
 
 // TESTS //
