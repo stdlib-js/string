@@ -154,6 +154,15 @@ setReadOnly( ns, 'forEach', require( './../../base/for-each' ) );
 setReadOnly( ns, 'forEachCodePoint', require( './../../base/for-each-code-point' ) );
 
 /**
+* @name forEachCodePointRight
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/for-each-code-point-right}
+*/
+setReadOnly( ns, 'forEachCodePointRight', require( './../../base/for-each-code-point-right' ) );
+
+/**
 * @name forEachGraphemeCluster
 * @memberof ns
 * @readonly
@@ -215,6 +224,33 @@ setReadOnly( ns, 'invcase', require( './../../base/invcase' ) );
 * @see {@link module:@stdlib/string/base/kebabcase}
 */
 setReadOnly( ns, 'kebabcase', require( './../../base/kebabcase' ) );
+
+/**
+* @name last
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/last}
+*/
+setReadOnly( ns, 'last', require( './../../base/last' ) );
+
+/**
+* @name lastCodePoint
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/last-code-point}
+*/
+setReadOnly( ns, 'lastCodePoint', require( './../../base/last-code-point' ) );
+
+/**
+* @name lastGraphemeCluster
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/last-grapheme-cluster}
+*/
+setReadOnly( ns, 'lastGraphemeCluster', require( './../../base/last-grapheme-cluster' ) );
 
 /**
 * @name lpad
@@ -440,6 +476,15 @@ setReadOnly( ns, 'startcase', require( './../../base/startcase' ) );
 * @see {@link module:@stdlib/string/base/starts-with}
 */
 setReadOnly( ns, 'startsWith', require( './../../base/starts-with' ) );
+
+/**
+* @name stickycase
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/stickycase}
+*/
+setReadOnly( ns, 'stickycase', require( './../../base/stickycase' ) );
 
 /**
 * @name trim
