@@ -84,6 +84,15 @@ out = camelcase( str );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/string/base/constantcase`][@stdlib/string/base/constantcase]</span><span class="delimiter">: </span><span class="description">convert a string to constant case.</span>
+-   <span class="package-name">[`@stdlib/string/base/lowercase`][@stdlib/string/base/lowercase]</span><span class="delimiter">: </span><span class="description">convert a string to lowercase.</span>
+-   <span class="package-name">[`@stdlib/string/base/snakecase`][@stdlib/string/base/snakecase]</span><span class="delimiter">: </span><span class="description">convert a string to snake case.</span>
+-   <span class="package-name">[`@stdlib/string/base/uppercase`][@stdlib/string/base/uppercase]</span><span class="delimiter">: </span><span class="description">convert a string to uppercase.</span>
+
 </section>
 
 <!-- /.related -->
@@ -91,6 +100,18 @@ out = camelcase( str );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/string/base/constantcase]: https://github.com/stdlib-js/string/tree/main/base/constantcase
+
+[@stdlib/string/base/lowercase]: https://github.com/stdlib-js/string/tree/main/base/lowercase
+
+[@stdlib/string/base/snakecase]: https://github.com/stdlib-js/string/tree/main/base/snakecase
+
+[@stdlib/string/base/uppercase]: https://github.com/stdlib-js/string/tree/main/base/uppercase
+
+<!-- </related-links> -->
 
 </section>
 
