@@ -34,6 +34,7 @@ import format = require( './../../format' );
 import fromCodePoint = require( './../../from-code-point' );
 import headercase = require( './../../headercase' );
 import kebabcase = require( './../../kebabcase' );
+import last = require( './../../last' );
 import lpad = require( './../../left-pad' );
 import ltrim = require( './../../left-trim' );
 import ltrimN = require( './../../left-trim-n' );
@@ -68,6 +69,7 @@ import substringBefore = require( './../../substring-before' );
 import substringBeforeLast = require( './../../substring-before-last' );
 import graphemeClusters2iterator = require( './../../to-grapheme-cluster-iterator' );
 import graphemeClusters2iteratorRight = require( './../../to-grapheme-cluster-iterator-right' );
+import toWellFormed = require( './../../to-well-formed' );
 import trim = require( './../../trim' );
 import truncate = require( './../../truncate' );
 import truncateMiddle = require( './../../truncate-middle' );
@@ -381,6 +383,39 @@ interface Namespace {
 	* // returns 'foo-bar'
 	*/
 	kebabcase: typeof kebabcase;
+
+	/**
+	* Returns the last character(s) of a string.
+	*
+	* @param str - input string
+	* @param n - number of characters to return (default: 1)
+	* @returns updated string
+	*
+	* @example
+	* var out = ns.last( 'ns.last man standing' );
+	* // returns 'g'
+	*
+	* @example
+	* var out = ns.last( 'presidential election' );
+	* // returns 'n'
+	*
+	* @example
+	* var out = ns.last( 'javaScript' );
+	* // returns 't'
+	*
+	* @example
+	* var out = ns.last( 'Hidden Treasures' );
+	* // returns 's'
+	*
+	* @example
+	* var out = ns.last( '🐶🐮🐷🐰🐸', 2 );
+	* // returns '🐰🐸'
+	*
+	* @example
+	* var out = ns.last( 'foo bar', 3 );
+	* // returns 'bar'
+	*/
+	last: typeof last;
 
 	/**
 	* Left pads a string such that the padded string has a length of at least `len`.
@@ -1215,6 +1250,26 @@ interface Namespace {
 	* // returns true
 	*/
 	graphemeClusters2iteratorRight: typeof graphemeClusters2iteratorRight;
+
+	/**
+	* Replaces all lone surrogates in order to create a new string which is well formed.
+	*
+	* @param str - string to test
+	* @returns new string which does not contain any lone surrogates
+	*
+	* @example
+	* var result = ns.toWellFormed( '\uDBFF' );
+	* // returns �
+	*
+	* @example
+	* var result = ns.toWellFormed( '\uDBFFFF\uDBFF' );
+	* // returns �FF�
+	*
+	* @example
+	* var result = ns.toWellFormed( '-5' );
+	* // returns -5
+	*/
+	toWellFormed: typeof toWellFormed;
 
 	/**
 	* Trims whitespace characters from the beginning and end of a string.

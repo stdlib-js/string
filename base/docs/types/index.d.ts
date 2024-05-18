@@ -33,6 +33,7 @@ import firstCodePoint = require( './../../../base/first-code-point' );
 import firstGraphemeCluster = require( './../../../base/first-grapheme-cluster' );
 import forEach = require( './../../../base/for-each' );
 import forEachCodePoint = require( './../../../base/for-each-code-point' );
+import forEachCodePointRight = require( './../../../base/for-each-code-point-right' );
 import forEachGraphemeCluster = require( './../../../base/for-each-grapheme-cluster' );
 import forEachRight = require( './../../../base/for-each-right' );
 import formatInterpolate = require( './../../../base/format-interpolate' );
@@ -40,6 +41,9 @@ import formatTokenize = require( './../../../base/format-tokenize' );
 import headercase = require( './../../../base/headercase' );
 import invcase = require( './../../../base/invcase' );
 import kebabcase = require( './../../../base/kebabcase' );
+import last = require( './../../../base/last' );
+import lastCodePoint = require( './../../../base/last-code-point' );
+import lastGraphemeCluster = require( './../../../base/last-grapheme-cluster' );
 import lpad = require( './../../../base/left-pad' );
 import ltrim = require( './../../../base/left-trim' );
 import lowercase = require( './../../../base/lowercase' );
@@ -65,6 +69,7 @@ import rtrim = require( './../../../base/right-trim' );
 import snakecase = require( './../../../base/snakecase' );
 import startcase = require( './../../../base/startcase' );
 import startsWith = require( './../../../base/starts-with' );
+import stickycase = require( './../../../base/stickycase' );
 import trim = require( './../../../base/trim' );
 import truncateMiddle = require( './../../../base/truncate-middle' );
 import uncapitalize = require( './../../../base/uncapitalize' );
@@ -364,6 +369,31 @@ interface Namespace {
 	forEachCodePoint: typeof forEachCodePoint;
 
 	/**
+	* Invokes a function for each Unicode code point in a string, iterating from right to left.
+	*
+	* ## Notes
+	*
+	* -   When invoked, the provided function is provided three arguments:
+	*
+	*     -   **value**: code point.
+	*     -   **index**: starting code point index.
+	*     -   **str**: input string.
+	*
+	* @param str - input string
+	* @param clbk - function to invoke
+	* @param thisArg - execution context
+	* @returns input string
+	*
+	* @example
+	* function log( value, index ) {
+	*     console.log( '%d: %s', index, value );
+	* }
+	*
+	* ns.forEachCodePointRight( 'Hello, World!', log );
+	*/
+	forEachCodePointRight: typeof forEachCodePointRight;
+
+	/**
 	* Invokes a function for each grapheme cluster (i.e., user-perceived character) in a string.
 	*
 	* ## Notes
@@ -503,6 +533,85 @@ interface Namespace {
 	* // returns 'foo-bar'
 	*/
 	kebabcase: typeof kebabcase;
+
+	/**
+	* Returns the last `n` UTF-16 code units of a string.
+	*
+	* @param str - input string
+	* @param n - number of code units to return
+	* @returns output string
+	*
+	* @example
+	* var s = ns.last( 'hello world', 1 );
+	* // returns 'd'
+	*
+	* @example
+	* var s = ns.last( 'foo', 2 );
+	* // returns 'oo'
+	*
+	* @example
+	* var s = ns.last( 'JavaScript', 6 );
+	* // returns 'Script'
+	*
+	* @example
+	* var s = ns.last( 'foo bar', 10 );
+	* // returns 'foo bar'
+	*/
+	last: typeof last;
+
+	/**
+	* Returns the last `n` Unicode code points of a string.
+	*
+	* @param str - input string
+	* @param n - number of code points to return
+	* @returns output string
+	*
+	* @example
+	* var out = ns.lastCodePoint( 'Hello World', 1 );
+	* // returns 'd'
+	*
+	* @example
+	* var out = ns.lastCodePoint( 'JavaScript', 6 );
+	* // returns 'Script'
+	*
+	* @example
+	* var out = ns.lastCodePoint( 'New', 5 );
+	* // returns 'New'
+	*
+	* @example
+	* var out = ns.lastCodePoint( 'अनुच्छेद', 1 );
+	* // returns 'द'
+	*/
+	lastCodePoint: typeof lastCodePoint;
+
+	/**
+	* Returns the last `n` grapheme clusters (i.e., user-perceived characters) of a string.
+	*
+	* @param str - input string
+	* @param n - number of grapheme clusters to return
+	* @returns output string
+	*
+	* @example
+	* var out = ns.lastGraphemeCluster( 'Hello World', 1 );
+	* // returns 'd'
+	*
+	* @example
+	* var out = ns.lastGraphemeCluster( 'Evening', 3 );
+	* // returns 'ing'
+	*
+	* @example
+	* var out = ns.lastGraphemeCluster( 'JavaScript', 6 );
+	* // returns 'Script'
+	*
+	* @example
+	* var out = ns.lastGraphemeCluster( '🐶🐮🐷🐰🐸', 2 );
+	* // returns '🐰🐸'
+	*
+	* @example
+	* var out = ns.lastGraphemeCluster( 'foo bar', 5 );
+	* // returns 'o bar'
+	*/
+	lastGraphemeCluster: typeof lastGraphemeCluster;
 
 	/**
 	* Left pads a string such that the padded string has a length of at least `len`.
@@ -1197,6 +1306,27 @@ interface Namespace {
 	* // returns true
 	*/
 	startsWith: typeof startsWith;
+
+	/**
+	 * Converts a string to "sticky caps" case.
+	 *
+	 * @param str - input string
+	 * @param p - probability of capitalization (default: 0.5)
+	 * @returns sticky case string
+	 *
+	 * @example
+	 * var str = ns.stickycase( 'hello world' );
+	 * // returns <string>
+	 *
+	 * @example
+	 * var str = ns.stickycase( 'hello world', 0.2 );
+	 * // returns <string>
+	 *
+	 * @example
+	 * var str = ns.stickycase( 'hello world', 0.8 );
+	 * // returns <string>
+	 */
+	stickycase: typeof stickycase;
 
 	/**
 	* Trims whitespace characters from the beginning and end of a string.
