@@ -35,38 +35,32 @@ limitations under the License.
 
 > String manipulation functions.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-string = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var string = require( 'path/to/vendor/umd/string/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.string;
-})();
-</script>
+var string = require( '@stdlib/string' );
 ```
 
 #### string
@@ -98,6 +92,7 @@ The namespace exposes the following string manipulation functions:
 -   <span class="signature">[`fromCodePoint( pt1[, pt2[, pt3[, ...]]] )`][@stdlib/string/from-code-point]</span><span class="delimiter">: </span><span class="description">create a string from a sequence of Unicode code points.</span>
 -   <span class="signature">[`headercase( str )`][@stdlib/string/headercase]</span><span class="delimiter">: </span><span class="description">convert a string to HTTP header case.</span>
 -   <span class="signature">[`kebabcase( str )`][@stdlib/string/kebabcase]</span><span class="delimiter">: </span><span class="description">convert a string to kebab case.</span>
+-   <span class="signature">[`last( str[, n][, options] )`][@stdlib/string/last]</span><span class="delimiter">: </span><span class="description">return the last character(s) of a string.</span>
 -   <span class="signature">[`lpad( str, len[, pad] )`][@stdlib/string/left-pad]</span><span class="delimiter">: </span><span class="description">left pad a string.</span>
 -   <span class="signature">[`ltrimN( str, n[, chars] )`][@stdlib/string/left-trim-n]</span><span class="delimiter">: </span><span class="description">trim `n` characters from the end of a string.</span>
 -   <span class="signature">[`ltrim( str )`][@stdlib/string/left-trim]</span><span class="delimiter">: </span><span class="description">trim whitespace characters from the beginning of a string.</span>
@@ -132,6 +127,7 @@ The namespace exposes the following string manipulation functions:
 -   <span class="signature">[`substringBefore( str, search )`][@stdlib/string/substring-before]</span><span class="delimiter">: </span><span class="description">return the part of a string before a specified substring.</span>
 -   <span class="signature">[`graphemeClusters2iteratorRight( src[, mapFcn[, thisArg]] )`][@stdlib/string/to-grapheme-cluster-iterator-right]</span><span class="delimiter">: </span><span class="description">create an iterator which iterates from right to left over grapheme clusters.</span>
 -   <span class="signature">[`graphemeClusters2iterator( src[, mapFcn[, thisArg]] )`][@stdlib/string/to-grapheme-cluster-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator which iterates over grapheme clusters.</span>
+-   <span class="signature">[`toWellFormed( str )`][@stdlib/string/to-well-formed]</span><span class="delimiter">: </span><span class="description">create a new well-formed string.</span>
 -   <span class="signature">[`trim( str )`][@stdlib/string/trim]</span><span class="delimiter">: </span><span class="description">trim whitespace characters from the beginning and end of a string.</span>
 -   <span class="signature">[`truncateMiddle( str, len[, seq] )`][@stdlib/string/truncate-middle]</span><span class="delimiter">: </span><span class="description">truncate a string in the middle to a specified length.</span>
 -   <span class="signature">[`truncate( str, len[, ending] )`][@stdlib/string/truncate]</span><span class="delimiter">: </span><span class="description">truncate a string to a specified length.</span>
@@ -155,21 +151,11 @@ The namespace exposes the following string manipulation functions:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var getKeys = require( '@stdlib/utils/keys' );
+var string = require( '@stdlib/string' );
 
 console.log( getKeys( string ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -286,6 +272,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/string/kebabcase]: https://github.com/stdlib-js/string/tree/main/kebabcase
 
+[@stdlib/string/last]: https://github.com/stdlib-js/string/tree/main/last
+
 [@stdlib/string/left-pad]: https://github.com/stdlib-js/string/tree/main/left-pad
 
 [@stdlib/string/left-trim-n]: https://github.com/stdlib-js/string/tree/main/left-trim-n
@@ -353,6 +341,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [@stdlib/string/to-grapheme-cluster-iterator-right]: https://github.com/stdlib-js/string/tree/main/to-grapheme-cluster-iterator-right
 
 [@stdlib/string/to-grapheme-cluster-iterator]: https://github.com/stdlib-js/string/tree/main/to-grapheme-cluster-iterator
+
+[@stdlib/string/to-well-formed]: https://github.com/stdlib-js/string/tree/main/to-well-formed
 
 [@stdlib/string/trim]: https://github.com/stdlib-js/string/tree/main/trim
 
