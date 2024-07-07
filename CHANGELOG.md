@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-06)
+## Unreleased (2024-07-07)
 
 <section class="packages">
 
@@ -596,6 +596,8 @@ A total of 9 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`659f752`](https://github.com/stdlib-js/stdlib/commit/659f752db18317bf5fc237fdbcad0d74b61e1ed9) - **style:** add missing spaces _(by Philipp Burckhardt)_
+-   [`a78f7d1`](https://github.com/stdlib-js/stdlib/commit/a78f7d1b859b6b1d7b0bc0ee4daf76789e3e0910) - **style:** add missing spaces _(by Philipp Burckhardt)_
 -   [`c3ebfa8`](https://github.com/stdlib-js/stdlib/commit/c3ebfa80e311db338b171ebf8eb5f46bc66e9bf6) - **docs:** update namespace table of contents and address spelling errors _(by Philipp Burckhardt)_
 -   [`547f610`](https://github.com/stdlib-js/stdlib/commit/547f6104226a8eb84c0473628733d859741ae661) - **fix:** perform explicit string casting when specifier is `%s` _(by Athan Reines)_
 -   [`f8775e6`](https://github.com/stdlib-js/stdlib/commit/f8775e6bda51d0d2c72d8005e6e377bed1dcc499) - **refactor:** avoid use of global _(by Athan Reines)_
