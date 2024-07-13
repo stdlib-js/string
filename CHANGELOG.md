@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-07)
+## Unreleased (2024-07-13)
 
 <section class="packages">
 
@@ -75,6 +75,39 @@
 </section>
 
 <!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="string-base-capitalize-unreleased">
+
+#### [@stdlib/string/base/capitalize](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/capitalize)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7) - improve type safety
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
+
+</section>
+
+<!-- /.breaking-changes -->
 
 </details>
 
@@ -209,6 +242,39 @@ This release closes the following issue:
 </section>
 
 <!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="string-base-lowercase-unreleased">
+
+#### [@stdlib/string/base/lowercase](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/lowercase)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7) - improve type safety
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
+
+</section>
+
+<!-- /.breaking-changes -->
 
 </details>
 
@@ -434,6 +500,105 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="string-base-uncapitalize-unreleased">
+
+#### [@stdlib/string/base/uncapitalize](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/uncapitalize)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7) - improve type safety
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="string-base-uppercase-unreleased">
+
+#### [@stdlib/string/base/uppercase](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/uppercase)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7) - improve type safety
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="string-capitalize-unreleased">
+
+#### [@stdlib/string/capitalize](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/capitalize)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7) - improve type safety
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="string-last-unreleased">
 
 #### [@stdlib/string/last](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/last)
@@ -449,6 +614,39 @@ This release closes the following issue:
 </section>
 
 <!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="string-lowercase-unreleased">
+
+#### [@stdlib/string/lowercase](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/lowercase)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7) - improve type safety
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
+
+</section>
+
+<!-- /.breaking-changes -->
 
 </details>
 
@@ -500,6 +698,72 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="string-uncapitalize-unreleased">
+
+#### [@stdlib/string/uncapitalize](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/uncapitalize)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7) - improve type safety
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="string-uppercase-unreleased">
+
+#### [@stdlib/string/uppercase](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/uppercase)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7) - improve type safety
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
@@ -508,6 +772,8 @@ This release closes the following issue:
 
 ### BREAKING CHANGES
 
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
 -   [`ec1c506`](https://github.com/stdlib-js/stdlib/commit/ec1c5066955fdcc71013805a5c55fc739d29a849): resolve negative index arguments relative to last index
 -   [`ec1c506`](https://github.com/stdlib-js/stdlib/commit/ec1c5066955fdcc71013805a5c55fc739d29a849): resolve negative index arguments relative to last index 
 
@@ -596,6 +862,7 @@ A total of 9 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7) - **feat:** improve type safety _(by Philipp Burckhardt)_
 -   [`659f752`](https://github.com/stdlib-js/stdlib/commit/659f752db18317bf5fc237fdbcad0d74b61e1ed9) - **style:** add missing spaces _(by Philipp Burckhardt)_
 -   [`a78f7d1`](https://github.com/stdlib-js/stdlib/commit/a78f7d1b859b6b1d7b0bc0ee4daf76789e3e0910) - **style:** add missing spaces _(by Philipp Burckhardt)_
 -   [`c3ebfa8`](https://github.com/stdlib-js/stdlib/commit/c3ebfa80e311db338b171ebf8eb5f46bc66e9bf6) - **docs:** update namespace table of contents and address spelling errors _(by Philipp Burckhardt)_
