@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-13)
+## Unreleased (2024-07-20)
 
 <section class="packages">
 
@@ -698,6 +698,40 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="string-truncate-unreleased">
+
+#### [@stdlib/string/truncate](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/truncate)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`4345839`](https://github.com/stdlib-js/stdlib/commit/43458394fe65479fe3ae8edd7fe062e59c37ca27) - resolve bug in `string/truncate` [(#2635)](https://github.com/stdlib-js/stdlib/pull/2635)
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#2630](https://github.com/stdlib-js/stdlib/issues/2630)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="string-uncapitalize-unreleased">
 
 #### [@stdlib/string/uncapitalize](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/uncapitalize)
@@ -828,9 +862,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 5 issues were closed in this release:
+A total of 6 issues were closed in this release:
 
-[#1729](https://github.com/stdlib-js/stdlib/issues/1729), [##813](#813), [##814](#814), [##856 ](#856 ), [#812](https://github.com/stdlib-js/stdlib/issues/812)
+[#1729](https://github.com/stdlib-js/stdlib/issues/1729), [#2630](https://github.com/stdlib-js/stdlib/issues/2630), [##813](#813), [##814](#814), [##856 ](#856 ), [#812](https://github.com/stdlib-js/stdlib/issues/812)
 
 </section>
 
@@ -840,7 +874,7 @@ A total of 5 issues were closed in this release:
 
 ### Contributors
 
-A total of 9 people contributed to this release. Thank you to the following contributors:
+A total of 10 people contributed to this release. Thank you to the following contributors:
 
 -   Aditya Sapra
 -   Anudeep Sanapala
@@ -850,6 +884,7 @@ A total of 9 people contributed to this release. Thank you to the following cont
 -   Philipp Burckhardt
 -   Pranav
 -   Pratik
+-   Snehil Shah
 -   stdlib-bot
 
 </section>
@@ -862,6 +897,7 @@ A total of 9 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`4345839`](https://github.com/stdlib-js/stdlib/commit/43458394fe65479fe3ae8edd7fe062e59c37ca27) - **fix:** resolve bug in `string/truncate` [(#2635)](https://github.com/stdlib-js/stdlib/pull/2635) _(by Snehil Shah)_
 -   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7) - **feat:** improve type safety _(by Philipp Burckhardt)_
 -   [`659f752`](https://github.com/stdlib-js/stdlib/commit/659f752db18317bf5fc237fdbcad0d74b61e1ed9) - **style:** add missing spaces _(by Philipp Burckhardt)_
 -   [`a78f7d1`](https://github.com/stdlib-js/stdlib/commit/a78f7d1b859b6b1d7b0bc0ee4daf76789e3e0910) - **style:** add missing spaces _(by Philipp Burckhardt)_
