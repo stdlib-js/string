@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-08-03)
+## Unreleased (2024-08-17)
 
 <section class="packages">
 
@@ -33,13 +33,11 @@
 
 ##### BREAKING CHANGES
 
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): update namespace TypeScript declarations
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases 
+-   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases
 
     -   To migrate, users should consult the relevant namespace documentation and associated commits in order to determine which aliases have been renamed.
 
 -   [`4c552c8`](https://github.com/stdlib-js/stdlib/commit/4c552c83b9ca9036f88e3470bba404b1ad06fee6): rename exported alias from `reverseString` to `reverse`
--   [`4c552c8`](https://github.com/stdlib-js/stdlib/commit/4c552c83b9ca9036f88e3470bba404b1ad06fee6): rename exported alias from `reverseString` to `reverse` 
 
     -   To migrate, users should drop the `String` suffix.
 
@@ -102,7 +100,6 @@
 
 ##### BREAKING CHANGES
 
--   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
 -   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
 
 </section>
@@ -152,18 +149,6 @@
 </section>
 
 <!-- /.features -->
-
-<section class="issues">
-
-##### Closed Issues
-
-This release closes the following issue:
-
-[#856 ](https://github.com/stdlib-js/stdlib/issues/856 )
-
-</section>
-
-<!-- /.issues -->
 
 </details>
 
@@ -269,7 +254,6 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
 -   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
 
 </section>
@@ -304,12 +288,11 @@ This release closes the following issue:
 ##### BREAKING CHANGES
 
 -   [`b665537`](https://github.com/stdlib-js/stdlib/commit/b6655370f23b4bfdccc19c55af18699c2f368020): resolve negative indices relative to the last string character
--   [`b665537`](https://github.com/stdlib-js/stdlib/commit/b6655370f23b4bfdccc19c55af18699c2f368020): resolve negative indices relative to the last string character 
 
     -   Previously, a negative index would resolve to `0`. This commit changes
-    that behavior to resolve relative to the last index. To preserve
-    previous behavior, users should clamp `fromIndex` values to string
-    bounds before calling into `replaceAfter`.
+        that behavior to resolve relative to the last index. To preserve
+        previous behavior, users should clamp `fromIndex` values to string
+        bounds before calling into `replaceAfter`.
 
 </section>
 
@@ -355,12 +338,11 @@ This release closes the following issue:
 ##### BREAKING CHANGES
 
 -   [`ec1c506`](https://github.com/stdlib-js/stdlib/commit/ec1c5066955fdcc71013805a5c55fc739d29a849): resolve negative index arguments relative to last index
--   [`ec1c506`](https://github.com/stdlib-js/stdlib/commit/ec1c5066955fdcc71013805a5c55fc739d29a849): resolve negative index arguments relative to last index 
 
     -   Previously, a negative `fromIndex` argument would resolve to `0`.
-    The current behavior resolves relative to the last character index.
-    To preserve the previous behavior, users should clamp index arguments
-    to index bounds before calling `replaceAfterLast`.
+        The current behavior resolves relative to the last character index.
+        To preserve the previous behavior, users should clamp index arguments
+        to index bounds before calling `replaceAfterLast`.
 
 </section>
 
@@ -405,19 +387,17 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`693efb2`](https://github.com/stdlib-js/stdlib/commit/693efb2eb159d1cd25c6cffe2440e36e6a14b9b2): resolve negative indices relative to the last character index
--   [`693efb2`](https://github.com/stdlib-js/stdlib/commit/693efb2eb159d1cd25c6cffe2440e36e6a14b9b2): resolve negative indices relative to the last index 
+-   [`693efb2`](https://github.com/stdlib-js/stdlib/commit/693efb2eb159d1cd25c6cffe2440e36e6a14b9b2): resolve negative indices relative to the last index
 
     -   Previously, negative index arguments would resolve to zero and
-    search would start from the beginning of the string. To preserve
-    previous behavior, users should clamp `fromIndex` values to string
-    index bounds before calling into `replaceBefore`.
+        search would start from the beginning of the string. To preserve
+        previous behavior, users should clamp `fromIndex` values to string
+        index bounds before calling into `replaceBefore`.
 
--   [`29d7b0d`](https://github.com/stdlib-js/stdlib/commit/29d7b0dc141e1112af120eab76fa6731b8fdbe78): add support for `fromIndex`
--   [`29d7b0d`](https://github.com/stdlib-js/stdlib/commit/29d7b0dc141e1112af120eab76fa6731b8fdbe78): require `fromIndex` argument 
+-   [`29d7b0d`](https://github.com/stdlib-js/stdlib/commit/29d7b0dc141e1112af120eab76fa6731b8fdbe78): require `fromIndex` argument
 
     -   To migrate, users should provide an explicit `fromIndex` of `0` in
-    order to retain previous behavior.
+        order to retain previous behavior.
 
 </section>
 
@@ -450,11 +430,10 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`b6cb1d3`](https://github.com/stdlib-js/stdlib/commit/b6cb1d392dab74242900a91b30c256d5b608dea6): support negative `fromIndex` arguments
--   [`b6cb1d3`](https://github.com/stdlib-js/stdlib/commit/b6cb1d392dab74242900a91b30c256d5b608dea6): resolve negative indices relative to last index 
+-   [`b6cb1d3`](https://github.com/stdlib-js/stdlib/commit/b6cb1d392dab74242900a91b30c256d5b608dea6): resolve negative indices relative to last index
 
     -   In order to preserve prior behavior, users should insert a manual
-    check before calling this API.
+        check before calling this API.
 
 </section>
 
@@ -520,7 +499,6 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
 -   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
 
 </section>
@@ -553,7 +531,6 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
 -   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
 
 </section>
@@ -586,7 +563,6 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
 -   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
 
 </section>
@@ -641,7 +617,6 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
 -   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
 
 </section>
@@ -752,7 +727,6 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
 -   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
 
 </section>
@@ -785,7 +759,6 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
 -   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
 
 </section>
@@ -806,51 +779,43 @@ This release closes the following issue:
 
 ### BREAKING CHANGES
 
--   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): improve type safety
 -   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7): The return types are now more specific. This may break existing code that relies on less strict typing, but should not affect most users. To preserve the prior behavior, you can cast the return value to `string` via a type assertion.
 -   [`ec1c506`](https://github.com/stdlib-js/stdlib/commit/ec1c5066955fdcc71013805a5c55fc739d29a849): resolve negative index arguments relative to last index
--   [`ec1c506`](https://github.com/stdlib-js/stdlib/commit/ec1c5066955fdcc71013805a5c55fc739d29a849): resolve negative index arguments relative to last index 
 
     -   Previously, a negative `fromIndex` argument would resolve to `0`.
-    The current behavior resolves relative to the last character index.
-    To preserve the previous behavior, users should clamp index arguments
-    to index bounds before calling `replaceAfterLast`.
+        The current behavior resolves relative to the last character index.
+        To preserve the previous behavior, users should clamp index arguments
+        to index bounds before calling `replaceAfterLast`.
 
--   [`693efb2`](https://github.com/stdlib-js/stdlib/commit/693efb2eb159d1cd25c6cffe2440e36e6a14b9b2): resolve negative indices relative to the last character index
--   [`693efb2`](https://github.com/stdlib-js/stdlib/commit/693efb2eb159d1cd25c6cffe2440e36e6a14b9b2): resolve negative indices relative to the last index 
+-   [`693efb2`](https://github.com/stdlib-js/stdlib/commit/693efb2eb159d1cd25c6cffe2440e36e6a14b9b2): resolve negative indices relative to the last index
 
     -   Previously, negative index arguments would resolve to zero and
-    search would start from the beginning of the string. To preserve
-    previous behavior, users should clamp `fromIndex` values to string
-    index bounds before calling into `replaceBefore`.
+        search would start from the beginning of the string. To preserve
+        previous behavior, users should clamp `fromIndex` values to string
+        index bounds before calling into `replaceBefore`.
 
 -   [`b665537`](https://github.com/stdlib-js/stdlib/commit/b6655370f23b4bfdccc19c55af18699c2f368020): resolve negative indices relative to the last string character
--   [`b665537`](https://github.com/stdlib-js/stdlib/commit/b6655370f23b4bfdccc19c55af18699c2f368020): resolve negative indices relative to the last string character 
 
     -   Previously, a negative index would resolve to `0`. This commit changes
-    that behavior to resolve relative to the last index. To preserve
-    previous behavior, users should clamp `fromIndex` values to string
-    bounds before calling into `replaceAfter`.
+        that behavior to resolve relative to the last index. To preserve
+        previous behavior, users should clamp `fromIndex` values to string
+        bounds before calling into `replaceAfter`.
 
--   [`b6cb1d3`](https://github.com/stdlib-js/stdlib/commit/b6cb1d392dab74242900a91b30c256d5b608dea6): support negative `fromIndex` arguments
--   [`b6cb1d3`](https://github.com/stdlib-js/stdlib/commit/b6cb1d392dab74242900a91b30c256d5b608dea6): resolve negative indices relative to last index 
+-   [`b6cb1d3`](https://github.com/stdlib-js/stdlib/commit/b6cb1d392dab74242900a91b30c256d5b608dea6): resolve negative indices relative to last index
 
     -   In order to preserve prior behavior, users should insert a manual
-    check before calling this API.
+        check before calling this API.
 
--   [`29d7b0d`](https://github.com/stdlib-js/stdlib/commit/29d7b0dc141e1112af120eab76fa6731b8fdbe78): add support for `fromIndex`
--   [`29d7b0d`](https://github.com/stdlib-js/stdlib/commit/29d7b0dc141e1112af120eab76fa6731b8fdbe78): require `fromIndex` argument 
+-   [`29d7b0d`](https://github.com/stdlib-js/stdlib/commit/29d7b0dc141e1112af120eab76fa6731b8fdbe78): require `fromIndex` argument
 
     -   To migrate, users should provide an explicit `fromIndex` of `0` in
-    order to retain previous behavior.
+        order to retain previous behavior.
 
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): update namespace TypeScript declarations
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases 
+-   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases
 
     -   To migrate, users should consult the relevant namespace documentation and associated commits in order to determine which aliases have been renamed.
 
 -   [`4c552c8`](https://github.com/stdlib-js/stdlib/commit/4c552c83b9ca9036f88e3470bba404b1ad06fee6): rename exported alias from `reverseString` to `reverse`
--   [`4c552c8`](https://github.com/stdlib-js/stdlib/commit/4c552c83b9ca9036f88e3470bba404b1ad06fee6): rename exported alias from `reverseString` to `reverse` 
 
     -   To migrate, users should drop the `String` suffix.
 
@@ -862,9 +827,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 6 issues were closed in this release:
+A total of 5 issues were closed in this release:
 
-[#812](https://github.com/stdlib-js/stdlib/issues/812), [#813](https://github.com/stdlib-js/stdlib/issues/813), [#814](https://github.com/stdlib-js/stdlib/issues/814), [#856 ](https://github.com/stdlib-js/stdlib/issues/856 ), [#1729](https://github.com/stdlib-js/stdlib/issues/1729), [#2630](https://github.com/stdlib-js/stdlib/issues/2630)
+[#812](https://github.com/stdlib-js/stdlib/issues/812), [#813](https://github.com/stdlib-js/stdlib/issues/813), [#814](https://github.com/stdlib-js/stdlib/issues/814), [#1729](https://github.com/stdlib-js/stdlib/issues/1729), [#2630](https://github.com/stdlib-js/stdlib/issues/2630)
 
 </section>
 
@@ -874,7 +839,7 @@ A total of 6 issues were closed in this release:
 
 ### Contributors
 
-A total of 10 people contributed to this release. Thank you to the following contributors:
+A total of 9 people contributed to this release. Thank you to the following contributors:
 
 -   Aditya Sapra
 -   Anudeep Sanapala
@@ -885,7 +850,6 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   Pranav
 -   Pratik
 -   Snehil Shah
--   stdlib-bot
 
 </section>
 
@@ -897,6 +861,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`df3ed1e`](https://github.com/stdlib-js/stdlib/commit/df3ed1ee7fdc62c9f49bfa38eb1df240fb752a6e) - **docs:** update namespace ToCs _(by Athan Reines)_
 -   [`7785577`](https://github.com/stdlib-js/stdlib/commit/7785577b5ad6c1978644642ccd519548b43f78a9) - **docs:** fix incorrect package description in `string/left-trim-n` _(by Snehil Shah)_
 -   [`4345839`](https://github.com/stdlib-js/stdlib/commit/43458394fe65479fe3ae8edd7fe062e59c37ca27) - **fix:** resolve bug in `string/truncate` [(#2635)](https://github.com/stdlib-js/stdlib/pull/2635) _(by Snehil Shah)_
 -   [`67858b3`](https://github.com/stdlib-js/stdlib/commit/67858b341e920fed871e34ba0d6b6809804916f7) - **feat:** improve type safety _(by Philipp Burckhardt)_
@@ -970,27 +935,17 @@ A total of 10 people contributed to this release. Thank you to the following con
 
 <!-- /.release -->
 
+<section class="release" id="v0.2.1">
+
 ## 0.2.1 (2024-02-05)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.2.0">
 
 ## 0.2.0 (2024-02-05)
 
@@ -1123,126 +1078,6 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="string-base-ends-with-v0.2.0">
-
-#### [@stdlib/string/base/ends-with](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/ends-with)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-base-first-v0.2.0">
-
-#### [@stdlib/string/base/first](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/first)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-base-first-grapheme-cluster-v0.2.0">
-
-#### [@stdlib/string/base/first-grapheme-cluster](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/first-grapheme-cluster)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-base-for-each-v0.2.0">
-
-#### [@stdlib/string/base/for-each](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/for-each)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-base-for-each-code-point-v0.2.0">
-
-#### [@stdlib/string/base/for-each-code-point](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/for-each-code-point)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-base-for-each-grapheme-cluster-v0.2.0">
-
-#### [@stdlib/string/base/for-each-grapheme-cluster](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/for-each-grapheme-cluster)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-base-format-tokenize-v0.2.0">
-
-#### [@stdlib/string/base/format-tokenize](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/format-tokenize)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-base-left-pad-v0.2.0">
-
-#### [@stdlib/string/base/left-pad](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/left-pad)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-base-replace-v0.2.0">
-
-#### [@stdlib/string/base/replace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/replace)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-base-starts-with-v0.2.0">
-
-#### [@stdlib/string/base/starts-with](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/starts-with)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
 <section class="package" id="string-base-truncate-middle-v0.2.0">
 
 #### [@stdlib/string/base/truncate-middle](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/truncate-middle)
@@ -1265,102 +1100,6 @@ No changes reported for this release.</details>
 
 <!-- /.package -->
 
-<section class="package" id="string-camelcase-v0.2.0">
-
-#### [@stdlib/string/camelcase](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/camelcase)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-dotcase-v0.2.0">
-
-#### [@stdlib/string/dotcase](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/dotcase)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-ends-with-v0.2.0">
-
-#### [@stdlib/string/ends-with](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/ends-with)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-first-v0.2.0">
-
-#### [@stdlib/string/first](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/first)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-for-each-v0.2.0">
-
-#### [@stdlib/string/for-each](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/for-each)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-headercase-v0.2.0">
-
-#### [@stdlib/string/headercase](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/headercase)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-left-pad-v0.2.0">
-
-#### [@stdlib/string/left-pad](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/left-pad)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-left-trim-n-v0.2.0">
-
-#### [@stdlib/string/left-trim-n](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/left-trim-n)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
 <section class="package" id="string-next-code-point-index-v0.2.0">
 
 #### [@stdlib/string/next-code-point-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/next-code-point-index)
@@ -1378,174 +1117,6 @@ No changes reported for this release.</details>
 <!-- /.features -->
 
 </details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-next-grapheme-cluster-break-v0.2.0">
-
-#### [@stdlib/string/next-grapheme-cluster-break](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/next-grapheme-cluster-break)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-pascalcase-v0.2.0">
-
-#### [@stdlib/string/pascalcase](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/pascalcase)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-prev-grapheme-cluster-break-v0.2.0">
-
-#### [@stdlib/string/prev-grapheme-cluster-break](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/prev-grapheme-cluster-break)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-remove-first-v0.2.0">
-
-#### [@stdlib/string/remove-first](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/remove-first)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-remove-last-v0.2.0">
-
-#### [@stdlib/string/remove-last](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/remove-last)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-replace-v0.2.0">
-
-#### [@stdlib/string/replace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/replace)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-right-trim-n-v0.2.0">
-
-#### [@stdlib/string/right-trim-n](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/right-trim-n)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-snakecase-v0.2.0">
-
-#### [@stdlib/string/snakecase](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/snakecase)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-starts-with-v0.2.0">
-
-#### [@stdlib/string/starts-with](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/starts-with)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-substring-after-last-v0.2.0">
-
-#### [@stdlib/string/substring-after-last](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/substring-after-last)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-to-grapheme-cluster-iterator-v0.2.0">
-
-#### [@stdlib/string/to-grapheme-cluster-iterator](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/to-grapheme-cluster-iterator)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-to-grapheme-cluster-iterator-right-v0.2.0">
-
-#### [@stdlib/string/to-grapheme-cluster-iterator-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/to-grapheme-cluster-iterator-right)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-tools-v0.2.0">
-
-#### [@stdlib/string/tools](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/tools)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="string-tools-grapheme-cluster-break-v0.2.0">
-
-#### [@stdlib/string/tools/grapheme-cluster-break](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/tools/grapheme-cluster-break)
-
-<details>
-
-No changes reported for this release.</details>
 
 </section>
 
@@ -1628,27 +1199,21 @@ A total of 5 people contributed to this release. Thank you to the following cont
 
 <!-- /.commits -->
 
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.1.1">
+
 ## 0.1.1 (2023-11-08)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.1.0">
 
 ## 0.1.0 (2023-11-08)
 
@@ -1974,18 +1539,6 @@ This release closes the following issue:
 
 <!-- /.breaking-changes -->
 
-<section class="issues">
-
-##### Closed Issues
-
-This release closes the following issue:
-
-[#835 ](https://github.com/stdlib-js/stdlib/issues/835 )
-
-</section>
-
-<!-- /.issues -->
-
 </details>
 
 </section>
@@ -2018,18 +1571,6 @@ This release closes the following issue:
 </section>
 
 <!-- /.breaking-changes -->
-
-<section class="issues">
-
-##### Closed Issues
-
-This release closes the following issue:
-
-[#835 ](https://github.com/stdlib-js/stdlib/issues/835 )
-
-</section>
-
-<!-- /.issues -->
 
 </details>
 
@@ -2901,11 +2442,10 @@ This release closes the following issue:
 
 -   [`3573d92`](https://github.com/stdlib-js/stdlib/commit/3573d92955f1150eae58fb534808b7a30532a1c1): update minimum TypeScript version
 -   [`a7e60d8`](https://github.com/stdlib-js/stdlib/commit/a7e60d8aae80fa67f961db4221263782edc89f99): remove CLI
--   [`a7e60d8`](https://github.com/stdlib-js/stdlib/commit/a7e60d8aae80fa67f961db4221263782edc89f99): remove CLI 
 
     -   This is a \"base\" package, and thus should not normally have a CLI.
-    The CLI has moved to `@stdlib/string/replace-before`. Users relying
-    on the CLI should migrate to using that package.
+        The CLI has moved to `@stdlib/string/replace-before`. Users relying
+        on the CLI should migrate to using that package.
 
 </section>
 
@@ -5304,11 +4844,10 @@ This release closes the following issue:
 
 -   [`3573d92`](https://github.com/stdlib-js/stdlib/commit/3573d92955f1150eae58fb534808b7a30532a1c1): update minimum TypeScript version
 -   [`a7e60d8`](https://github.com/stdlib-js/stdlib/commit/a7e60d8aae80fa67f961db4221263782edc89f99): remove CLI
--   [`a7e60d8`](https://github.com/stdlib-js/stdlib/commit/a7e60d8aae80fa67f961db4221263782edc89f99): remove CLI 
 
     -   This is a \"base\" package, and thus should not normally have a CLI.
-    The CLI has moved to `@stdlib/string/replace-before`. Users relying
-    on the CLI should migrate to using that package.
+        The CLI has moved to `@stdlib/string/replace-before`. Users relying
+        on the CLI should migrate to using that package.
 
 </section>
 
@@ -5318,9 +4857,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 7 issues were closed in this release:
+A total of 6 issues were closed in this release:
 
-[#811](https://github.com/stdlib-js/stdlib/issues/811), [#835 ](https://github.com/stdlib-js/stdlib/issues/835 ), [#849](https://github.com/stdlib-js/stdlib/issues/849), [#851](https://github.com/stdlib-js/stdlib/issues/851), [#853](https://github.com/stdlib-js/stdlib/issues/853), [#855](https://github.com/stdlib-js/stdlib/issues/855), [#1017](https://github.com/stdlib-js/stdlib/issues/1017)
+[#811](https://github.com/stdlib-js/stdlib/issues/811), [#849](https://github.com/stdlib-js/stdlib/issues/849), [#851](https://github.com/stdlib-js/stdlib/issues/851), [#853](https://github.com/stdlib-js/stdlib/issues/853), [#855](https://github.com/stdlib-js/stdlib/issues/855), [#1017](https://github.com/stdlib-js/stdlib/issues/1017)
 
 </section>
 
@@ -5330,9 +4869,8 @@ A total of 7 issues were closed in this release:
 
 ### Contributors
 
-A total of 10 people contributed to this release. Thank you to the following contributors:
+A total of 9 people contributed to this release. Thank you to the following contributors:
 
--   Athan Reines
 -   Athan Reines
 -   Harshita Kalani
 -   Naresh Jagadeesan
@@ -5491,311 +5029,147 @@ A total of 10 people contributed to this release. Thank you to the following con
 
 <!-- /.commits -->
 
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.14">
+
 ## 0.0.14 (2022-07-12)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.13">
 
 ## 0.0.13 (2021-08-22)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.12">
 
 ## 0.0.12 (2021-07-09)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.11">
 
 ## 0.0.11 (2021-07-07)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.10">
 
 ## 0.0.10 (2021-06-27)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.9">
 
 ## 0.0.9 (2021-06-16)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.8">
 
 ## 0.0.8 (2021-06-16)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.7">
 
 ## 0.0.7 (2021-06-15)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.6">
 
 ## 0.0.6 (2021-06-14)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.5">
 
 ## 0.0.5 (2021-06-13)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.4">
 
 ## 0.0.4 (2021-06-12)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.3">
 
 ## 0.0.3 (2021-06-12)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.2">
 
 ## 0.0.2 (2021-06-10)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.1">
 
 ## 0.0.1 (2021-06-10)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
-
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<!-- /.release -->
 
