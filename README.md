@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@deno/mod.js';
+import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@v0.3.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { acronym, base, camelcase, capitalize, codePointAt, constantcase, dotcase, endsWith, first, forEach, format, fromCodePoint, graphemeClusters2iterator, graphemeClusters2iteratorRight, headercase, kebabcase, last, lowercase, lpad, ltrim, ltrimN, nextCodePointIndex, nextGraphemeClusterBreak, num2words, numGraphemeClusters, pad, pascalcase, percentEncode, prevGraphemeClusterBreak, removeFirst, removeLast, removePunctuation, removeUTF8BOM, removeWords, repeat, replace, replaceBefore, reverse, rpad, rtrim, rtrimN, snakecase, splitGraphemeClusters, startcase, startsWith, substringAfter, substringAfterLast, substringBefore, substringBeforeLast, toWellFormed, trim, truncate, truncateMiddle, uncapitalize, uppercase, utf16ToUTF8Array } from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@deno/mod.js';
+import { acronym, base, camelcase, capitalize, codePointAt, constantcase, dotcase, endsWith, first, forEach, format, fromCodePoint, graphemeClusters2iterator, graphemeClusters2iteratorRight, headercase, kebabcase, last, lowercase, lpad, ltrim, ltrimN, nextCodePointIndex, nextGraphemeClusterBreak, num2words, numGraphemeClusters, pad, pascalcase, percentEncode, prevGraphemeClusterBreak, removeFirst, removeLast, removePunctuation, removeUTF8BOM, removeWords, repeat, replace, replaceBefore, reverse, rpad, rtrim, rtrimN, snakecase, splitGraphemeClusters, startcase, startsWith, substringAfter, substringAfterLast, substringBefore, substringBeforeLast, toWellFormed, trim, truncate, truncateMiddle, uncapitalize, uppercase, utf16ToUTF8Array } from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@v0.3.1-deno/mod.js';
 ```
 
 #### string
@@ -141,7 +141,7 @@ The namespace exposes the following string manipulation functions:
 
 ```javascript
 import getKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@deno/mod.js';
+import string from 'https://cdn.jsdelivr.net/gh/stdlib-js/string@v0.3.1-deno/mod.js';
 
 console.log( getKeys( string ) );
 ```
