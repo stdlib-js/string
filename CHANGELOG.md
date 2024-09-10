@@ -76,6 +76,7 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 
 <details>
 
+-   [`1c44dbd`](https://github.com/stdlib-js/stdlib/commit/1c44dbd95fa65436eb96e8dfc312d4d08df6c018) - **chore:** add browser entry point _(by Athan Reines)_
 -   [`095449b`](https://github.com/stdlib-js/stdlib/commit/095449bc5f6084b363a5b1dc1deb040fd029b76b) - **feat:** add `atob` to namespace _(by Athan Reines)_
 -   [`37e0d70`](https://github.com/stdlib-js/stdlib/commit/37e0d70a86a621a109f74c68adbc6aa4a4177f0f) - **feat:** add `string/base/atob` _(by Athan Reines)_
 
