@@ -2,6 +2,93 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2024-09-10)
+
+<section class="packages">
+
+### Packages
+
+<section class="package" id="string-base-unreleased">
+
+#### [@stdlib/string/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`095449b`](https://github.com/stdlib-js/stdlib/commit/095449bc5f6084b363a5b1dc1deb040fd029b76b) - add `atob` to namespace
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="string-base-atob-unreleased">
+
+#### [@stdlib/string/base/atob](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/atob)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`37e0d70`](https://github.com/stdlib-js/stdlib/commit/37e0d70a86a621a109f74c68adbc6aa4a4177f0f) - add `string/base/atob`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`095449b`](https://github.com/stdlib-js/stdlib/commit/095449bc5f6084b363a5b1dc1deb040fd029b76b) - **feat:** add `atob` to namespace _(by Athan Reines)_
+-   [`37e0d70`](https://github.com/stdlib-js/stdlib/commit/37e0d70a86a621a109f74c68adbc6aa4a4177f0f) - **feat:** add `string/base/atob` _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.1">
 
 ## 0.3.1 (2024-08-18)

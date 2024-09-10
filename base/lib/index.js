@@ -46,6 +46,15 @@ var ns = {};
 setReadOnly( ns, 'altcase', require( './../../base/altcase' ) );
 
 /**
+* @name atob
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/atob}
+*/
+setReadOnly( ns, 'atob', require( './../../base/atob' ) );
+
+/**
 * @name camelcase
 * @memberof ns
 * @readonly
