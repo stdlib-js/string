@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-14)
+## Unreleased (2024-09-19)
 
 <section class="packages">
 
@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`2eded73`](https://github.com/stdlib-js/stdlib/commit/2eded73655c7d803cdbdce88d38af9bc5aab42b0) - add `base64ToUint8Array` to namespace
 -   [`095449b`](https://github.com/stdlib-js/stdlib/commit/095449bc5f6084b363a5b1dc1deb040fd029b76b) - add `atob` to namespace
 
 </section>
@@ -54,6 +55,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="string-base-base64-to-uint8array-unreleased">
+
+#### [@stdlib/string/base/base64-to-uint8array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/base64-to-uint8array)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`09e7120`](https://github.com/stdlib-js/stdlib/commit/09e71201868eaa8fb1c003c4de270b4002fa900c) - add `string/base/base64-to-uint8array`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
@@ -76,6 +99,8 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 
 <details>
 
+-   [`2eded73`](https://github.com/stdlib-js/stdlib/commit/2eded73655c7d803cdbdce88d38af9bc5aab42b0) - **feat:** add `base64ToUint8Array` to namespace _(by Athan Reines)_
+-   [`09e7120`](https://github.com/stdlib-js/stdlib/commit/09e71201868eaa8fb1c003c4de270b4002fa900c) - **feat:** add `string/base/base64-to-uint8array` _(by Athan Reines)_
 -   [`f200857`](https://github.com/stdlib-js/stdlib/commit/f2008570f57d9bdaec78ec212fe91858f68cf3ac) - **chore:** fix copyright year _(by Athan Reines)_
 -   [`1c44dbd`](https://github.com/stdlib-js/stdlib/commit/1c44dbd95fa65436eb96e8dfc312d4d08df6c018) - **chore:** add browser entry point _(by Athan Reines)_
 -   [`095449b`](https://github.com/stdlib-js/stdlib/commit/095449bc5f6084b363a5b1dc1deb040fd029b76b) - **feat:** add `atob` to namespace _(by Athan Reines)_
