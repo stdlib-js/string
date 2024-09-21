@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-19)
+## Unreleased (2024-09-21)
 
 <section class="packages">
 
@@ -85,9 +85,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Philipp Burckhardt
 
 </section>
 
@@ -99,6 +100,7 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 
 <details>
 
+-   [`6e9f42e`](https://github.com/stdlib-js/stdlib/commit/6e9f42e4c912485d9896eaa16c88b70fd3688e97) - **docs:** harmonize list formatting in repl.txt and ensure starting newline _(by Philipp Burckhardt)_
 -   [`2eded73`](https://github.com/stdlib-js/stdlib/commit/2eded73655c7d803cdbdce88d38af9bc5aab42b0) - **feat:** add `base64ToUint8Array` to namespace _(by Athan Reines)_
 -   [`09e7120`](https://github.com/stdlib-js/stdlib/commit/09e71201868eaa8fb1c003c4de270b4002fa900c) - **feat:** add `string/base/base64-to-uint8array` _(by Athan Reines)_
 -   [`f200857`](https://github.com/stdlib-js/stdlib/commit/f2008570f57d9bdaec78ec212fe91858f68cf3ac) - **chore:** fix copyright year _(by Athan Reines)_
