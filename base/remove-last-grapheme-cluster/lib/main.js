@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var nextGraphemeClusterBreak = require('./../../../next-grapheme-cluster-break');
+var nextGraphemeClusterBreak = require( './../../../next-grapheme-cluster-break' );
 var numGraphemeClusters = require( './../../../num-grapheme-clusters' );
 
 
