@@ -2,6 +2,16 @@
 
 > Package changelog.
 
+<section class="release" id="v0.3.3">
+
+## 0.3.3 (2024-11-05)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.2">
 
 ## 0.3.2 (2024-11-05)
@@ -10,7 +20,7 @@
 
 ### Packages
 
-<section class="package" id="string-base-unreleased">
+<section class="package" id="string-base-v0.3.2">
 
 #### [@stdlib/string/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base)
 
@@ -33,7 +43,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="string-base-atob-unreleased">
+<section class="package" id="string-base-atob-v0.3.2">
 
 #### [@stdlib/string/base/atob](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/atob)
 
@@ -55,7 +65,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="string-base-base64-to-uint8array-unreleased">
+<section class="package" id="string-base-base64-to-uint8array-v0.3.2">
 
 #### [@stdlib/string/base/base64-to-uint8array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/base64-to-uint8array)
 
