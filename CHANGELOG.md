@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-15)
+## Unreleased (2024-12-17)
 
 <section class="packages">
 
@@ -112,6 +112,7 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 
 <details>
 
+-   [`32deb11`](https://github.com/stdlib-js/stdlib/commit/32deb11c6a2453748d8db9554b6bb3fdb73a077f) - **docs:** update related packages sections [(#3976)](https://github.com/stdlib-js/stdlib/pull/3976) _(by stdlib-bot)_
 -   [`b8c41df`](https://github.com/stdlib-js/stdlib/commit/b8c41df78cd2cdc9cd3c3c6b223759d32f4f6e14) - **docs:** update related packages sections [(#3915)](https://github.com/stdlib-js/stdlib/pull/3915) _(by stdlib-bot)_
 -   [`2825b42`](https://github.com/stdlib-js/stdlib/commit/2825b42e8cd7483d15dfed1c6b389bfcb86d7ca0) - **docs:** update related packages sections [(#3898)](https://github.com/stdlib-js/stdlib/pull/3898) _(by stdlib-bot)_
 -   [`bf5643f`](https://github.com/stdlib-js/stdlib/commit/bf5643fb1a3f32a60903d8e210f71571e609119f) - **docs:** update related packages sections [(#3404)](https://github.com/stdlib-js/stdlib/pull/3404) _(by stdlib-bot)_
@@ -1112,13 +1113,13 @@ A total of 5 issues were closed in this release:
 A total of 9 people contributed to this release. Thank you to the following contributors:
 
 -   Aditya Sapra
+-   Ahmed Khaled
 -   Anudeep Sanapala
 -   Athan Reines
 -   Golden Kumar
--   Khaldon
 -   Philipp Burckhardt
 -   Pranav Goswami
--   Pratik
+-   Pratik Singh
 -   Snehil Shah
 
 </section>
@@ -1150,7 +1151,7 @@ A total of 9 people contributed to this release. Thank you to the following cont
 -   [`aaa391a`](https://github.com/stdlib-js/stdlib/commit/aaa391a46214c21dca294506d06ac0b3d59512ce) - **chore:** fix typos _(by Philipp Burckhardt)_
 -   [`113ec19`](https://github.com/stdlib-js/stdlib/commit/113ec1946e4f10fbcce6cc59a57022afcdb582f5) - **docs:** update related packages sections [(#2207)](https://github.com/stdlib-js/stdlib/pull/2207 ) _(by stdlib-bot)_
 -   [`189c569`](https://github.com/stdlib-js/stdlib/commit/189c5691b88b36a2fd1ff53368e6d44b90e40535) - **docs:** update related packages sections [(#2194)](https://github.com/stdlib-js/stdlib/pull/2194) _(by stdlib-bot)_
--   [`91f84da`](https://github.com/stdlib-js/stdlib/commit/91f84dabd8218e66dde7e25c570904e790d5e8a3) - **feat:** add `string/base/for-each-code-point-right` [(#2163)](https://github.com/stdlib-js/stdlib/pull/2163) _(by Khaldon, Athan Reines)_
+-   [`91f84da`](https://github.com/stdlib-js/stdlib/commit/91f84dabd8218e66dde7e25c570904e790d5e8a3) - **feat:** add `string/base/for-each-code-point-right` [(#2163)](https://github.com/stdlib-js/stdlib/pull/2163) _(by Ahmed Khaled, Athan Reines)_
 -   [`57e8762`](https://github.com/stdlib-js/stdlib/commit/57e87620ec449ad73b884e3b4850537df0c494fe) - **chore:** change to relative require paths and fix code style _(by Philipp Burckhardt)_
 -   [`a9bf096`](https://github.com/stdlib-js/stdlib/commit/a9bf0960cff2227ff551671eb2de9e00e7c9851c) - **chore:** use relative paths for internal requires _(by Philipp Burckhardt)_
 -   [`22aaef5`](https://github.com/stdlib-js/stdlib/commit/22aaef5de7af0f8a54f4a7d39405cc4da9dc3cfd) - **feat:** add `string/base/last` [(#2145)](https://github.com/stdlib-js/stdlib/pull/2145) _(by Aditya Sapra)_
@@ -1181,12 +1182,12 @@ A total of 9 people contributed to this release. Thank you to the following cont
 -   [`7bce237`](https://github.com/stdlib-js/stdlib/commit/7bce23772744ae439e8fc4d86f1abf92ea8a8b05) - **feat:** add `string/base/last-code-point` _(by Aditya Sapra, Pranav, Philipp Burckhardt)_
 -   [`dc20da0`](https://github.com/stdlib-js/stdlib/commit/dc20da0604fe2798e20e757277072fefc876da3c) - **chore:** update package meta data [(#1856)](https://github.com/stdlib-js/stdlib/pull/1856) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`d40dbaf`](https://github.com/stdlib-js/stdlib/commit/d40dbafc25e3e10c8fa83f5b4203db97c289823c) - **chore:** update package meta data [(#1812)](https://github.com/stdlib-js/stdlib/pull/1812) _(by stdlib-bot)_
--   [`31405e7`](https://github.com/stdlib-js/stdlib/commit/31405e7d8346beb089c0d53e113c5c8927bcb12a) - **feat:** add `string/to-well-formed` _(by Pratik, Pranav, Philipp Burckhardt)_
+-   [`31405e7`](https://github.com/stdlib-js/stdlib/commit/31405e7d8346beb089c0d53e113c5c8927bcb12a) - **feat:** add `string/to-well-formed` _(by Pratik Singh, Pranav, Philipp Burckhardt)_
 -   [`3b6b680`](https://github.com/stdlib-js/stdlib/commit/3b6b680826a663ca6d22b4d5666ef84389143330) - **feat:** add `string/base/last` _(by Aditya Sapra, Philipp Burckhardt)_
 -   [`84a6f4b`](https://github.com/stdlib-js/stdlib/commit/84a6f4be753da2f694affc99d649b49f5e41e231) - **feat:** add  `string/base/stickycase` _(by Anudeep Sanapala, stdlib-bot, Philipp Burckhardt)_
 -   [`272f91b`](https://github.com/stdlib-js/stdlib/commit/272f91b30128d4536470605d01aeeb73d2684376) - **feat:** add `string/base/replace-before-last` [(#1364)](https://github.com/stdlib-js/stdlib/pull/1364) _(by Golden Kumar, stdlib-bot, Athan Reines, Philipp Burckhardt)_
 -   [`58bdac8`](https://github.com/stdlib-js/stdlib/commit/58bdac8a8a5914b7b2598f873418f9edae4c8843) - **feat:** add `string/base/replace-after-last` [(#1365)](https://github.com/stdlib-js/stdlib/pull/1365) _(by Golden Kumar, Athan Reines, Philipp Burckhardt)_
--   [`0aa7b4a`](https://github.com/stdlib-js/stdlib/commit/0aa7b4ad8adfde545ba39a7a4d5ebf1afc502342) - **feat:** add `string/base/for-each-right` [(#1369)](https://github.com/stdlib-js/stdlib/pull/1369) _(by Khaldon, Philipp Burckhardt)_
+-   [`0aa7b4a`](https://github.com/stdlib-js/stdlib/commit/0aa7b4ad8adfde545ba39a7a4d5ebf1afc502342) - **feat:** add `string/base/for-each-right` [(#1369)](https://github.com/stdlib-js/stdlib/pull/1369) _(by Ahmed Khaled, Philipp Burckhardt)_
 -   [`04ee89f`](https://github.com/stdlib-js/stdlib/commit/04ee89f626756ab9da99b864ccbb9897964a568d) - **feat:** add `string/base/replace-after` [(#1363)](https://github.com/stdlib-js/stdlib/pull/1363) _(by Golden Kumar, Athan Reines)_
 -   [`c85743c`](https://github.com/stdlib-js/stdlib/commit/c85743c72136bd824a495d1717cc32f60c91d0d6) - **style:** add missing space _(by Athan Reines)_
 -   [`6bff34f`](https://github.com/stdlib-js/stdlib/commit/6bff34fcc4cbc7c17b7ff99beed20cdd0ea1b3c0) - **style:** add missing space _(by Athan Reines)_
