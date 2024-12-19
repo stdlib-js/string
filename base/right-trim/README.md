@@ -96,6 +96,12 @@ out = rtrim( '\n\n\nNew Lines\n\n\n' );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/string/base/left-trim`][@stdlib/string/base/left-trim]</span><span class="delimiter">: </span><span class="description">trim whitespace characters from the beginning of a string.</span>
+
 </section>
 
 <!-- /.related -->
@@ -105,6 +111,12 @@ out = rtrim( '\n\n\nNew Lines\n\n\n' );
 <section class="links">
 
 [unicode]: https://en.wikipedia.org/wiki/Unicode
+
+<!-- <related-links> -->
+
+[@stdlib/string/base/left-trim]: https://github.com/stdlib-js/string/tree/main/base/left-trim
+
+<!-- </related-links> -->
 
 </section>
 
