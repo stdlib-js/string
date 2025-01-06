@@ -109,6 +109,12 @@ logEach( '%s', out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/string/base/left-pad`][@stdlib/string/base/left-pad]</span><span class="delimiter">: </span><span class="description">left pad a string.</span>
+
 </section>
 
 <!-- /.related -->
@@ -116,6 +122,12 @@ logEach( '%s', out );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/string/base/left-pad]: https://github.com/stdlib-js/string/tree/main/base/left-pad
+
+<!-- </related-links> -->
 
 </section>
 
