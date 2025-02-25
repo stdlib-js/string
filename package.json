@@ -41,6 +41,7 @@
     "@stdlib/buffer": "github:stdlib-js/buffer#main",
     "@stdlib/cli": "github:stdlib-js/cli#main",
     "@stdlib/constants": "github:stdlib-js/constants#main",
+    "@stdlib/dstructs": "github:stdlib-js/dstructs#main",
     "@stdlib/fs": "github:stdlib-js/fs#main",
     "@stdlib/math": "github:stdlib-js/math#main",
     "@stdlib/nlp": "github:stdlib-js/nlp#main",
