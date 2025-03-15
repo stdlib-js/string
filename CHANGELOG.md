@@ -100,6 +100,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="string-num-code-points-unreleased">
+
+#### [@stdlib/string/num-code-points](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/num-code-points)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`955bcbe`](https://github.com/stdlib-js/stdlib/commit/955bcbe5afffaff26af44cdd176a41a638d81f1b) - add `string/num-code-points` [(#5456)](https://github.com/stdlib-js/stdlib/pull/5456)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
@@ -120,11 +142,12 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Muhammad Haris
 -   Philipp Burckhardt
+-   Stephannie Jiménez Gacha
 
 </section>
 
@@ -136,6 +159,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`955bcbe`](https://github.com/stdlib-js/stdlib/commit/955bcbe5afffaff26af44cdd176a41a638d81f1b) - **feat:** add `string/num-code-points` [(#5456)](https://github.com/stdlib-js/stdlib/pull/5456) _(by Muhammad Haris, Stephannie Jiménez Gacha)_
 -   [`38b39db`](https://github.com/stdlib-js/stdlib/commit/38b39dba03763c4847268176872dcdccecc34f16) - **feat:** add `string/base/slice` [(#5395)](https://github.com/stdlib-js/stdlib/pull/5395) _(by Muhammad Haris, Athan Reines)_
 -   [`7e8f02d`](https://github.com/stdlib-js/stdlib/commit/7e8f02ddf2771907ff71fc79b56e165c62c69bd6) - **docs:** update related packages sections [(#5434)](https://github.com/stdlib-js/stdlib/pull/5434) _(by stdlib-bot)_
 -   [`6bcbe1f`](https://github.com/stdlib-js/stdlib/commit/6bcbe1f4e084722e6c0bb1a6ee79d4e985f524bb) - **refactor:** update require path _(by Athan Reines)_
