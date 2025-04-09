@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-16)
+## Unreleased (2025-04-09)
 
 <section class="packages">
 
@@ -89,6 +89,28 @@
 ##### Features
 
 -   [`38b39db`](https://github.com/stdlib-js/stdlib/commit/38b39dba03763c4847268176872dcdccecc34f16) - add `string/base/slice` [(#5395)](https://github.com/stdlib-js/stdlib/pull/5395)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="string-base-slice-code-points-unreleased">
+
+#### [@stdlib/string/base/slice-code-points](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/slice-code-points)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`c30bb89`](https://github.com/stdlib-js/stdlib/commit/c30bb89ea18eec5fcff098f16a30cc19315150e4) - add `string/base/slice-code-points` [(#5414)](https://github.com/stdlib-js/stdlib/pull/5414)
 
 </section>
 
@@ -191,6 +213,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`c30bb89`](https://github.com/stdlib-js/stdlib/commit/c30bb89ea18eec5fcff098f16a30cc19315150e4) - **feat:** add `string/base/slice-code-points` [(#5414)](https://github.com/stdlib-js/stdlib/pull/5414) _(by Muhammad Haris)_
 -   [`4c404c7`](https://github.com/stdlib-js/stdlib/commit/4c404c78dcb1a575ddc8d4b770122affdec5751d) - **fix:** make CLI scripts executable [(#6085)](https://github.com/stdlib-js/stdlib/pull/6085) _(by stdlib-bot)_
 -   [`5fd8af8`](https://github.com/stdlib-js/stdlib/commit/5fd8af8015ce57db86127c6deec0561273eb6a39) - **feat:** add `string/base/slice-grapheme-clusters` [(#5457)](https://github.com/stdlib-js/stdlib/pull/5457) _(by Muhammad Haris, Athan Reines)_
 -   [`955bcbe`](https://github.com/stdlib-js/stdlib/commit/955bcbe5afffaff26af44cdd176a41a638d81f1b) - **feat:** add `string/num-code-points` [(#5456)](https://github.com/stdlib-js/stdlib/pull/5456) _(by Muhammad Haris, Stephannie Jiménez Gacha)_
