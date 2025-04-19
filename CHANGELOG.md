@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-09)
+## Unreleased (2025-04-19)
 
 <section class="packages">
 
@@ -71,6 +71,28 @@
 </section>
 
 <!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="string-base-format-tokenize-unreleased">
+
+#### [@stdlib/string/base/format-tokenize](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/format-tokenize)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`5d5742b`](https://github.com/stdlib-js/stdlib/commit/5d5742b1d6b22eb0e9d597242035be42833c004c) - update `format-tokenize` to correctly handle escaped percent signs [(#6695)](https://github.com/stdlib-js/stdlib/pull/6695)
+
+</section>
+
+<!-- /.bug-fixes -->
 
 </details>
 
@@ -196,9 +218,10 @@
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Karan Anand
 -   Muhammad Haris
 -   Philipp Burckhardt
 -   Stephannie Jiménez Gacha
@@ -213,6 +236,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`5d5742b`](https://github.com/stdlib-js/stdlib/commit/5d5742b1d6b22eb0e9d597242035be42833c004c) - **fix:** update `format-tokenize` to correctly handle escaped percent signs [(#6695)](https://github.com/stdlib-js/stdlib/pull/6695) _(by Karan Anand)_
 -   [`c30bb89`](https://github.com/stdlib-js/stdlib/commit/c30bb89ea18eec5fcff098f16a30cc19315150e4) - **feat:** add `string/base/slice-code-points` [(#5414)](https://github.com/stdlib-js/stdlib/pull/5414) _(by Muhammad Haris)_
 -   [`4c404c7`](https://github.com/stdlib-js/stdlib/commit/4c404c78dcb1a575ddc8d4b770122affdec5751d) - **fix:** make CLI scripts executable [(#6085)](https://github.com/stdlib-js/stdlib/pull/6085) _(by stdlib-bot)_
 -   [`5fd8af8`](https://github.com/stdlib-js/stdlib/commit/5fd8af8015ce57db86127c6deec0561273eb6a39) - **feat:** add `string/base/slice-grapheme-clusters` [(#5457)](https://github.com/stdlib-js/stdlib/pull/5457) _(by Muhammad Haris, Athan Reines)_
