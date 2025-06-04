@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-08)
+## Unreleased (2025-06-04)
 
 <section class="features">
 
@@ -50,6 +50,7 @@
 
 <details>
 
+-   [`dc3d5b1`](https://github.com/stdlib-js/stdlib/commit/dc3d5b1a544dc54e76b709b762b840aeabfe0692) - **chore:** fix typo in test description _(by Philipp Burckhardt)_
 -   [`b3c2d12`](https://github.com/stdlib-js/stdlib/commit/b3c2d120d3da72729235e034c7db01644ff70fa3) - **fix:** disable zero-padding for special values in `string/base/format-interpolate` [(#6957)](https://github.com/stdlib-js/stdlib/pull/6957) _(by Karan Anand)_
 -   [`5d5742b`](https://github.com/stdlib-js/stdlib/commit/5d5742b1d6b22eb0e9d597242035be42833c004c) - **fix:** update `format-tokenize` to correctly handle escaped percent signs [(#6695)](https://github.com/stdlib-js/stdlib/pull/6695) _(by Karan Anand)_
 -   [`c30bb89`](https://github.com/stdlib-js/stdlib/commit/c30bb89ea18eec5fcff098f16a30cc19315150e4) - **feat:** add `string/base/slice-code-points` [(#5414)](https://github.com/stdlib-js/stdlib/pull/5414) _(by Muhammad Haris)_
