@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-01)
+## Unreleased (2025-08-12)
 
 <section class="features">
 
@@ -50,6 +50,9 @@
 
 <details>
 
+-   [`77867ac`](https://github.com/stdlib-js/stdlib/commit/77867ac1767a186023f633dea30ddf860962aaed) - **docs:** remove trailing whitespace _(by Philipp Burckhardt)_
+-   [`153c9c1`](https://github.com/stdlib-js/stdlib/commit/153c9c19e7e5bc138e18500cea598365d6df55d8) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
+-   [`09ffc3c`](https://github.com/stdlib-js/stdlib/commit/09ffc3c9d3609ca545f2e4509eb81151a10c45b1) - **docs:** fix example code in TS declaration files _(by Philipp Burckhardt)_
 -   [`1d9e0f7`](https://github.com/stdlib-js/stdlib/commit/1d9e0f723c6962a3401a73d0a1955e5fd26cddc7) - **test:** fix comma position in expected value _(by Philipp Burckhardt)_
 -   [`dc3d5b1`](https://github.com/stdlib-js/stdlib/commit/dc3d5b1a544dc54e76b709b762b840aeabfe0692) - **chore:** fix typo in test description _(by Philipp Burckhardt)_
 -   [`b3c2d12`](https://github.com/stdlib-js/stdlib/commit/b3c2d120d3da72729235e034c7db01644ff70fa3) - **fix:** disable zero-padding for special values in `string/base/format-interpolate` [(#6957)](https://github.com/stdlib-js/stdlib/pull/6957) _(by Karan Anand)_
