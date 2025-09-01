@@ -469,6 +469,33 @@ setReadOnly( ns, 'rpad', require( './../../base/right-pad' ) );
 setReadOnly( ns, 'rtrim', require( './../../base/right-trim' ) );
 
 /**
+* @name slice
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/slice}
+*/
+setReadOnly( ns, 'slice', require( './../../base/slice' ) );
+
+/**
+* @name sliceCodePoints
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/slice-code-points}
+*/
+setReadOnly( ns, 'sliceCodePoints', require( './../../base/slice-code-points' ) );
+
+/**
+* @name sliceGraphemeClusters
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/string/base/slice-grapheme-clusters}
+*/
+setReadOnly( ns, 'sliceGraphemeClusters', require( './../../base/slice-grapheme-clusters' ) );
+
+/**
 * @name snakecase
 * @memberof ns
 * @readonly
