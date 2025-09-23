@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-06)
+## Unreleased (2025-09-23)
 
 <section class="features">
 
 ### Features
 
+-   [`7a9fb2e`](https://github.com/stdlib-js/stdlib/commit/7a9fb2e2b14b1fa32c1c2578c29e80e8edca8bf7) - update `string` TypeScript declarations
 -   [`774b270`](https://github.com/stdlib-js/stdlib/commit/774b270d053d49740326553d549f698c7a5e94c8) - add missing exports to namespaces
 -   [`ccb87b6`](https://github.com/stdlib-js/stdlib/commit/ccb87b67fc9b58a37d5603ee1b86658bc70f0ef3) - add missing exports to namespaces
 -   [`c30bb89`](https://github.com/stdlib-js/stdlib/commit/c30bb89ea18eec5fcff098f16a30cc19315150e4) - add `string/base/slice-code-points` [(#5414)](https://github.com/stdlib-js/stdlib/pull/5414)
@@ -52,6 +53,8 @@
 
 <details>
 
+-   [`b2dd31c`](https://github.com/stdlib-js/stdlib/commit/b2dd31c868ab2cc9d77f035b29de48e741fcc52b) - **chore:** fix main entry field in `package.json` _(by Philipp Burckhardt)_
+-   [`7a9fb2e`](https://github.com/stdlib-js/stdlib/commit/7a9fb2e2b14b1fa32c1c2578c29e80e8edca8bf7) - **feat:** update `string` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`380f888`](https://github.com/stdlib-js/stdlib/commit/380f888de613b7b07e909ce7a1bc53f5a9801717) - **docs:** fix TypeScript declaration examples in string packages _(by Philipp Burckhardt)_
 -   [`774b270`](https://github.com/stdlib-js/stdlib/commit/774b270d053d49740326553d549f698c7a5e94c8) - **feat:** add missing exports to namespaces _(by Philipp Burckhardt)_
 -   [`ccb87b6`](https://github.com/stdlib-js/stdlib/commit/ccb87b67fc9b58a37d5603ee1b86658bc70f0ef3) - **feat:** add missing exports to namespaces _(by Philipp Burckhardt)_
