@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`930998f`](https://github.com/stdlib-js/stdlib/commit/930998fbd7e86475339b52d84e41b9d86b97f45f) - update `string/base` TypeScript declarations [(#8132)](https://github.com/stdlib-js/stdlib/pull/8132)
 -   [`7a9fb2e`](https://github.com/stdlib-js/stdlib/commit/7a9fb2e2b14b1fa32c1c2578c29e80e8edca8bf7) - update `string` TypeScript declarations
 -   [`774b270`](https://github.com/stdlib-js/stdlib/commit/774b270d053d49740326553d549f698c7a5e94c8) - add missing exports to namespaces
 -   [`ccb87b6`](https://github.com/stdlib-js/stdlib/commit/ccb87b67fc9b58a37d5603ee1b86658bc70f0ef3) - add missing exports to namespaces
@@ -53,6 +54,7 @@
 
 <details>
 
+-   [`930998f`](https://github.com/stdlib-js/stdlib/commit/930998fbd7e86475339b52d84e41b9d86b97f45f) - **feat:** update `string/base` TypeScript declarations [(#8132)](https://github.com/stdlib-js/stdlib/pull/8132) _(by stdlib-bot)_
 -   [`b2dd31c`](https://github.com/stdlib-js/stdlib/commit/b2dd31c868ab2cc9d77f035b29de48e741fcc52b) - **chore:** fix main entry field in `package.json` _(by Philipp Burckhardt)_
 -   [`7a9fb2e`](https://github.com/stdlib-js/stdlib/commit/7a9fb2e2b14b1fa32c1c2578c29e80e8edca8bf7) - **feat:** update `string` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`380f888`](https://github.com/stdlib-js/stdlib/commit/380f888de613b7b07e909ce7a1bc53f5a9801717) - **docs:** fix TypeScript declaration examples in string packages _(by Philipp Burckhardt)_
