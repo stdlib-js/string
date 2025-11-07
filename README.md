@@ -99,6 +99,7 @@ The namespace exposes the following string manipulation functions:
 -   <span class="signature">[`lowercase( str )`][@stdlib/string/lowercase]</span><span class="delimiter">: </span><span class="description">convert a string to lowercase.</span>
 -   <span class="signature">[`nextCodePointIndex( string[, fromIndex] )`][@stdlib/string/next-code-point-index]</span><span class="delimiter">: </span><span class="description">return the position of the next Unicode code point in a string after a specified position.</span>
 -   <span class="signature">[`nextGraphemeClusterBreak( string[, fromIndex] )`][@stdlib/string/next-grapheme-cluster-break]</span><span class="delimiter">: </span><span class="description">return the next extended grapheme cluster break in a string after a specified position.</span>
+-   <span class="signature">[`numCodePoints( str )`][@stdlib/string/num-code-points]</span><span class="delimiter">: </span><span class="description">return the number of Unicode code points in a string.</span>
 -   <span class="signature">[`numGraphemeClusters( str )`][@stdlib/string/num-grapheme-clusters]</span><span class="delimiter">: </span><span class="description">return the number of grapheme clusters in a string.</span>
 -   <span class="signature">[`num2words( value[, options] )`][@stdlib/string/num2words]</span><span class="delimiter">: </span><span class="description">convert a number to a word representation.</span>
 -   <span class="signature">[`pad( str, len[, options] )`][@stdlib/string/pad]</span><span class="delimiter">: </span><span class="description">pad a string.</span>
@@ -285,6 +286,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [@stdlib/string/next-code-point-index]: https://github.com/stdlib-js/string/tree/main/next-code-point-index
 
 [@stdlib/string/next-grapheme-cluster-break]: https://github.com/stdlib-js/string/tree/main/next-grapheme-cluster-break
+
+[@stdlib/string/num-code-points]: https://github.com/stdlib-js/string/tree/main/num-code-points
 
 [@stdlib/string/num-grapheme-clusters]: https://github.com/stdlib-js/string/tree/main/num-grapheme-clusters
 
