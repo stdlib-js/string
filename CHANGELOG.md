@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-07)
+## Unreleased (2025-11-18)
 
 <section class="features">
 
 ### Features
 
+-   [`e9d4935`](https://github.com/stdlib-js/stdlib/commit/e9d49359c29e317fcdd6eaaf170b300fd3a1d5ef) - add `string/base/concat` [(#8521)](https://github.com/stdlib-js/stdlib/pull/8521)
 -   [`930998f`](https://github.com/stdlib-js/stdlib/commit/930998fbd7e86475339b52d84e41b9d86b97f45f) - update `string/base` TypeScript declarations [(#8132)](https://github.com/stdlib-js/stdlib/pull/8132)
 -   [`7a9fb2e`](https://github.com/stdlib-js/stdlib/commit/7a9fb2e2b14b1fa32c1c2578c29e80e8edca8bf7) - update `string` TypeScript declarations
 -   [`774b270`](https://github.com/stdlib-js/stdlib/commit/774b270d053d49740326553d549f698c7a5e94c8) - add missing exports to namespaces
@@ -48,12 +49,25 @@
 
 <!-- /.breaking-changes -->
 
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#8520](https://github.com/stdlib-js/stdlib/issues/8520)
+
+</section>
+
+<!-- /.issues -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`e9d4935`](https://github.com/stdlib-js/stdlib/commit/e9d49359c29e317fcdd6eaaf170b300fd3a1d5ef) - **feat:** add `string/base/concat` [(#8521)](https://github.com/stdlib-js/stdlib/pull/8521) _(by Sagar Ratna Chaudhary, Athan Reines)_
 -   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
 -   [`be7e3d0`](https://github.com/stdlib-js/stdlib/commit/be7e3d0ba8775b49db37662e0f509c374025c0c3) - **docs:** resolve lint errors _(by Athan Reines)_
 -   [`930998f`](https://github.com/stdlib-js/stdlib/commit/930998fbd7e86475339b52d84e41b9d86b97f45f) - **feat:** update `string/base` TypeScript declarations [(#8132)](https://github.com/stdlib-js/stdlib/pull/8132) _(by stdlib-bot)_
@@ -115,12 +129,13 @@
 
 ### Contributors
 
-A total of 5 people contributed to this release. Thank you to the following contributors:
+A total of 6 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Karan Anand
 -   Muhammad Haris
 -   Philipp Burckhardt
+-   Sagar Ratna Chaudhary
 -   Stephannie Jiménez Gacha
 
 </section>
