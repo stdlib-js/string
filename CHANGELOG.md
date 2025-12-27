@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-17)
+## Unreleased (2025-12-27)
 
 <section class="features">
 
@@ -67,6 +67,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`6ce0275`](https://github.com/stdlib-js/stdlib/commit/6ce0275d3eec598ce3ecb8da74a1c82f0de3a482) - **docs:** remove incorrect hyphens from JSDoc `returns` annotations _(by Philipp Burckhardt)_
 -   [`e9d4935`](https://github.com/stdlib-js/stdlib/commit/e9d49359c29e317fcdd6eaaf170b300fd3a1d5ef) - **feat:** add `string/base/concat` [(#8521)](https://github.com/stdlib-js/stdlib/pull/8521) _(by Sagar Ratna Chaudhary, Athan Reines)_
 -   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
 -   [`be7e3d0`](https://github.com/stdlib-js/stdlib/commit/be7e3d0ba8775b49db37662e0f509c374025c0c3) - **docs:** resolve lint errors _(by Athan Reines)_
