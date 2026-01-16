@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-10)
+## Unreleased (2026-01-16)
 
 <section class="features">
 
@@ -67,6 +67,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`0472076`](https://github.com/stdlib-js/stdlib/commit/04720767c484e6277ad9411dff3dc5a116c31378) - **docs:** remove duplicated words in documentation and comments _(by Philipp Burckhardt)_
 -   [`bfc8c3a`](https://github.com/stdlib-js/stdlib/commit/bfc8c3a7bcebf1a049c9e457ab440f540fd5c7a9) - **chore:** use one asterisk for license comment in TS files _(by Philipp Burckhardt)_
 -   [`6ce0275`](https://github.com/stdlib-js/stdlib/commit/6ce0275d3eec598ce3ecb8da74a1c82f0de3a482) - **docs:** remove incorrect hyphens from JSDoc `returns` annotations _(by Philipp Burckhardt)_
 -   [`e9d4935`](https://github.com/stdlib-js/stdlib/commit/e9d49359c29e317fcdd6eaaf170b300fd3a1d5ef) - **feat:** add `string/base/concat` [(#8521)](https://github.com/stdlib-js/stdlib/pull/8521) _(by Sagar Ratna Chaudhary, Athan Reines)_
