@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-02-16)
+## Unreleased (2026-02-25)
 
 <section class="features">
 
@@ -67,6 +67,8 @@ This release closes the following issue:
 
 <details>
 
+-   [`6154a32`](https://github.com/stdlib-js/stdlib/commit/6154a32beaac09d20e3f76af7daabf41bfa22c32) - **docs:** fix section tags and disable spellcheck for false positives in README files _(by Philipp Burckhardt)_
+-   [`46f06ad`](https://github.com/stdlib-js/stdlib/commit/46f06ad6754741320241c60ff79ffdf0a7175b07) - **docs:** fix section tags in README files _(by Philipp Burckhardt)_
 -   [`50f2408`](https://github.com/stdlib-js/stdlib/commit/50f240842114b46d91ccc84ca97f93f6c21ae5ac) - **test:** remove duplicate test cases in `string/base` packages _(by Philipp Burckhardt)_
 -   [`0472076`](https://github.com/stdlib-js/stdlib/commit/04720767c484e6277ad9411dff3dc5a116c31378) - **docs:** remove duplicated words in documentation and comments _(by Philipp Burckhardt)_
 -   [`bfc8c3a`](https://github.com/stdlib-js/stdlib/commit/bfc8c3a7bcebf1a049c9e457ab440f540fd5c7a9) - **chore:** use one asterisk for license comment in TS files _(by Philipp Burckhardt)_
