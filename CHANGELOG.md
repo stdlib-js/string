@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-07)
+## Unreleased (2026-04-19)
 
 <section class="features">
 
@@ -67,6 +67,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`aa8d436`](https://github.com/stdlib-js/stdlib/commit/aa8d436e7f5bcab413e101bc9954e9e15d162d5d) - **bench:** refactor to use string interpolation in `@stdlib/string` [(#11456)](https://github.com/stdlib-js/stdlib/pull/11456) _(by Uday Kakade, Karan Anand)_
 -   [`6154a32`](https://github.com/stdlib-js/stdlib/commit/6154a32beaac09d20e3f76af7daabf41bfa22c32) - **docs:** fix section tags and disable spellcheck for false positives in README files _(by Philipp Burckhardt)_
 -   [`46f06ad`](https://github.com/stdlib-js/stdlib/commit/46f06ad6754741320241c60ff79ffdf0a7175b07) - **docs:** fix section tags in README files _(by Philipp Burckhardt)_
 -   [`50f2408`](https://github.com/stdlib-js/stdlib/commit/50f240842114b46d91ccc84ca97f93f6c21ae5ac) - **test:** remove duplicate test cases in `string/base` packages _(by Philipp Burckhardt)_
@@ -135,7 +136,7 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 6 people contributed to this release. Thank you to the following contributors:
+A total of 7 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Karan Anand
@@ -143,6 +144,7 @@ A total of 6 people contributed to this release. Thank you to the following cont
 -   Philipp Burckhardt
 -   Sagar Ratna Chaudhary
 -   Stephannie Jiménez Gacha
+-   Uday Kakade
 
 </section>
 
