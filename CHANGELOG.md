@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`8d35b2b`](https://github.com/stdlib-js/stdlib/commit/8d35b2b4214dcf3ec69fd86b44ae2d6fc4cd0645) - **docs:** update `string/base` TypeScript declarations [(#12619)](https://github.com/stdlib-js/stdlib/pull/12619) _(by stdlib-bot)_
 -   [`d763013`](https://github.com/stdlib-js/stdlib/commit/d763013646aa16f7e4d32211249397f9a8ce5789) - **docs:** update `string` TypeScript declarations [(#12620)](https://github.com/stdlib-js/stdlib/pull/12620) _(by stdlib-bot)_
 
 </details>
