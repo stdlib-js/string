@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-04)
+## Unreleased (2026-08-12)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`a0ddbae`](https://github.com/stdlib-js/stdlib/commit/a0ddbae6d3f4bb2b9f95ff2e249202a5d3c95e82) - **docs:** fix description and add missing spaces [(#14202)](https://github.com/stdlib-js/stdlib/pull/14202) _(by Philipp Burckhardt)_
 -   [`c33404a`](https://github.com/stdlib-js/stdlib/commit/c33404ab42f5cd06257f3f02843fa23393884e80) - **style:** remove extra space and address lint failures [(#13263)](https://github.com/stdlib-js/stdlib/pull/13263) _(by Philipp Burckhardt)_
 -   [`a0117e2`](https://github.com/stdlib-js/stdlib/commit/a0117e27e6c47e9f96b3a2017edb2fff6b249683) - **chore:** update keywords [(#13235)](https://github.com/stdlib-js/stdlib/pull/13235) _(by Philipp Burckhardt)_
 -   [`a8be8d1`](https://github.com/stdlib-js/stdlib/commit/a8be8d1588388d3f20084bf4431dff14f4c7c7ed) - **docs:** update descriptions [(#13257)](https://github.com/stdlib-js/stdlib/pull/13257) _(by Philipp Burckhardt)_
