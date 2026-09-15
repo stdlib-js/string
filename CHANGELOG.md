@@ -4,7 +4,19 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-16)
+## Unreleased (2026-09-15)
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#14920](https://github.com/stdlib-js/stdlib/issues/14920)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="commits">
 
@@ -12,6 +24,7 @@
 
 <details>
 
+-   [`1e05f05`](https://github.com/stdlib-js/stdlib/commit/1e05f05fc4151d680febc6ae20bd8cdc73d85568) - **chore:** fix JavaScript lint errors [(#14999)](https://github.com/stdlib-js/stdlib/pull/14999) _(by Kanika Sharma)_
 -   [`a0ddbae`](https://github.com/stdlib-js/stdlib/commit/a0ddbae6d3f4bb2b9f95ff2e249202a5d3c95e82) - **docs:** fix description and add missing spaces [(#14202)](https://github.com/stdlib-js/stdlib/pull/14202) _(by Philipp Burckhardt)_
 -   [`c33404a`](https://github.com/stdlib-js/stdlib/commit/c33404ab42f5cd06257f3f02843fa23393884e80) - **style:** remove extra space and address lint failures [(#13263)](https://github.com/stdlib-js/stdlib/pull/13263) _(by Philipp Burckhardt)_
 -   [`a0117e2`](https://github.com/stdlib-js/stdlib/commit/a0117e27e6c47e9f96b3a2017edb2fff6b249683) - **chore:** update keywords [(#13235)](https://github.com/stdlib-js/stdlib/pull/13235) _(by Philipp Burckhardt)_
@@ -30,8 +43,9 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
+-   Kanika Sharma
 -   Philipp Burckhardt
 
 </section>
