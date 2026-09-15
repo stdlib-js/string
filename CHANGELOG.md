@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`b93cc24`](https://github.com/stdlib-js/stdlib/commit/b93cc24f76201f23788eb83e1cf0998bd20f7cb7) - **chore:** clean-up [(#15238)](https://github.com/stdlib-js/stdlib/pull/15238) _(by Philipp Burckhardt)_
 -   [`1e05f05`](https://github.com/stdlib-js/stdlib/commit/1e05f05fc4151d680febc6ae20bd8cdc73d85568) - **chore:** fix JavaScript lint errors [(#14999)](https://github.com/stdlib-js/stdlib/pull/14999) _(by Kanika Sharma)_
 -   [`a0ddbae`](https://github.com/stdlib-js/stdlib/commit/a0ddbae6d3f4bb2b9f95ff2e249202a5d3c95e82) - **docs:** fix description and add missing spaces [(#14202)](https://github.com/stdlib-js/stdlib/pull/14202) _(by Philipp Burckhardt)_
 -   [`c33404a`](https://github.com/stdlib-js/stdlib/commit/c33404ab42f5cd06257f3f02843fa23393884e80) - **style:** remove extra space and address lint failures [(#13263)](https://github.com/stdlib-js/stdlib/pull/13263) _(by Philipp Burckhardt)_
