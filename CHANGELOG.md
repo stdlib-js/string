@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-14)
+## Unreleased (2026-10-24)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`27a9ec9`](https://github.com/stdlib-js/stdlib/commit/27a9ec959464c955dd9bbfd04f15b3078976b30e) - **docs:** fix example and output description [(#16255)](https://github.com/stdlib-js/stdlib/pull/16255) _(by Philipp Burckhardt)_
 -   [`a73d38b`](https://github.com/stdlib-js/stdlib/commit/a73d38bb5fb3def53498a3d74f8e4efe0c24f7f8) - **test:** remove excess whitespace in descriptions [(#16145)](https://github.com/stdlib-js/stdlib/pull/16145) _(by Philipp Burckhardt)_
 -   [`b93cc24`](https://github.com/stdlib-js/stdlib/commit/b93cc24f76201f23788eb83e1cf0998bd20f7cb7) - **chore:** clean-up [(#15238)](https://github.com/stdlib-js/stdlib/pull/15238) _(by Philipp Burckhardt)_
 -   [`1e05f05`](https://github.com/stdlib-js/stdlib/commit/1e05f05fc4151d680febc6ae20bd8cdc73d85568) - **chore:** fix JavaScript lint errors [(#14999)](https://github.com/stdlib-js/stdlib/pull/14999) _(by Kanika Sharma)_
