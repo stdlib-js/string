@@ -4,15 +4,25 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-29)
+## Unreleased (2026-11-10)
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`4c83379`](https://github.com/stdlib-js/stdlib/commit/4c8337989191231862b5c98dbdffe492b827c7c0) - ensure support for empty replacement strings [(#16553)](https://github.com/stdlib-js/stdlib/pull/16553)
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="issues">
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#14920](https://github.com/stdlib-js/stdlib/issues/14920)
+[#14920](https://github.com/stdlib-js/stdlib/issues/14920), [#16547](https://github.com/stdlib-js/stdlib/issues/16547)
 
 </section>
 
@@ -24,6 +34,8 @@ This release closes the following issue:
 
 <details>
 
+-   [`4c83379`](https://github.com/stdlib-js/stdlib/commit/4c8337989191231862b5c98dbdffe492b827c7c0) - **fix:** ensure support for empty replacement strings [(#16553)](https://github.com/stdlib-js/stdlib/pull/16553) _(by Aditya Kumar)_
+-   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
 -   [`f6df074`](https://github.com/stdlib-js/stdlib/commit/f6df0741b98bbc22a6ca637cd9d963f982173597) - **build:** upgrade ESLint core to v9 (gh54 part VI) [(#10972)](https://github.com/stdlib-js/stdlib/pull/10972) _(by Philipp Burckhardt, Athan Reines)_
 -   [`27a9ec9`](https://github.com/stdlib-js/stdlib/commit/27a9ec959464c955dd9bbfd04f15b3078976b30e) - **docs:** fix example and output description [(#16255)](https://github.com/stdlib-js/stdlib/pull/16255) _(by Philipp Burckhardt)_
 -   [`a73d38b`](https://github.com/stdlib-js/stdlib/commit/a73d38bb5fb3def53498a3d74f8e4efe0c24f7f8) - **test:** remove excess whitespace in descriptions [(#16145)](https://github.com/stdlib-js/stdlib/pull/16145) _(by Philipp Burckhardt)_
@@ -47,8 +59,9 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
+-   Aditya Kumar
 -   Athan Reines
 -   Kanika Sharma
 -   Philipp Burckhardt
