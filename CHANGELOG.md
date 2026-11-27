@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-18)
+## Unreleased (2026-11-27)
 
 <section class="bug-fixes">
 
@@ -20,9 +20,9 @@
 
 ### Closed Issues
 
-A total of 2 issues were closed in this release:
+A total of 3 issues were closed in this release:
 
-[#14920](https://github.com/stdlib-js/stdlib/issues/14920), [#16547](https://github.com/stdlib-js/stdlib/issues/16547)
+[#14920](https://github.com/stdlib-js/stdlib/issues/14920), [#16126](https://github.com/stdlib-js/stdlib/issues/16126), [#16547](https://github.com/stdlib-js/stdlib/issues/16547)
 
 </section>
 
@@ -34,6 +34,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`0b96845`](https://github.com/stdlib-js/stdlib/commit/0b96845d12440c242a839c29206c056892a3500f) - **chore:** fix JavaScript lint errors [(#16841)](https://github.com/stdlib-js/stdlib/pull/16841) _(by UJJWAL RAJ, Athan Reines)_
 -   [`4c83379`](https://github.com/stdlib-js/stdlib/commit/4c8337989191231862b5c98dbdffe492b827c7c0) - **fix:** ensure support for empty replacement strings [(#16553)](https://github.com/stdlib-js/stdlib/pull/16553) _(by Aditya Kumar)_
 -   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
 -   [`f6df074`](https://github.com/stdlib-js/stdlib/commit/f6df0741b98bbc22a6ca637cd9d963f982173597) - **build:** upgrade ESLint core to v9 (gh54 part VI) [(#10972)](https://github.com/stdlib-js/stdlib/pull/10972) _(by Philipp Burckhardt, Athan Reines)_
@@ -59,12 +60,13 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Aditya Kumar
 -   Athan Reines
 -   Kanika Sharma
 -   Philipp Burckhardt
+-   UJJWAL RAJ
 
 </section>
 
